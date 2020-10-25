@@ -16,7 +16,7 @@
 
 
 <meta name="description" content="最近在复习pwn的一些知识。主要涉及到当堆栈开启了保护的时候，我们不能够直接将shellcode覆盖到堆栈中执行，而需要利用程序其他部分的可执行的小片段来连接成最终的shellcode。此小片段就是gadgets。本文主要通过练习题的方式讲述如何寻找gadgets，如何利用现有的工具来加速自己的pwn的效率。Gadgets的类型和难度也逐步变化。下面带来手把手教你linux pwn。让你的pwn">
-<meta name="keywords" content="linux-pwn,ret2libc,ret2shellcode,ret2syscall">
+<meta name="keywords" content="linux-pwn,ret2shellcode,ret2libc,ret2syscall">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux PWN从入门到熟练">
 <meta property="og:url" content="http://yoursite.com/2018/11/18/linx-pwn-basic-rop/index.html">
@@ -62,7 +62,7 @@
 
 
 
-    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="shortcut icon" href="/img/avatar-4.png">
 
 
 
@@ -131,7 +131,7 @@
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/" class="profilepic">
-            <img src="/img/head.jpg" class="animated zoomIn">
+            <img src="/img/head.jpeg" class="animated zoomIn">
         </a>
         <hgroup>
           <h1 class="header-author"><a href="/">Gonglong Chen</a></h1>
@@ -199,7 +199,7 @@
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
-                <img src="/img/head.jpg" class="animated zoomIn">
+                <img src="/img/head.jpeg" class="animated zoomIn">
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/" title="回到主页">Gonglong Chen</a></h1>
@@ -501,8 +501,8 @@ new Valine({
     verify:false, 
     appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
     appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
-    placeholder: 'Welcome to comments',
-    avatar:'mm' 
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
 });
 </script>
 
@@ -551,44 +551,55 @@ new Valine({
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since%>-<% } %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+                2018-2020 Gonglong Chen
             </div>
 
 
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="<%= __('tooltip.Hexo') %>">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="<%= __('tooltip.Yelee') %>  v<%= theme.Yelee %>">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+
+<!--
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+-->
+
+<!-- hitwebcounter Code START 
+<a href="http://www.hitwebcounter.com" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=6974923&style=0025&nbdigits=5&type=page&initCount=0" title="website counter" Alt="website counter"   border="0" align="up" >
+</a> 
+-->
+
+<a href="https://clustrmaps.com/site/1aae7" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=_A6aIN1PIjxyWChOHfot_6QWJTyXak5ICsMT6_Cye6I&co=2d78ad&ct=ffffff"></a>
+
+
             </div>
+
+
+
         </div>
 
 
 
-<!-- hitwebcounter Code START -->
-<a href="http://www.hitwebcounter.com" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6974923&style=0025&nbdigits=5&type=page&initCount=0" title="website counter" Alt="website counter"   border="0" align="up" >
-</a> 
-  	<a href="https://clustrmaps.com/site/1aae7" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=100&t=n&d=_A6aIN1PIjxyWChOHfot_6QWJTyXak5ICsMT6_Cye6I&co=2d78ad&ct=ffffff"></a>
 
 
 <!--
-        <% if (theme.visit_counter.on) { %>
+        
             <div class="visit">
-                <% if (theme.visit_counter.site_visit) { %>
+                
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="<%= __('visit_counter.site') %>"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
-                <% } %>
-                <% if (theme.visit_counter.site_visit && theme.visit_counter.page_visit) { %>
+                
+                
                     <span>| </span>
-                <% } %>
-                <% if (theme.visit_counter.page_visit) { %>
+                
+                
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="<%= __('visit_counter.page') %>"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
-                <% } %>
+                
             </div>
-        <% } %>
+        
 
 -->
 
