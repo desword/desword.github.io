@@ -206,101 +206,189 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me">
 </nav>
-      <div class="body-wrap"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope="" itemprop="blogPost">
-  <%if(post.nodate !="true" ){%="">
+      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
+  
     <div class="article-meta">
-      <%- partial('post="" date',="" {class_name:="" 'article-date',="" date_format:="" null})="" %="">
-    </%-></div>
-  <%}%>
+      <a href="/about/index.html" class="article-date">
+      <time datetime="2018-11-01T02:02:39.000Z" itemprop="datePublished">2018-11-01</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
-    <% if="" (theme.fancybox){="" %="">
+    
       <input type="hidden" class="isFancy">
-    <% }="" %="">
-    <% if="" (post.link="" ||="" post.title){="" %="">
+    
+    
       <header class="article-header">
-        <%- partial('post="" title',="" {class_name:="" 'article-title'})="" %="">
-      </%-></header>
-      <% if="" (!index){="" %="">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Gonglong Chen
+    </h1>
+  
+
+      </header>
+      
       <div class="article-info article-info-post">
-        <%- partial('post="" category')="" %="">
-        <%- partial('post="" tag')="" %="">
+        
+
+        
         <div class="clearfix"></div>
-      </%-></%-></div>
-      <% }="" %="">
-    <% }="" %="">
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
-          <% if="" (post.description){="" %="">
-              <%- post.description="" %="">
-          <% }="" else="" {="" %="">
-              <%- post.excerpt="" %="">
-          <% }="" %="">
-      <% }="" else="" {="" %="">
-          <% if="" (is_page()){="" %="">
-              <%- partial('_partial="" page')="" %="">
-          <% }="" %="">
-        <%- post.content="" %="">
-      <% }="" %="">
-    </%></%-></%></%-></%></%></%></%-></%></%-></%></%></div>
-    <% if="" (index){="" %="">
-    <div class="article-info article-info-index">
-      <%if(post.top){%>
-        <div class="article-pop-out tagcloud">
-          <a class="">置顶</a>
+      
+          
+              <style>
+    .article-meta { display: none; }
+    #container .article .article-title { padding-right: 0; }
+    .article-header {
+        padding: 0;
+        padding-top: 26px;
+        border-left: none;
+        text-align: center;
+    }
+    .article-header:hover { border-left: none; }
+    .article-title { font-size: 1.6em }
+    .article-entry hr { margin: 0;}
+    .article-meta,
+    #container .article-info-post.article-info { display: none;}
+    #container .article .article-title { padding: 0; }
+</style>
+
+
+          
+        <h1 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h1><p>PhD Candidate, </p>
+<p><a href="http://www.cs.zju.edu.cn/" target="_blank" rel="noopener">College of Computer Science</a>, <a href="http://www.zju.edu.cn/" target="_blank" rel="noopener">Zhejiang University</a></p>
+<p>Email:    desword AT zju.edu.cn<br>Personal site:    <a href="https://blog.csdn.net/ls1160" target="_blank" rel="noopener">CSDN</a>, <a href="https://www.anquanke.com/member/122056" target="_blank" rel="noopener">Security Blog</a>, <a href="https://github.com/desword" target="_blank" rel="noopener">github</a>,</p>
+<h1 id="Biography"><a href="#Biography" class="headerlink" title="Biography"></a>Biography</h1><p>Gonglong Chen is currently a PhD candidate at the College of Computer Science in <em>Zhejiang University</em>. He received the BS degree from the College of Computer Science in <em>East China University of Political Science and Law (ECUPL)</em> in 2011. His research interests include <strong>Internet of Things (IoT)</strong>, <strong>wireless</strong> and <strong>security</strong>.</p>
+<h1 id="News"><a href="#News" class="headerlink" title="News"></a>News</h1><ul>
+<li>[2020-07-20] One paper about jamming attack over CTC links is accepted to TOSN.</li>
+<li>[2019-12-19] Awarded Huawei Jingying (华为菁英) Scholarship 2019.</li>
+<li>[2019-10-29] Post a new blog. <a href="https://desword.github.io/2019/10/29/linux-pwn-basic-3/" target="_blank" rel="noopener">Linux PWN From the Junior to the Senior III</a>.</li>
+<li>[2019-10-24] Update <a href="https://github.com/desword/shellcode_tools" target="_blank" rel="noopener">getOverFlowOffset</a>,  support tracking the offset to EBP in programs enabling PIE.</li>
+<li>[2019-10-16] Awarded National Scholarship Scholarship 2019.</li>
+<li>[2019-06-20] One poster about modular network architecture for IoT has been accepted to SIGCOMM 19.</li>
+<li>[2019-06-18] Awarded  Tianzhou Chen Scholarship 2019.</li>
+<li>[2019-05-23] Update a new blog about modifying a LoRa firmware to enable the reception of corruption packets <a href="https://desword.github.io/2019/05/22/lora-error-packet-modify/" target="_blank" rel="noopener">lora-error-packet-modify</a>.</li>
+</ul>
+<h1 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h1><h2 id="Conferences"><a href="#Conferences" class="headerlink" title="Conferences"></a>Conferences</h2><ol>
+<li><strong>Gonglong Chen</strong>, Jiamei Lv, and Wei Dong, “Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks”,  <em>IEEE IWQoS</em>, Virtual, June 15-17, 2020. <a href="https://desword.github.io/paper/iwqos20_eLoRa.pdf" target="_blank" rel="noopener">[PDF]</a> (<strong>CCF B</strong>)</li>
+<li><strong>Gonglong Chen</strong>, Wei Dong, Fujian Qiu, Gaoyang Guan, Yi Gao, and Siyu Zeng, “Scalable and Interactive Simulation for IoT Applications with TinySim”, accept to <em>IEEE INFOCOM Poster</em>, Virtual, July 6-9, 2020. <a href="https://desword.github.io/paper/infocom20-poster-tinysim.pdf" target="_blank" rel="noopener">[PDF]</a> (<strong>CCF A</strong>)</li>
+<li><strong>Gonglong Chen</strong>, Wei Dong, Yihui Wang, and Huikang Li, “TinyNet: A Lightweight, Modular, and Unified Network Architecture for The Internet of Things”, <em>ACM SIGCOMM Poster</em>, Beijing, China, Augest 19-24, 2019. <a href="https://desword.github.io/paper/sigcomm19_tinynet_poster_v2.pdf" target="_blank" rel="noopener">[PDF]</a> (<strong>CCF A</strong>)</li>
+<li><strong>Gonglong Chen</strong>, and Wei Dong, “JamCloak: Reactive Jamming Attack over Cross-Technology Communication Links”, <em>IEEE ICNP 2018</em>, Cambridge, UK, September 24-27, 2018. <a href="https://desword.github.io/paper/icnp18_jamcloak.pdf" target="_blank" rel="noopener">[PDF]</a> (<strong>CCF B, 17.8% acceptance rate</strong>)</li>
+<li>Yihui Wang, <strong>Gonglong Chen</strong>, Jiajun Bu, and Wei Dong, “MoRa: a LoRa-based System for Timely and Energy-Efficient e-Price Tag Update in Markets”, <em>IEEE ICPADS 2019</em>, Tianjing, China, December 4-6, 2019. <a href="https://desword.github.io/paper/icpads19-mora.pdf" target="_blank" rel="noopener">[PDF]</a></li>
+<li>Zhiwei Zhao, Wei Dong, Geyong Min, <strong>Gonglong Chen</strong>, Tao Gu and Jiajun Bu, “Towards Repeatable Wireless Network Simulation Using Performance-Aware Markov Model”, <em>IEEE INFOCOM 2018</em>, Honolulu, HI, USA, April 15-19, 2018. <a href="https://desword.github.io/paper/Infocom18-zhao.pdf" target="_blank" rel="noopener">[PDF]</a> (<strong>CCF A, 19.2% acceptance rate</strong>)</li>
+<li>Huikang Li, <strong>Gonglong Chen</strong>, Yihui Wang and Wei Dong, “Accurate Performance Modeling of Uplink Transmission in NB-IoT”, <em>IEEE ICPADS 2018</em>, Singapore, December 11-13, 2018. <a href="https://desword.github.io/paper/icpads18_nblink.pdf" target="_blank" rel="noopener">[PDF]</a></li>
+<li><strong>Gonglong Chen</strong>, Wei Dong, Zhiwei Zhao, and Tao Gu, “Towards Accurate Corruption Estimation in ZigBee Under Cross-Technology Interference”, <em>IEEE ICDCS 2017</em>, Atlanta, GA, USA, June 5-8, 2017. <a href="https://desword.github.io/paper/icdcs17_AccuEst.pdf" target="_blank" rel="noopener">[PDF]</a> (<strong>CCF B, 16.9% acceptance rate</strong>)</li>
+<li><strong>Gonglong Chen</strong>, and Wei Dong, “Adaptive Path Profiling using Arithmetic Coding”, <em>IEEE ICPADS 2015</em>, Melbourne, Australia, December 14-17, 2015. <a href="https://desword.github.io/paper/icpads15_adaptracer.pdf" target="_blank" rel="noopener">[PDF]</a></li>
+</ol>
+<h2 id="Journals"><a href="#Journals" class="headerlink" title="Journals"></a>Journals</h2><ol>
+<li><strong>Gonglong Chen</strong>, Wei Dong, “Reactive Jamming and Attack Mitigation over Cross-Technology Communication Links, accepted to <em>ACM Transactions on Sensor Networks</em>, 2020. <a href="./#">[PDF]</a> (<strong>CCF B, IF=2.469, 2019</strong>)</li>
+<li><strong>Gonglong Chen</strong>, Wei Dong, Zhiwei Zhao, and Tao Gu, “Accurate Corruption Estimation in ZigBee Under Cross-Technology Interference”, <em>IEEE Transactions on Mobile Computing</em>, vol. 18, no. 10, pp. 2243-2256, 1 Oct. 2019. <a href="https://desword.github.io/paper/tmc19_accuest.pdf" target="_blank" rel="noopener">[PDF]</a> (<strong>CCF A, IF=4.474, 2018</strong>)</li>
+<li>Wei Dong, <strong>Gonglong Chen</strong>, Xiaoyu Zhang, and Yi Gao, “Trading Routing Diversity for Better Network Performance”, <em>IEEE Transactions on Mobile Computing</em>, vol. 18, no. 6, pp. 1433-1446, 1 June 2019. <a href="https://desword.github.io/paper/tmc18_flexcut.pdf" target="_blank" rel="noopener">[PDF]</a> (<strong>CCF A, IF=4.474, 2018</strong>)</li>
+<li><strong>Gonglong Chen</strong>, and Wei Dong, “AdapTracer: Adaptive Path Profiling Using Arithmetic Coding”, Elsevier Journal of Systems Architecture, Vol.88, pp.74-86, 31 May, 2018. <a href="https://desword.github.io/paper/jsa18_adaptracer.pdf" target="_blank" rel="noopener">[PDF]</a> (<strong>CCF B, IF=1.159, 2017</strong>)</li>
+<li>Zhiwei Zhao, Wei Dong, <strong>Gonglong Chen</strong>, Geyong Min, Tao Gu, and Jiajun Bu, “Embracing Corruption Burstiness: Fast Error Recovery for ZigBee under Wi-Fi Interference”, <em>IEEE Transactions on Mobile Computing</em>, vol. 16, no. 9, pp. 2518-2530, 2017. <a href="https://desword.github.io/paper/tmc-2016-embracing.pdf" target="_blank" rel="noopener">[PDF]</a> (<strong>CCF A, IF=4.098, 2017</strong>)</li>
+<li>Wei Dong, <strong>Gonglong Chen</strong>, Chenhong Cao, Luyao Luo, Yi Gao, Towards a Software-Defined Architecture for Wireless Sensor Networks. <em>Chinese Journal of Computers(CJC)</em>, Vol.40, No. 8, pp.1779-1797, 2017. <a href="https://desword.github.io/paper/DW0315-2017315152626.pdf" target="_blank" rel="noopener">[PDF]</a></li>
+</ol>
+<h1 id="Awards"><a href="#Awards" class="headerlink" title="Awards"></a>Awards</h1><ul>
+<li>Huawei Jingying (华为菁英) Scholarship 2019 (1/400 in ZJU CS, top 1%)</li>
+<li>National Scholarship 2019 (6/400 in ZJU CS, top 1%)</li>
+<li>Tianzhou Chen Scholarship 2019 (2/400 in ZJU CS, top 1%)</li>
+<li>National Scholarship 2018 (5/400 in ZJU CS, top 1%)</li>
+<li>ICNP 2018 travel grant</li>
+<li>ICDCS 2017 travel grant</li>
+</ul>
+<h1 id="Tools"><a href="#Tools" class="headerlink" title="Tools"></a>Tools</h1><ul>
+<li><a href="https://github.com/desword/shellcode_tools" target="_blank" rel="noopener">getOverFlowOffset</a><ul>
+<li>An easy-to-use tool to get the over flow offset to the EBP. </li>
+<li>We now support dealing with programs enabling PIE/ALSR. Welcome to use and post issues :).</li>
+</ul>
+</li>
+</ul>
+<h1 id="Patents"><a href="#Patents" class="headerlink" title="Patents"></a>Patents</h1><ul>
+<li>A method for restoring the execution path of Android applications. CN 106802866B. 2019.12.10</li>
+</ul>
+<h1 id="Uesful-Security-Links"><a href="#Uesful-Security-Links" class="headerlink" title="Uesful Security Links"></a>Uesful Security Links</h1><p><a href="https://www.cs.ucr.edu/~zhiyunq/publications.html" target="_blank" rel="noopener">Zhiyun Qian</a>,<br><a href="https://diaowenrui.github.io/" target="_blank" rel="noopener">Wenrui Diao</a>, <a href="http://www.yajin.org/#" target="_blank" rel="noopener">Yajin Zhou</a>, <a href="http://faculty.cs.tamu.edu/guofei/" target="_blank" rel="noopener">Guofei Gu</a>,<br><a href="https://staff.ie.cuhk.edu.hk/~khzhang/" target="_blank" rel="noopener">Kehuan Zhang</a>, <a href="http://chao.100871.net/" target="_blank" rel="noopener">Chao Zhang (Blue-Lotus CTF team)</a>, <a href="https://chenbihuan.github.io/" target="_blank" rel="noopener">Bihuan Chen (FuDan)</a>,<br><a href="https://dblp.uni-trier.de/pers/hd/w/Wang_0001:XiaoFeng" target="_blank" rel="noopener">Xiaofeng Wang</a>,<a href="hhttps://dblp.uni-trier.de/pers/hd/l/Lee:Wenke" target="_blank" rel="noopener">Wenke Lee</a>,<a href="https://dblp.uni-trier.de/pers/hd/p/Perrig:Adrian" target="_blank" rel="noopener">ADRIAN PERRIG</a>,<br><a href="https://dblp.uni-trier.de/pers/hd/b/Backes_0001:Michael" target="_blank" rel="noopener">Michael Backes</a>,<a href="https://dblp.uni-trier.de/pers/hd/j/Jha:Somesh" target="_blank" rel="noopener">Somesh Jha </a>,<br><a href="https://dblp.uni-trier.de/pers/hd/k/Kirda:Engin" target="_blank" rel="noopener">Engin Kirda</a>,<a href="https://dblp.uni-trier.de/pers/hd/r/Reiter:Michael_K=" target="_blank" rel="noopener">Michael K. Reiter</a>,<br><a href="https://sites.cs.ucsb.edu/~vigna/publications.html" target="_blank" rel="noopener">Giovanni Vigna</a>,<a href="https://dblp.uni-trier.de/pers/hd/s/Song:Dawn_Xiaodong" target="_blank" rel="noopener">Dawn Song</a>,<br><a href="https://dblp.uni-trier.de/pers/hd/k/Kr=uuml=gel:Christopher" target="_blank" rel="noopener">Christopher Kruegel</a>,<a href="https://dblp.uni-trier.de/pers/hd/s/Shmatikov:Vitaly" target="_blank" rel="noopener">Vitaly Shmatikov</a>,</p>
+<p><a href="https://desword.github.io/image/Vulnerability-Exploit-Fuzz-Mitigation-v1.3.jpeg" target="_blank" rel="noopener">Vulnerability-Exploit-Fuzz-Mitigation-v1.3</a>, <a href="https://sec.today/events/" target="_blank" rel="noopener">SecEvents</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+  
+</article>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
         </div>
-      <% }="" %="">
-      <%- partial('post="" category')="" %="">
-      <%- partial('post="" tag')="" %="">
-      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= __('index.more')="" %=""> >></%=></a>
-        </p>
-      <% }="" %="">
-      <div class="clearfix"></div>
-    </%></%></%-></%-></%></%if(post.top){%></div>
-    <% }="" %="">
-  </%></%></%></%></%></%></%></%></div>
-  <% if="" (!index){="" %="">
-    <%- partial('post="" nav')="" %="">
-  <% }="" %="">
-</%></%-></%></%}%></%if(post.nodate></article>
-<%- partial('_partial="" toc')="" %="">
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Gonglong Chen　| Gonglong Chen　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
 
-<% if="" (!index="" &&="" theme.share.on="" (post.share="" !="false" ||="" post.share)){="" %="">
-    <%- partial('post="" share')="" %="">
-<% }="" %="">
-
-
-<% if="" (theme.valine_appid="" &&="" theme.valine_appkey){="" %="">
-    <%- partial('post="" valine',="" {="" key:="" post.slug,="" title:="" post.title,="" url:="" config.url+url_for(post.path)="" })="" %="">
-    <% }="" %="">
-
-
-<% if="" (!index="" &&="" post.comments){="" %="">
-    <% if="" (theme.duoshuo.on)="" {="" %="">
-      <%- partial('comments="" duoshuo',="" {="" key:="" post.path,="" title:="" post.title,="" url:="" config.url+url_for(post.path),="" })="" %="">
-    <% }="" else="" if="" (theme.youyan.on)="" {="" %="">
-        <%- partial('comments="" youyan')="" %="">
-    <% }="" else="" if="" (theme.disqus.on)="" {="" %="">
-        <%- partial('comments="" disqus',="" {="" shortname:="" theme.disqus.shortname="" })="" %="">
-    <% }="" else="" if="" (config.disqus_shortname)="" {="" %="">
-        <%- partial('comments="" disqus',="" {="" shortname:="" config.disqus_shortname="" })="" %="">
-    <% }="" %="">
+    
+</div>
 
 
 
-<% }="" %="">
 
-<%- partial('_partial="" post-nav-button')="" %="">
 
-<% if="" (!index)="" {="" %="">
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
+});
+</script>
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
     <script>
-        <% if (post.fancybox === false){ %>
-            yiliaConfig.fancybox = false;
-        <% } %>
+        
     </script>
-<% }="" %="">
-</%></%></%-></%></%></%-></%></%-></%></%-></%></%-></%></%></%></%-></%></%></%-></%></%-></div>
+
+</div>
       <footer id="footer">
     <div class="outer">
 
