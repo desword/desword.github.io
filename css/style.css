@@ -1413,7 +1413,7 @@ color
   font-weight: bold;
 }
 .article-entry li strong {
-  color: #0746b6;
+  color: #000;
 }
 .article-entry .caption {
   display: block;
