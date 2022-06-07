@@ -1403,6 +1403,9 @@ color
 .article-entry em {
   font-style: italic;
 }
+.article-entry li italic {
+  color: #000;
+}
 .article-entry video {
   max-width: 100%;
 }
@@ -1410,7 +1413,7 @@ color
   font-weight: bold;
 }
 .article-entry li strong {
-  color: #708090;
+  color: #0746b6;
 }
 .article-entry .caption {
   display: block;
@@ -1529,7 +1532,7 @@ color
   text-decoration: underline;
 }
 .article-entry h3::after {
-  content: " >";
+  content: "";
 }
 .article-entry h4,
 .article-entry h5,
