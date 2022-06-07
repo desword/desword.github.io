@@ -203,101 +203,196 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me">
 </nav>
-      <div class="body-wrap"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope="" itemprop="blogPost">
-  <%if(post.nodate !="true" ){%="">
+      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
+  
     <div class="article-meta">
-      <%- partial('post="" date',="" {class_name:="" 'article-date',="" date_format:="" null})="" %="">
-    </%-></div>
-  <%}%>
+      <a href="/tags/index.html" class="article-date">
+      <time datetime="2019-10-28T08:39:39.000Z" itemprop="datePublished">2019-10-28</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
-    <% if="" (theme.fancybox){="" %="">
+    
       <input type="hidden" class="isFancy">
-    <% }="" %="">
-    <% if="" (post.link="" ||="" post.title){="" %="">
+    
+    
       <header class="article-header">
-        <%- partial('post="" title',="" {class_name:="" 'article-title'})="" %="">
-      </%-></header>
-      <% if="" (!index){="" %="">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      tags
+    </h1>
+  
+
+      </header>
+      
       <div class="article-info article-info-post">
-        <%- partial('post="" category')="" %="">
-        <%- partial('post="" tag')="" %="">
+        
+
+        
         <div class="clearfix"></div>
-      </%-></%-></div>
-      <% }="" %="">
-    <% }="" %="">
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
-          <% if="" (post.description){="" %="">
-              <%- post.description="" %="">
-          <% }="" else="" {="" %="">
-              <%- post.excerpt="" %="">
-          <% }="" %="">
-      <% }="" else="" {="" %="">
-          <% if="" (is_page()){="" %="">
-              <%- partial('_partial="" page')="" %="">
-          <% }="" %="">
-        <%- post.content="" %="">
-      <% }="" %="">
-    </%></%-></%></%-></%></%></%></%-></%></%-></%></%></div>
-    <% if="" (index){="" %="">
-    <div class="article-info article-info-index">
-      <%if(post.top){%>
-        <div class="article-pop-out tagcloud">
-          <a class="">置顶</a>
+      
+          
+              <style>
+    .article-meta { display: none; }
+    #container .article .article-title { padding-right: 0; }
+    .article-header {
+        padding: 0;
+        padding-top: 26px;
+        border-left: none;
+        text-align: center;
+    }
+    .article-header:hover { border-left: none; }
+    .article-title { font-size: 1.6em }
+    .article-entry hr { margin: 0;}
+    .article-meta,
+    #container .article-info-post.article-info { display: none;}
+    #container .article .article-title { padding: 0; }
+</style>
+
+
+    <!-- Tag Cloud Page -->
+    <hr>
+<br>
+
+
+<p class="count"></p>
+
+<div class="tags">
+    <a href="/tags/AFL/" style="font-size: 16px; color: #808080">AFL</a> <a href="/tags/MQTT/" style="font-size: 16px; color: #808080">MQTT</a> <a href="/tags/RPI/" style="font-size: 16px; color: #808080">RPI</a> <a href="/tags/T-Fuzz/" style="font-size: 16px; color: #808080">T-Fuzz</a> <a href="/tags/ZigBee-control/" style="font-size: 16px; color: #808080">ZigBee control</a> <a href="/tags/fake-frame/" style="font-size: 16px; color: #808080">fake frame</a> <a href="/tags/firmware-reverse/" style="font-size: 16px; color: #808080">firmware reverse</a> <a href="/tags/fuzzer/" style="font-size: 16px; color: #808080">fuzzer</a> <a href="/tags/linux-pwn/" style="font-size: 35px; color: #000">linux-pwn</a> <a href="/tags/lora/" style="font-size: 16px; color: #808080">lora</a> <a href="/tags/ret2csu/" style="font-size: 16px; color: #808080">ret2csu</a> <a href="/tags/ret2libc/" style="font-size: 25.5px; color: #404040">ret2libc</a> <a href="/tags/ret2shellcode/" style="font-size: 16px; color: #808080">ret2shellcode</a> <a href="/tags/ret2syscall/" style="font-size: 16px; color: #808080">ret2syscall</a> <a href="/tags/stack-pivoting/" style="font-size: 16px; color: #808080">stack pivoting</a>
+</div>
+<style>
+    .category-list li{
+        display: inline-block;
+        margin: 0 1em .5em 0;
+        padding: 4px;
+        border: 1px solid lightgray;
+        font-size: 1.2rem;
+    }
+    .category-list a { color: gray; }
+    .category-list-item:hover a {
+        color: gray;
+        text-decoration: none;
+    }
+    .category-list-count {
+        margin-left: 2px;
+        font-size: .9rem;
+    }
+    .article-entry ul li:before{ display: none; }
+    .article-inner { text-align: center; }
+    .tags {
+        max-width: 42em;
+        margin: 2em auto;
+        margin-top: 0em;
+    }
+    .tags a {
+        margin-right: 1em;
+        line-height: 65px;
+        border-bottom: 1px solid gray;
+        white-space: nowrap;
+        transition: border-bottom .5s;
+    }
+    .tags a:hover {
+        border-bottom: 3px dotted gray;
+        text-decoration: none;
+    }
+    #count > span {
+        margin: auto .2em;
+        font-weight: bold;
+    }
+</style>
+
+<!-- Count tags and categories -->
+<p id="count">
+         <span><script>document.write($(".category-list-item").length)</script></span>Categories,
+         <span><script>document.write($(".tags > a").length)</script></span>Tags
+</p>
+<script>
+    $('#count').appendTo('.count');
+</script>
+
+          
+        
+      
+    </div>
+    
+  </div>
+  
+    
+
+
+  
+</article>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
         </div>
-      <% }="" %="">
-      <%- partial('post="" category')="" %="">
-      <%- partial('post="" tag')="" %="">
-      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= __('index.more')="" %=""> >></%=></a>
-        </p>
-      <% }="" %="">
-      <div class="clearfix"></div>
-    </%></%></%-></%-></%></%if(post.top){%></div>
-    <% }="" %="">
-  </%></%></%></%></%></%></%></%></div>
-  <% if="" (!index){="" %="">
-    <%- partial('post="" nav')="" %="">
-  <% }="" %="">
-</%></%-></%></%}%></%if(post.nodate></article>
-<%- partial('_partial="" toc')="" %="">
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"tags　| Gonglong Chen　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
 
-<% if="" (!index="" &&="" theme.share.on="" (post.share="" !="false" ||="" post.share)){="" %="">
-    <%- partial('post="" share')="" %="">
-<% }="" %="">
-
-
-<% if="" (theme.valine_appid="" &&="" theme.valine_appkey){="" %="">
-    <%- partial('post="" valine',="" {="" key:="" post.slug,="" title:="" post.title,="" url:="" config.url+url_for(post.path)="" })="" %="">
-    <% }="" %="">
-
-
-<% if="" (!index="" &&="" post.comments){="" %="">
-    <% if="" (theme.duoshuo.on)="" {="" %="">
-      <%- partial('comments="" duoshuo',="" {="" key:="" post.path,="" title:="" post.title,="" url:="" config.url+url_for(post.path),="" })="" %="">
-    <% }="" else="" if="" (theme.youyan.on)="" {="" %="">
-        <%- partial('comments="" youyan')="" %="">
-    <% }="" else="" if="" (theme.disqus.on)="" {="" %="">
-        <%- partial('comments="" disqus',="" {="" shortname:="" theme.disqus.shortname="" })="" %="">
-    <% }="" else="" if="" (config.disqus_shortname)="" {="" %="">
-        <%- partial('comments="" disqus',="" {="" shortname:="" config.disqus_shortname="" })="" %="">
-    <% }="" %="">
+    
+</div>
 
 
 
-<% }="" %="">
 
-<%- partial('_partial="" post-nav-button')="" %="">
 
-<% if="" (!index)="" {="" %="">
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: 'Welcome to comments',
+    avatar:'mm' 
+});
+</script>
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
     <script>
-        <% if (post.fancybox === false){ %>
-            yiliaConfig.fancybox = false;
-        <% } %>
+        
     </script>
-<% }="" %="">
-</%></%></%-></%></%></%-></%></%-></%></%-></%></%-></%></%></%></%-></%></%></%-></%></%-></div>
+
+</div>
       <footer id="footer">
     <div class="outer">
 

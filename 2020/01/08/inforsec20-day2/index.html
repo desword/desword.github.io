@@ -208,101 +208,188 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me">
 </nav>
-      <div class="body-wrap"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope="" itemprop="blogPost">
-  <%if(post.nodate !="true" ){%="">
+      <div class="body-wrap"><article id="post-inforsec20-day2" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
     <div class="article-meta">
-      <%- partial('post="" date',="" {class_name:="" 'article-date',="" date_format:="" null})="" %="">
-    </%-></div>
-  <%}%>
+      <a href="/2020/01/08/inforsec20-day2/" class="article-date">
+      <time datetime="2020-01-08T12:10:06.000Z" itemprop="datePublished">2020-01-08</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
-    <% if="" (theme.fancybox){="" %="">
+    
       <input type="hidden" class="isFancy">
-    <% }="" %="">
-    <% if="" (post.link="" ||="" post.title){="" %="">
+    
+    
       <header class="article-header">
-        <%- partial('post="" title',="" {class_name:="" 'article-title'})="" %="">
-      </%-></header>
-      <% if="" (!index){="" %="">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      InforSec 2020 网络空间安全国际学术成果分享（上） Day Two
+    </h1>
+  
+
+      </header>
+      
       <div class="article-info article-info-post">
-        <%- partial('post="" category')="" %="">
-        <%- partial('post="" tag')="" %="">
+        
+
+        
         <div class="clearfix"></div>
-      </%-></%-></div>
-      <% }="" %="">
-    <% }="" %="">
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
-          <% if="" (post.description){="" %="">
-              <%- post.description="" %="">
-          <% }="" else="" {="" %="">
-              <%- post.excerpt="" %="">
-          <% }="" %="">
-      <% }="" else="" {="" %="">
-          <% if="" (is_page()){="" %="">
-              <%- partial('_partial="" page')="" %="">
-          <% }="" %="">
-        <%- post.content="" %="">
-      <% }="" %="">
-    </%></%-></%></%-></%></%></%></%-></%></%-></%></%></div>
-    <% if="" (index){="" %="">
-    <div class="article-info article-info-index">
-      <%if(post.top){%>
-        <div class="article-pop-out tagcloud">
-          <a class="">置顶</a>
-        </div>
-      <% }="" %="">
-      <%- partial('post="" category')="" %="">
-      <%- partial('post="" tag')="" %="">
-      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= __('index.more')="" %=""> >></%=></a>
+      
+          
+        <p> <img src="https://desword.github.io/image/2020-1-8/infosec20_program.jpg" width="50%" height="50%" align="center"></p>
+<h2 id="Day-2"><a href="#Day-2" class="headerlink" title="Day 2"></a>Day 2</h2><h3 id="上午："><a href="#上午：" class="headerlink" title="上午："></a>上午：</h3><p><a href="https://www.bilibili.com/video/av82577959?p=6" target="_blank" rel="noopener">mopt_更好的变异选择_浙江大学.mp4</a> MOPT: Optimized Mutation Scheduling for Fuzzers <a href="https://desword.github.io/paper/ref/mopt_更好的变异选择_浙江大学.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=9" target="_blank" rel="noopener">蒙特卡洛混合式漏洞挖掘_武汉大学.mp4</a> Send Hardest Problems My Way: Probabilistic Path Prioritization for Hybrid Fuzzing <a href="https://desword.github.io/paper/ref/蒙特卡洛混合式漏洞挖掘_武汉大学_ndss19.pdf" target="_blank" rel="noopener">pdf</a> NDSS2019<br><a href="https://www.bilibili.com/video/av82577959?p=2" target="_blank" rel="noopener">EnFuzz_清华.mp4</a> EnFuzz: Ensemble Fuzzing with Seed Synchronization among Diverse Fuzzers <a href="https://desword.github.io/paper/ref/EnFuzz_清华_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=3" target="_blank" rel="noopener">Firm-AFL_信工所.mp4</a> FIRM-AFL: High-Throughput Greybox Fuzzing of IoT Firmware via Augmented Process Emulation <a href="https://desword.github.io/paper/ref/Firm-AFL_信工所_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=10" target="_blank" rel="noopener">中文用户口令_南开.mp4</a> Birthday, Name and Bifacial-security: Understanding Passwords of Chinese Web Users <a href="https://desword.github.io/paper/ref/中文用户口令_南开_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019</p>
+<h3 id="下午："><a href="#下午：" class="headerlink" title="下午："></a>下午：</h3><p><a href="https://www.bilibili.com/video/av82577959?p=7" target="_blank" rel="noopener">ProFuzzer_人民大学.mp4</a> ProFuzzer: On-the-fly Input Type Probing for Better Zero-day Vulnerability Discovery <a href="https://desword.github.io/paper/ref/ProFuzzer_人民大学_sp19.pdf" target="_blank" rel="noopener">pdf</a> SP2019<br><a href="https://www.bilibili.com/video/av82577959?p=4" target="_blank" rel="noopener">iot移动应用云交互的安全隐患_中科院大学.mp4</a> Discovering and Understanding the Security Hazards in the Interactions between IoT Devices, Mobile Apps, and Clouds on Smart Home Platforms <a href="https://desword.github.io/paper/ref/iot移动应用云交互的安全隐患_中科院大学_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=5" target="_blank" rel="noopener">KEPLER内核控制流劫持_信工所.mp4</a> KEPLER: Facilitating Control-flow Hijacking Primitive Evaluation for Linux Kernel Vulnerabilities <a href="https://desword.github.io/paper/ref/KEPLER内核控制流劫持_信工所_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=1" target="_blank" rel="noopener">Bscout软件补丁Java_复旦.mp4</a> BScout: Direct Whole Patch Presence Test 作者主页 USENIX2020</p>
+<p><a href="https://www.bilibili.com/video/av82577959?p=11" target="_blank" rel="noopener">自动漏洞报告分析保护iot设备_信工所.mp4</a> Understanding and Securing Device Vulnerabilities through Automated Bug Report Analysis <a href="https://desword.github.io/paper/ref/自动漏洞报告分析保护iot设备_信工所_sp19.pdf" target="_blank" rel="noopener">pdf</a> SP2019<br><a href="https://www.bilibili.com/video/av82577959?p=8" target="_blank" rel="noopener">SafeHidden进程隔离_清华.mp4</a> SafeHidden: An Efficient and Secure Information Hiding Technique Using Re-randomization <a href="https://desword.github.io/paper/ref/SafeHidden进程隔离_清华_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82577959?p=12" target="_blank" rel="noopener">总结发言.mp4</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>Title:</span><a href="/2020/01/08/inforsec20-day2/">InforSec 2020 网络空间安全国际学术成果分享（上） Day Two</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Gonglong Chen</a></p>
+        <p><span>Created:</span>2020-01-08, 20:10:06</p>
+        <p><span>Updated:</span>2022-05-10, 11:59:58</p>
+        <p>
+            <span>Full URL:</span><a class="post-url" href="/2020/01/08/inforsec20-day2/" title="InforSec 2020 网络空间安全国际学术成果分享（上） Day Two">http://yoursite.com/2020/01/08/inforsec20-day2/</a>
+            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2020/01/08/inforsec20-day2/　　By Gonglong Chen" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      <% }="" %="">
-      <div class="clearfix"></div>
-    </%></%></%-></%-></%></%if(post.top){%></div>
-    <% }="" %="">
-  </%></%></%></%></%></%></%></%></div>
-  <% if="" (!index){="" %="">
-    <%- partial('post="" nav')="" %="">
-  <% }="" %="">
-</%></%-></%></%}%></%if(post.nodate></article>
-<%- partial('_partial="" toc')="" %="">
-
-<% if="" (!index="" &&="" theme.share.on="" (post.share="" !="false" ||="" post.share)){="" %="">
-    <%- partial('post="" share')="" %="">
-<% }="" %="">
-
-
-<% if="" (theme.valine_appid="" &&="" theme.valine_appkey){="" %="">
-    <%- partial('post="" valine',="" {="" key:="" post.slug,="" title:="" post.title,="" url:="" config.url+url_for(post.path)="" })="" %="">
-    <% }="" %="">
-
-
-<% if="" (!index="" &&="" post.comments){="" %="">
-    <% if="" (theme.duoshuo.on)="" {="" %="">
-      <%- partial('comments="" duoshuo',="" {="" key:="" post.path,="" title:="" post.title,="" url:="" config.url+url_for(post.path),="" })="" %="">
-    <% }="" else="" if="" (theme.youyan.on)="" {="" %="">
-        <%- partial('comments="" youyan')="" %="">
-    <% }="" else="" if="" (theme.disqus.on)="" {="" %="">
-        <%- partial('comments="" disqus',="" {="" shortname:="" theme.disqus.shortname="" })="" %="">
-    <% }="" else="" if="" (config.disqus_shortname)="" {="" %="">
-        <%- partial('comments="" disqus',="" {="" shortname:="" config.disqus_shortname="" })="" %="">
-    <% }="" %="">
+        <p>
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+        </p>
+    </div>
 
 
 
-<% }="" %="">
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2020/01/08/infosec-20/">
+                    InforSec 2020 网络空间安全国际学术成果分享（上） Day One
+                </a>
+            </div>
+        
+    </nav>
 
-<%- partial('_partial="" post-nav-button')="" %="">
+  
+</article>
 
-<% if="" (!index)="" {="" %="">
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Day-2"><span class="toc-number">1.</span> <span class="toc-text">Day 2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#上午："><span class="toc-number">1.1.</span> <span class="toc-text">上午：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下午："><span class="toc-number">1.2.</span> <span class="toc-text">下午：</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="Hide" title="Show or Hide Table of Contents">
+
     <script>
-        <% if (post.fancybox === false){ %>
-            yiliaConfig.fancybox = false;
-        <% } %>
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
-<% }="" %="">
-</%></%></%-></%></%></%-></%></%-></%></%-></%></%-></%></%></%></%-></%></%></%-></%></%-></div>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"InforSec 2020 网络空间安全国际学术成果分享（上） Day Two　| Gonglong Chen　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: 'Welcome to comments',
+    avatar:'mm' 
+});
+</script>
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="Back to Homepage"><i class="fa fa-home"></i></a>
+        
+
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2020/01/08/infosec-20/" title="Next: InforSec 2020 网络空间安全国际学术成果分享（上） Day One">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/01/08/inforsec20-day2/">InforSec 2020 网络空间安全国际学术成果分享（上） Day Two</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/08/infosec-20/">InforSec 2020 网络空间安全国际学术成果分享（上） Day One</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/29/linux-pwn-basic-3/">Linux pwn从入门到熟练（三）</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/22/lora-error-packet-modify/">修改某款lora固件库以支持接收错误数据包</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/24/linux-pwn-2/">Linux pwn从入门到熟练（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/18/linx-pwn-basic-rop/">Linux PWN从入门到熟练</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/03/cc2650-mqtt-client-example/">CC2650 launchpad + RPI + CC2650 sensor tag 构造MQTT控制蓝牙节点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/01/fuzzer_simple_survey/">漏洞挖掘之乱拳打死老师傅——Fuzzer</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+
+</div>
       <footer id="footer">
     <div class="outer">
 
