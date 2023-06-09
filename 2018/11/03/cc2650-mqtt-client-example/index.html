@@ -209,101 +209,360 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me">
 </nav>
-      <div class="body-wrap"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope="" itemprop="blogPost">
-  <%if(post.nodate !="true" ){%="">
+      <div class="body-wrap"><article id="post-cc2650-mqtt-client-example" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
     <div class="article-meta">
-      <%- partial('post="" date',="" {class_name:="" 'article-date',="" date_format:="" null})="" %="">
-    </%-></div>
-  <%}%>
+      <a href="/2018/11/03/cc2650-mqtt-client-example/" class="article-date">
+      <time datetime="2018-11-02T22:24:13.000Z" itemprop="datePublished">2018-11-03</time>
+</a>
+
+
+    </div>
+  
   <div class="article-inner">
-    <% if="" (theme.fancybox){="" %="">
+    
       <input type="hidden" class="isFancy">
-    <% }="" %="">
-    <% if="" (post.link="" ||="" post.title){="" %="">
+    
+    
       <header class="article-header">
-        <%- partial('post="" title',="" {class_name:="" 'article-title'})="" %="">
-      </%-></header>
-      <% if="" (!index){="" %="">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CC2650 launchpad + RPI + CC2650 sensor tag 构造MQTT控制蓝牙节点
+    </h1>
+  
+
+      </header>
+      
       <div class="article-info article-info-post">
-        <%- partial('post="" category')="" %="">
-        <%- partial('post="" tag')="" %="">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MQTT/">MQTT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RPI/">RPI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZigBee-control/">ZigBee control</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
-      </%-></%-></div>
-      <% }="" %="">
-    <% }="" %="">
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
-      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
-          <% if="" (post.description){="" %="">
-              <%- post.description="" %="">
-          <% }="" else="" {="" %="">
-              <%- post.excerpt="" %="">
-          <% }="" %="">
-      <% }="" else="" {="" %="">
-          <% if="" (is_page()){="" %="">
-              <%- partial('_partial="" page')="" %="">
-          <% }="" %="">
-        <%- post.content="" %="">
-      <% }="" %="">
-    </%></%-></%></%-></%></%></%></%-></%></%-></%></%></div>
-    <% if="" (index){="" %="">
-    <div class="article-info article-info-index">
-      <%if(post.top){%>
-        <div class="article-pop-out tagcloud">
-          <a class="">置顶</a>
-        </div>
-      <% }="" %="">
-      <%- partial('post="" category')="" %="">
-      <%- partial('post="" tag')="" %="">
-      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
-        <p class="article-more-link">
-          <a href="<%- url_for(post.path) %>#more"><%= __('index.more')="" %=""> >></%=></a>
+      
+          
+        <p>经过一番折腾，总算跑通了MQTT控制蓝牙节点的程序。目前来说，基于6lbr的这个服务来控制蓝牙节点还存在问题，也有可能是cc26x0-web-demo这个样例程序本身的问题。但是不管如何，我的当前的目标就是通过MQTT来控制蓝牙节点，这个目的算法达成了。但是cc26x0-web-demo为什么没有成功，只能留到以后再解决了。</p>
+<a id="more"></a>
+<p>总结来说，是利用以下几个相关的程序的：</p>
+<ol>
+<li>contiki-ng/examples/rpl-border-router， 这个程序运行在RPI上，使用的是native模式，且RPI上要运行mqtt broker，从而完成对MQTT消息的转发。</li>
+<li>contiki-ng/examples/slip-radio， 这个程序烧写在CC2650 launch pad上，这里的节点主要就是作为radio的收发部分， 仅仅运行了物理层以及MAC层的代码，再往上层的代码就不运行了。</li>
+<li>contiki-ng/examples/mqtt-client, 这个程序烧写在CC2650 sensortag上，主要是MQTT的client，它里面包含了MQTT的publish以及subscribe的部分。</li>
+</ol>
+<h2 id="获取contiki-ng项目"><a href="#获取contiki-ng项目" class="headerlink" title="获取contiki-ng项目"></a>获取contiki-ng项目</h2><pre><code>$ git clone git@github.com:contiki-ng/contiki-ng.git
+$ cd contiki-ng
+$ git submodule update --init --recursive
+</code></pre><h2 id="烧写在RPI上的rpl-border-router"><a href="#烧写在RPI上的rpl-border-router" class="headerlink" title="烧写在RPI上的rpl-border-router"></a>烧写在RPI上的rpl-border-router</h2><ol>
+<li>在RPI上，<pre><code>make TARGET=native  
+</code></pre></li>
+<li><p>设置一会连接的专门用来收发radio的程序串口   </p>
+<pre><code>sudo ./border-router.native fd00::1/64 -s /dev/ttyACM0
+</code></pre><p>/dev/ttyACM0，这个部分根据实际情况来，如果是CC2650设备，一般是这个。</p>
+</li>
+<li><p>安装mqtt在RPI上，</p>
+<pre><code>sudo apt-get update
+sudo apt-get install mosquitto
+sudo apt-get install mosquitto-clients
+</code></pre></li>
+<li>设置RPI上的地址长度</li>
+<li><p>完成桥接地址的设置</p>
+<pre><code>iface eth0 inet static
+address 0.0.0.0
+
+auto br0
+iface br0 inet dhcp
+bridge_ports eth0
+bridge_stp off
+up echo 0 &gt; /sys/devices/virtual/net/br0/bridge/multicast_snooping
+post-up ip link set br0 address `ip link show eth0 | grep ether | awk &#39;{print $2}&#39;`
+</code></pre></li>
+<li><p>Reboot，从而启用网络设置。</p>
+</li>
+</ol>
+<p>注意：如果RPI上安装过6lbr的话，需要先把6lbr服务关闭，因为他们会占用同一个slip-radio串口。<br>service 6lbr stop.</p>
+<h2 id="烧写在CC2650-launch-pad上的slip-radio"><a href="#烧写在CC2650-launch-pad上的slip-radio" class="headerlink" title="烧写在CC2650 launch pad上的slip-radio"></a>烧写在CC2650 launch pad上的slip-radio</h2><ol>
+<li>build the slip-radio first.<pre><code> make TARGET=simplelink BOARD=launchpad/cc2650 slip-radio
+</code></pre>最新的contiki-ng版本要使用simplelink来烧写，如果上面的不行，就使用这个编译方式：make TARGET=srf06-cc26xx BOARD=launchpad/cc2650 slip-radio  </li>
+<li>拷贝slip-radio.bin到TI programmer flash里面烧写。</li>
+</ol>
+<p><img src="https://desword.github.io/image/blemqtt-pg.png" alt=""></p>
+<ol start="3">
+<li>将CC2650 launch pad连接到RPI上。</li>
+</ol>
+<h2 id="烧写在CC2650-sensortag中的MQTT-client"><a href="#烧写在CC2650-sensortag中的MQTT-client" class="headerlink" title="烧写在CC2650 sensortag中的MQTT client"></a>烧写在CC2650 sensortag中的MQTT client</h2><ol>
+<li><p>查看RPI上global的ipv6 地址，比如，我的这里是这样</p>
+<pre><code>br0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+      inet6 fe80::ba27:ebff:fe91:106  prefixlen 64  scopeid 0x20&lt;link&gt;
+      inet6 bbbb::ba27:ebff:fe91:106  prefixlen 64  scopeid 0x0&lt;global&gt;
+      ether b8:27:eb:91:01:06  txqueuelen 1000  (Ethernet)
+      RX packets 5439  bytes 304292 (297.1 KiB)
+      RX errors 0  dropped 0  overruns 0  frame 0
+      TX packets 37  bytes 5937 (5.7 KiB)
+      TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163&lt;UP,BROADCAST,RUNNING,MULTICAST&gt;  mtu 1500
+      ether b8:27:eb:91:01:06  txqueuelen 1000  (Ethernet)
+      RX packets 5432  bytes 306558 (299.3 KiB)
+      RX errors 0  dropped 11  overruns 0  frame 0
+      TX packets 58  bytes 9501 (9.2 KiB)
+      TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73&lt;UP,LOOPBACK,RUNNING&gt;  mtu 65536
+      inet 127.0.0.1  netmask 255.0.0.0
+      inet6 ::1  prefixlen 128  scopeid 0x10&lt;host&gt;
+      loop  txqueuelen 1000  (Local Loopback)
+      RX packets 0  bytes 0 (0.0 B)
+      RX errors 0  dropped 0  overruns 0  frame 0
+      TX packets 0  bytes 0 (0.0 B)
+      TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+tun0: flags=4305&lt;UP,POINTOPOINT,RUNNING,NOARP,MULTICAST&gt;  mtu 1500
+      inet 127.0.1.1  netmask 255.255.255.255  destination 127.0.1.1
+      inet6 fd00::1  prefixlen 64  scopeid 0x0&lt;global&gt;
+      inet6 fe80::b344:c02d:22ca:aeeb  prefixlen 64  scopeid 0x20&lt;link&gt;
+      unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500
+</code></pre></li>
+<li><p>在project_conf.h里面修改MQTT_CLIENT_CONF_BROKER_IP_ADDR的值为RPI地址</p>
+<pre><code>#define MQTT_CLIENT_CONF_BROKER_IP_ADDR &quot;bbbb::ba27:ebff:fe91:106&quot;
+</code></pre></li>
+<li>为了能够通过MQTT来控制CC2650 sensortag，我们需要使得MQTT_CLIENT_CONF_ORG_ID不等于quickstart，所以在project_conf.h中，再把这个修改了。比如：<pre><code>//#define MQTT_CLIENT_CONF_ORG_ID &quot;quickstart&quot;
+#define MQTT_CLIENT_CONF_ORG_ID &quot;q22start&quot;
+</code></pre></li>
+<li>Finally, build the mqtt-client<pre><code>make TARGET=cc26x0-cc13x0 BOARD=sensortag/cc2650 mqtt-client
+</code></pre></li>
+</ol>
+<h2 id="验证结果"><a href="#验证结果" class="headerlink" title="验证结果"></a>验证结果</h2><ol>
+<li><p>在RPI上首先验证节点之间的连通性，运行如下命令查看RPI的地址，</p>
+<pre><code>pi@raspberrypi:~/pure-contiki-ng/contiki-ng/examples/rpl-border-router $ sudo ./border-router.native fd00::1/64 -s /dev/ttyACM0 
+[INFO: Main      ] Starting Contiki-NG-develop/v4.2-50-g2b0c2d5e4-dirty
+[INFO: Main      ] - Routing: RPL Lite
+[INFO: Main      ] - Net: sicslowpan
+[INFO: Main      ] - MAC: br-mac
+[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+[INFO: Main      ] - 802.15.4 Default channel: 26
+[INFO: Main      ] Node ID: 1800
+[INFO: Main      ] Link-layer address: 0102.0304.0506.0708
+[INFO: Main      ] Tentative link-local IPv6 address: fe80::302:304:506:708
+[INFO: Native    ] Added global IPv6 address fd00::302:304:506:708
+[INFO: RPL BR    ] Contiki-NG Border Router started
+[INFO: BR        ] RPL-Border router started
+********SLIP started on ``/dev/ttyACM0&#39;&#39;
+opened tun device ``/dev/tun0&#39;&#39;
+ifconfig tun0 inet `hostname` up
+ifconfig tun0 add fd00::1/64
+ifconfig tun0
+
+tun0: flags=4305&lt;UP,POINTOPOINT,RUNNING,NOARP,MULTICAST&gt;  mtu 1500
+      inet 127.0.1.1  netmask 255.255.255.255  destination 127.0.1.1
+      inet6 fd00::1  prefixlen 64  scopeid 0x0&lt;global&gt;
+      inet6 fe80::b344:c02d:22ca:aeeb  prefixlen 64  scopeid 0x20&lt;link&gt;
+      unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+      RX packets 0  bytes 0 (0.0 B)
+      RX errors 0  dropped 0  overruns 0  frame 0
+      TX packets 0  bytes 0 (0.0 B)
+      TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[INFO: BR        ] Setting prefix fd00::1
+[INFO: BR        ] Server IPv6 addresses:
+[INFO: BR        ]   fd00::212:4b00:b23:1102
+[INFO: BR        ]   fe80::212:4b00:b23:1102
+</code></pre></li>
+<li><p>接着利用wget获取sensortag地址。</p>
+<pre><code>$ wget -6 “http://[ fd00::212:4b00:b23:1102]”
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Contiki-NG&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Neighbors
+&lt;ul&gt;
+  &lt;li&gt;fe80::212:4b00:c31:8d82&lt;/li&gt;
+&lt;/ul&gt;
+Routing links
+&lt;ul&gt;
+  &lt;li&gt;fd00::212:4b00:c31:8d82 (parent: fd00::212:4b00:b23:1102) 1800s&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+<li><p>Ping一下sensortag，发现可以ping通，那么就测试通信成功了。</p>
+</li>
+<li><p>在RPI上运行如下命令，来订阅该MQTT样例的默认topic</p>
+<pre><code>mosquitto_sub –h bbbb::ba27:ebff:fe91:106 -t iot-2/evt/status/fmt/json
+</code></pre><p>我们应当看到如下输出：</p>
+<pre><code>pi@raspberrypi:~/pure-contiki-ng/contiki-ng/examples/rpl-border-router $ mosquitto_sub -h bbbb::ba27:ebff:fe91:106  -t iot-2/evt/status/fmt/json
+{&quot;d&quot;:{&quot;Platform&quot;:&quot;cc26x0-cc13x0&quot;,&quot;Board&quot;:&quot;sensortag/cc2650&quot;,&quot;Seq #&quot;:1,&quot;Uptime (sec)&quot;:53,&quot;Def Route&quot;:&quot;fe80::212:4b00:b23:1102&quot;,&quot;RSSI (dBm)&quot;:134217728,&quot;On-Chip Temp (mC)&quot;:29,&quot;Volt (mV)&quot;:3273}}
+{&quot;d&quot;:{&quot;Platform&quot;:&quot;cc26x0-cc13x0&quot;,&quot;Board&quot;:&quot;sensortag/cc2650&quot;,&quot;Seq #&quot;:2,&quot;Uptime (sec)&quot;:83,&quot;Def Route&quot;:&quot;fe80::212:4b00:b23:1102&quot;,&quot;RSSI (dBm)&quot;:-42,&quot;On-Chip Temp (mC)&quot;:29,&quot;Volt (mV)&quot;:3273}}
+{&quot;d&quot;:{&quot;Platform&quot;:&quot;cc26x0-cc13x0&quot;,&quot;Board&quot;:&quot;sensortag/cc2650&quot;,&quot;Seq #&quot;:3,&quot;Uptime (sec)&quot;:113,&quot;Def Route&quot;:&quot;fe80::212:4b00:b23:1102&quot;,&quot;RSSI (dBm)&quot;:-38,&quot;On-Chip Temp (mC)&quot;:29,&quot;Volt (mV)&quot;:3273}}
+{&quot;d&quot;:{&quot;Platform&quot;:&quot;cc26x0-cc13x0&quot;,&quot;Board&quot;:&quot;sensortag/cc2650&quot;,&quot;Seq #&quot;:4,&quot;Uptime (sec)&quot;:143,&quot;Def Route&quot;:&quot;fe80::212:4b00:b23:1102&quot;,&quot;RSSI (dBm)&quot;:-36,&quot;On-Chip Temp (mC)&quot;:29,&quot;Volt (mV)&quot;:3273}}
+</code></pre></li>
+<li>在RPI打开另一窗口，我们运行如下命令，发送修改sensor tag灯状态的命令<pre><code>mosquitto_pub –h bbbb::ba27:ebff:fe91:106 –m “1” -t iot-2/evt/leds/fmt/json
+mosquitto_pub –h bbbb::ba27:ebff:fe91:106 –m “0” -t iot-2/evt/leds/fmt/json
+</code></pre>这个时候，我们应当看到sensortag的红色的灯根据我们消息的不同，变换亮灭。</li>
+</ol>
+<p>一些坑：</p>
+<ol>
+<li>尝试直接利用主机连接CC2650 launch pad，但是主机设置桥接网卡存在一些问题，因此在RPI上测试了。如果桥接网卡测试成功，也是可以直接把RPI替换的。</li>
+<li>通过6lbr这个服务器来搭建的实验一直没有成功，所以就改成了利用原生的rpl-border-router来测试。问了超多问题在这个issue里面，尝试很多方式，还是没有成功<a href="https://github.com/contiki-ng/contiki-ng/issues/736" target="_blank" rel="noopener">can not set the configurations on mqtt of cc26xx-web-demo, get bad request</a>，希望基于目前完成的部分，以后有需要再研究吧。</li>
+</ol>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>Title:</span><a href="/2018/11/03/cc2650-mqtt-client-example/">CC2650 launchpad + RPI + CC2650 sensor tag 构造MQTT控制蓝牙节点</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Gonglong Chen</a></p>
+        <p><span>Created:</span>2018-11-03, 06:24:13</p>
+        <p><span>Updated:</span>2022-05-10, 11:59:58</p>
+        <p>
+            <span>Full URL:</span><a class="post-url" href="/2018/11/03/cc2650-mqtt-client-example/" title="CC2650 launchpad + RPI + CC2650 sensor tag 构造MQTT控制蓝牙节点">http://yoursite.com/2018/11/03/cc2650-mqtt-client-example/</a>
+            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2018/11/03/cc2650-mqtt-client-example/　　By Gonglong Chen" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      <% }="" %="">
-      <div class="clearfix"></div>
-    </%></%></%-></%-></%></%if(post.top){%></div>
-    <% }="" %="">
-  </%></%></%></%></%></%></%></%></div>
-  <% if="" (!index){="" %="">
-    <%- partial('post="" nav')="" %="">
-  <% }="" %="">
-</%></%-></%></%}%></%if(post.nodate></article>
-<%- partial('_partial="" toc')="" %="">
-
-<% if="" (!index="" &&="" theme.share.on="" (post.share="" !="false" ||="" post.share)){="" %="">
-    <%- partial('post="" share')="" %="">
-<% }="" %="">
-
-
-<% if="" (theme.valine_appid="" &&="" theme.valine_appkey){="" %="">
-    <%- partial('post="" valine',="" {="" key:="" post.slug,="" title:="" post.title,="" url:="" config.url+url_for(post.path)="" })="" %="">
-    <% }="" %="">
-
-
-<% if="" (!index="" &&="" post.comments){="" %="">
-    <% if="" (theme.duoshuo.on)="" {="" %="">
-      <%- partial('comments="" duoshuo',="" {="" key:="" post.path,="" title:="" post.title,="" url:="" config.url+url_for(post.path),="" })="" %="">
-    <% }="" else="" if="" (theme.youyan.on)="" {="" %="">
-        <%- partial('comments="" youyan')="" %="">
-    <% }="" else="" if="" (theme.disqus.on)="" {="" %="">
-        <%- partial('comments="" disqus',="" {="" shortname:="" theme.disqus.shortname="" })="" %="">
-    <% }="" else="" if="" (config.disqus_shortname)="" {="" %="">
-        <%- partial('comments="" disqus',="" {="" shortname:="" config.disqus_shortname="" })="" %="">
-    <% }="" %="">
+        <p>
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
+        </p>
+    </div>
 
 
 
-<% }="" %="">
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2018/11/18/linx-pwn-basic-rop/">
+                    Linux PWN从入门到熟练
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/11/01/fuzzer_simple_survey/">
+                    漏洞挖掘之乱拳打死老师傅——Fuzzer
+                </a>
+            </div>
+        
+    </nav>
 
-<%- partial('_partial="" post-nav-button')="" %="">
+  
+</article>
 
-<% if="" (!index)="" {="" %="">
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#获取contiki-ng项目"><span class="toc-number">1.</span> <span class="toc-text">获取contiki-ng项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#烧写在RPI上的rpl-border-router"><span class="toc-number">2.</span> <span class="toc-text">烧写在RPI上的rpl-border-router</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#烧写在CC2650-launch-pad上的slip-radio"><span class="toc-number">3.</span> <span class="toc-text">烧写在CC2650 launch pad上的slip-radio</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#烧写在CC2650-sensortag中的MQTT-client"><span class="toc-number">4.</span> <span class="toc-text">烧写在CC2650 sensortag中的MQTT client</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#验证结果"><span class="toc-number">5.</span> <span class="toc-text">验证结果</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="Hide" title="Show or Hide Table of Contents">
+
     <script>
-        <% if (post.fancybox === false){ %>
-            yiliaConfig.fancybox = false;
-        <% } %>
+        yiliaConfig.toc = ["Hide", "Show", !!"false"];
     </script>
-<% }="" %="">
-</%></%></%-></%></%></%-></%></%-></%></%-></%></%-></%></%></%></%-></%></%></%-></%></%-></div>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"CC2650 launchpad + RPI + CC2650 sensor tag 构造MQTT控制蓝牙节点　| Gonglong Chen　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+<!-- for valine comment-->
+
+    <div id="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+new Valine({
+    el: '#comment' ,
+    notify:false, 
+    verify:false, 
+    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
+    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
+    placeholder: "One comment, many ideas.",
+    avatar:"retro"
+});
+</script>
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/11/18/linx-pwn-basic-rop/" title="Pre: Linux PWN从入门到熟练">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/11/01/fuzzer_simple_survey/" title="Next: 漏洞挖掘之乱拳打死老师傅——Fuzzer">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/01/08/inforsec20-day2/">InforSec 2020 网络空间安全国际学术成果分享（上） Day Two</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/08/infosec-20/">InforSec 2020 网络空间安全国际学术成果分享（上） Day One</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/29/linux-pwn-basic-3/">Linux pwn从入门到熟练（三）</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/22/lora-error-packet-modify/">修改某款lora固件库以支持接收错误数据包</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/24/linux-pwn-2/">Linux pwn从入门到熟练（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/18/linx-pwn-basic-rop/">Linux PWN从入门到熟练</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/03/cc2650-mqtt-client-example/">CC2650 launchpad + RPI + CC2650 sensor tag 构造MQTT控制蓝牙节点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/01/fuzzer_simple_survey/">漏洞挖掘之乱拳打死老师傅——Fuzzer</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+
+</div>
       <footer id="footer">
     <div class="outer">
 
@@ -311,44 +570,55 @@
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since%>-<% } %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+                2018-2023 Gonglong Chen
             </div>
 
 
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="<%= __('tooltip.Hexo') %>">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="<%= __('tooltip.Yelee') %>  v<%= theme.Yelee %>">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+
+<!--
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+-->
+
+<!-- hitwebcounter Code START 
+<a href="http://www.hitwebcounter.com" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=6974923&style=0025&nbdigits=5&type=page&initCount=0" title="website counter" Alt="website counter"   border="0" align="up" >
+</a> 
+-->
+
+<a href="https://clustrmaps.com/site/1aae7" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=_A6aIN1PIjxyWChOHfot_6QWJTyXak5ICsMT6_Cye6I&co=2d78ad&ct=ffffff"></a>
+
+
             </div>
+
+
+
         </div>
 
 
 
-<!-- hitwebcounter Code START -->
-<a href="http://www.hitwebcounter.com" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6974923&style=0025&nbdigits=5&type=page&initCount=0" title="website counter" Alt="website counter"   border="0" align="up" >
-</a> 
-  	<a href="https://clustrmaps.com/site/1aae7" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=100&t=n&d=_A6aIN1PIjxyWChOHfot_6QWJTyXak5ICsMT6_Cye6I&co=2d78ad&ct=ffffff"></a>
 
 
 <!--
-        <% if (theme.visit_counter.on) { %>
+        
             <div class="visit">
-                <% if (theme.visit_counter.site_visit) { %>
+                
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="<%= __('visit_counter.site') %>"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
-                <% } %>
-                <% if (theme.visit_counter.site_visit && theme.visit_counter.page_visit) { %>
+                
+                
                     <span>| </span>
-                <% } %>
-                <% if (theme.visit_counter.page_visit) { %>
+                
+                
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="<%= __('visit_counter.page') %>"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
-                <% } %>
+                
             </div>
-        <% } %>
+        
 
 -->
 
