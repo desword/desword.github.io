@@ -209,280 +209,101 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me">
 </nav>
-      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
-  
+      <div class="body-wrap"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope="" itemprop="blogPost">
+  <%if(post.nodate !="true" ){%="">
     <div class="article-meta">
-      <a href="/paper/index.html" class="article-date">
-      <time datetime="2022-05-10T03:59:58.426Z" itemprop="datePublished">2022-05-10</time>
-</a>
-
-
-    </div>
-  
+      <%- partial('post="" date',="" {class_name:="" 'article-date',="" date_format:="" null})="" %="">
+    </%-></div>
+  <%}%>
   <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
+    <% if="" (theme.fancybox){="" %="">
+      <input type="hidden" class="isFancy">
+    <% }="" %="">
+    <% if="" (post.link="" ||="" post.title){="" %="">
+      <header class="article-header">
+        <%- partial('post="" title',="" {class_name:="" 'article-title'})="" %="">
+      </%-></header>
+      <% if="" (!index){="" %="">
+      <div class="article-info article-info-post">
+        <%- partial('post="" category')="" %="">
+        <%- partial('post="" tag')="" %="">
+        <div class="clearfix"></div>
+      </%-></%-></div>
+      <% }="" %="">
+    <% }="" %="">
     <div class="article-entry" itemprop="articleBody">
-      
-          
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
-
-
-          
-        
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head><meta name="generator" content="Hexo 3.8.0">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>Gonglong Chen</title>
-<link href="main.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-<!--
-.style6 {
-	font-family: "Times New Roman", Times, serif;
-	font-size: 120%;
-	color: #000000;
-	font-weight: normal;
-}
-
-.style20 {
-	font-size: medium;
-	font-style: normal;
-	color: #000;
-	font-family: "Times New Roman", Times, serif;
-}
-.style21 {
-	font-size: medium;
-	font-weight: bold;
-	color: #F00;
-	font-family: "Times New Roman", Times, serif;
-}
-.style61 {	font-family: "Times New Roman", Times, serif;
-	font-size: medium;
-	color: #000000;
-	font-weight: normal;
-}
--->
-</style>
-
-<link rel="shortcut icon" href="favicon.ico">
-</head>
-
-<body>
-
-<table height="177" border="0" class="style6">
-  <tr>
-    <td width="498" height="173"><p>Gonglong Chen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-      <p> <strong>PhD Student</strong>,
-      </p>
-<p><a href="http://www.cs.zju.edu.cn/" target="_blank" rel="noopener">College of Computer Science</a>, <a href="http://www.zju.edu.cn/" target="_blank" rel="noopener">Zhejiang University</a></p>
-      <table width="98%" border="0">
-        <tr>
-          <td>Email:</td>
-          <td>desword AT zju.edu.cn</td>
-        </tr>
-        <tr>
-          <td>Personal site:</td>
-          <td><a href="https://blog.csdn.net/ls1160" target="_blank" rel="noopener">CSDN</a>,
-            <a href="https://www.anquanke.com/member/122056" target="_blank" rel="noopener"> Security Blog</a>, 
-          	<a href="https://github.com/desword" target="_blank" rel="noopener"> github</a>,
-          </td>
-        </tr>
-    </table>      </td>
-    
-  </tr>
-</table>
-<hr>
-  <p class="header"><a name="bio"></a><strong>  Biography </strong></p>
-
-<ul>
-  Gonglong Chen is currently a fourth year PhD student at the College of Computer Science in <em>Zhejiang University</em>.  He received the BS degree from the College of Computer Science in <em>East China University of Political Science and Law (ECUPL)</em> in 2011. His research interests include <strong>Internet of Things (IoT)</strong> and <strong>wireless and mobile computing</strong>.
-</ul>
-<hr>
-
-  <p class="header" style="margin-bottom:10px"><a name="pub"></a> <strong>Publications </strong> <span class="style6"></span></p>
-  <ol>
-    
-	<li><strong>Gonglong Chen</strong>, Wei Dong, Zhiwei Zhao, and Tao Gu, &quot;<span style="margin-top:0px">Accurate Corruption Estimation in ZigBee
-  Under Cross-Technology Interference</span>&quot;,  accept to <em><strong>IEEE Transactions on Mobile Computing</strong></em>, 2018.  [<a href="#">PDF</a>] <strong>(CCF A, IF=4.098, 2017)</strong></li>
-
-  
-  <li><strong>Gonglong Chen</strong>, and Wei Dong, &ldquo;JamCloak: Reactive Jamming Attack over Cross-Technology
-              Communication Links&rdquo;, <em><strong>IEEE ICNP 2018</strong></em>,  Cambridge, UK, September 24-27, 2018.   [<a href="https://desword.github.io/paper/icnp18_jamcloak.pdf" target="_blank" rel="noopener">PDF</a>]  <strong>(CCF B, 17.8% acceptance rate)</strong></li> 
-
-      <li>Wei Dong, <strong>Gonglong Chen</strong>, Xiaoyu Zhang, and Yi Gao, &quot;Trading Routing Diversity for Better Network Performance", accepted to <em><strong>IEEE Transactions on Mobile Computing</strong></em>, 24 July, 2018.  [<a href="#">PDF</a>] <strong> (CCF A, IF=4.098, 2017)</strong></li>
-
-  <li>Zhiwei Zhao, Wei Dong, Geyong Min, <strong>Gonglong Chen</strong>, Tao Gu and Jiajun Bu, "Towards Repeatable Wireless Network Simulation Using Performance-Aware Markov Model",  <em><strong>IEEE INFOCOM 2018</strong></em>, Honolulu, HI, USA, April 15-19, 2018.    [<a href="https://desword.github.io/paper/Infocom18-zhao.pdf" target="_blank" rel="noopener">PDF</a>] <strong>(CCF A,  19.2% acceptance rate)</strong></li>
-
-  <li><strong>Gonglong Chen</strong>, and Wei Dong, &quot;AdapTracer: Adaptive Path Profiling Using Arithmetic Coding&quot;, Elsevier <em> <strong>Journal of Systems Architecture</strong></em>, Vol.88, pp.74-86, 31 May, 2018.  [<a href="https://desword.github.io/paper/jsa18_adaptracer.pdf" target="_blank" rel="noopener">PDF</a>]  <strong>(CCF B, IF=0.913, 2017)</strong></li>
-    
-	<li>Huikang Li, <strong>Gonglong Chen</strong>, Yihui Wang and Wei Dong, &quot;Accurate Performance Modeling of Uplink Transmission in NB-IoT&quot;, <em> <strong>IEEE ICPADS 2018</strong></em>, Singapore, December 11-13, 2018. [<a href="#">PDF</a>] </li>
-    
-  <li><strong>Gonglong Chen</strong>, Wei Dong, Zhiwei Zhao, and Tao Gu, &quot;<span style="margin-top:0px">Towards Accurate Corruption Estimation in ZigBee
-  Under Cross-Technology Interference</span>&quot;,  <em><strong>IEEE ICDCS 2017</strong></em>, Atlanta, GA, USA, June 5-8, 2017.  [<a href="https://desword.github.io/paper/icdcs17_AccuEst.pdf" target="_blank" rel="noopener">PDF</a>] <strong>(CCF B, 16.9% acceptance rate)</strong></li>
-
-
-  <li>Zhiwei Zhao, Wei Dong, <strong>Gonglong Chen</strong>, Geyong Min, Tao Gu, and Jiajun Bu, &quot;Embracing Corruption Burstiness: Fast Error Recovery for ZigBee under Wi-Fi Interference&quot;, <em> <strong>IEEE Transactions on Mobile Computing</strong></em>, vol. 16, no. 9, pp. 2518-2530, 2017.  [<a href="https://desword.github.io/paper/tmc-2016-embracing.pdf" target="_blank" rel="noopener">PDF</a> ] <strong>(CCF A, IF=4.098, 2017)</strong> </li>
-
-  <li> Wei Dong, <strong>Gonglong Chen</strong>, Chenhong Cao, Luyao Luo, Yi Gao, Towards a Software-Defined Architecture for Wireless Sensor Networks. <em><strong>  Chinese Journal of Computers(CJC)</strong></em>, Vol.40, No. 8, pp.1779-1797, 2017. [<a href="https://desword.github.io/paper/dw-20178782323.pdf" target="_blank" rel="noopener">PDF</a>] </li>
- 
-  
-
-  <li><strong>Gonglong Chen</strong>, and Wei Dong, &quot;Adaptive Path Profiling using Arithmetic Coding&quot;, <em> <strong>IEEE ICPADS 2015</strong></em>, Melbourne, Australia, December 14-17, 2015. [<a href="https://desword.github.io/paper/icpads15_adaptracer.pdf" target="_blank" rel="noopener">PDF</a>] </li>
-    
-</ol>
-    
-    
-<hr>
-  <p class="header" style="margin-bottom:10px">
-    
-  <a name="pub"></a><strong>Awards</strong> <span class="style6"></span></p>
-  <li>National Scholarship 2018 (5/400 in ZJU CS, top 1%) </li>
-  <li>ICNP 2018 travel grant </li>
-  <li>ICDCS 2017 travel grant </li>
-  
-<hr>
-  
-  
-  <p class="header" style="margin-bottom:10px">
-  <a name="pub"></a><strong>Uesful Security Links</strong> <span class="style6"></span></p>
-  <a href="https://diaowenrui.github.io/" target="_blank" rel="noopener">Wenrui Diao</a>,
-  <a href="http://www.yajin.org/#" target="_blank" rel="noopener">Yajin Zhou</a>,
-  <a href="http://faculty.cs.tamu.edu/guofei/" target="_blank" rel="noopener">Guofei Gu</a>, 
-  <a href="https://staff.ie.cuhk.edu.hk/~khzhang/" target="_blank" rel="noopener">Kehuan Zhang</a>,
-  <a href="http://chao.100871.net/" target="_blank" rel="noopener">Chao Zhang (Blue-Lotus CTF team)</a>,
-  <a href="https://chenbihuan.github.io/" target="_blank" rel="noopener">Bihuan Chen (FuDan)</a>,
-  <a href="https://desword.github.io/image/Vulnerability-Exploit-Fuzz-Mitigation-v1.3.jpeg" target="_blank" rel="noopener">Vulnerability-Exploit-Fuzz-Mitigation-v1.3</a>
-  
-<hr>
-  <p class="header" style="margin-bottom:10px">
-  <a name="pub"></a><strong>Intesting Links</strong> <span class="style6"></span></p>
-  <a href="http://www.iqiyi.com/lib/m_216427614.html?src=search" target="_blank" rel="noopener">Children at Home 2018</a>,
-  <a href="http://www.iqiyi.com/lib/m_217874014.html?src=search" target="_blank" rel="noopener">Children at Home 2018_vip</a>,
-  <a href="http://www.iqiyi.com/lib/m_200032714.html?src=search" target="_blank" rel="noopener">The martial arts and legends 2006</a>,
-  <br>
-  <a href="http://www.iqiyi.com/lib/m_200052214.html?src=search" target="_blank" rel="noopener">Ipartment Season 1</a>,
-  <a href="http://www.iqiyi.com/a_19rrjaf9kd.html" target="_blank" rel="noopener">Ipartment Season 2</a>,
-  <a href="http://v.qq.com/zt/inpartmentseason.html" target="_blank" rel="noopener">Ipartment Season 3</a>,
-  <a href="http://www.iqiyi.com/lib/m_200052614.html?src=search" target="_blank" rel="noopener">Ipartment Season 4_vip</a>
-<hr>
-<table width="100%" border="0" bordercolor="#ECE9D8" class="style6">                                     
-                                        
-<tr>
-
-    
-    <td width="28%" class="small">
-
-<!-- hitwebcounter Code START -->
-<a href="http://www.hitwebcounter.com" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6974923&style=0025&nbdigits=5&type=page&initCount=0" title="website counter" alt="website counter" border="0" align="up">
-</a> 
-  	<a href="https://clustrmaps.com/site/1aae7" title="Visit tracker" target="_blank" rel="noopener"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=100&t=n&d=_A6aIN1PIjxyWChOHfot_6QWJTyXak5ICsMT6_Cye6I&co=2d78ad&ct=ffffff"></a>
-
-
-
-	
-	</td>
-    <td width="72%"><div align="right" class="small">Last updated in October, 2018 by Gonglong Chen</div></td>
-  </tr>
-</table>
-
-
-</body>
-</html>
-
-      
-    </div>
-    
-  </div>
-  
-    
-
-
-  
-</article>
-
-
-
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
+          <% if="" (post.description){="" %="">
+              <%- post.description="" %="">
+          <% }="" else="" {="" %="">
+              <%- post.excerpt="" %="">
+          <% }="" %="">
+      <% }="" else="" {="" %="">
+          <% if="" (is_page()){="" %="">
+              <%- partial('_partial="" page')="" %="">
+          <% }="" %="">
+        <%- post.content="" %="">
+      <% }="" %="">
+    </%></%-></%></%-></%></%></%></%-></%></%-></%></%></div>
+    <% if="" (index){="" %="">
+    <div class="article-info article-info-index">
+      <%if(post.top){%>
+        <div class="article-pop-out tagcloud">
+          <a class="">置顶</a>
         </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"　| Gonglong Chen　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
+      <% }="" %="">
+      <%- partial('post="" category')="" %="">
+      <%- partial('post="" tag')="" %="">
+      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
+        <p class="article-more-link">
+          <a href="<%- url_for(post.path) %>#more"><%= __('index.more')="" %=""> >></%=></a>
+        </p>
+      <% }="" %="">
+      <div class="clearfix"></div>
+    </%></%></%-></%-></%></%if(post.top){%></div>
+    <% }="" %="">
+  </%></%></%></%></%></%></%></%></div>
+  <% if="" (!index){="" %="">
+    <%- partial('post="" nav')="" %="">
+  <% }="" %="">
+</%></%-></%></%}%></%if(post.nodate></article>
+<%- partial('_partial="" toc')="" %="">
 
-    
-</div>
-
-
-
-
-
-
-<!-- for valine comment-->
-
-    <div id="comment"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<script>
-new Valine({
-    el: '#comment' ,
-    notify:false, 
-    verify:false, 
-    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
-    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
-    placeholder: "One comment, many ideas.",
-    avatar:"retro"
-});
-</script>
-
-    
+<% if="" (!index="" &&="" theme.share.on="" (post.share="" !="false" ||="" post.share)){="" %="">
+    <%- partial('post="" share')="" %="">
+<% }="" %="">
 
 
+<% if="" (theme.valine_appid="" &&="" theme.valine_appkey){="" %="">
+    <%- partial('post="" valine',="" {="" key:="" post.slug,="" title:="" post.title,="" url:="" config.url+url_for(post.path)="" })="" %="">
+    <% }="" %="">
 
-    
 
-
-
-
+<% if="" (!index="" &&="" post.comments){="" %="">
+    <% if="" (theme.duoshuo.on)="" {="" %="">
+      <%- partial('comments="" duoshuo',="" {="" key:="" post.path,="" title:="" post.title,="" url:="" config.url+url_for(post.path),="" })="" %="">
+    <% }="" else="" if="" (theme.youyan.on)="" {="" %="">
+        <%- partial('comments="" youyan')="" %="">
+    <% }="" else="" if="" (theme.disqus.on)="" {="" %="">
+        <%- partial('comments="" disqus',="" {="" shortname:="" theme.disqus.shortname="" })="" %="">
+    <% }="" else="" if="" (config.disqus_shortname)="" {="" %="">
+        <%- partial('comments="" disqus',="" {="" shortname:="" config.disqus_shortname="" })="" %="">
+    <% }="" %="">
 
 
 
+<% }="" %="">
 
+<%- partial('_partial="" post-nav-button')="" %="">
+
+<% if="" (!index)="" {="" %="">
     <script>
-        
+        <% if (post.fancybox === false){ %>
+            yiliaConfig.fancybox = false;
+        <% } %>
     </script>
-
-</div>
+<% }="" %="">
+</%></%></%-></%></%></%-></%></%-></%></%-></%></%-></%></%></%></%-></%></%></%-></%></%-></div>
       <footer id="footer">
     <div class="outer">
 
@@ -490,55 +311,44 @@ new Valine({
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2018-2022 Gonglong Chen
+                <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since%>-<% } %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
             </div>
 
 
             <div class="footer-right">
-
-<!--
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
--->
-
-<!-- hitwebcounter Code START 
-<a href="http://www.hitwebcounter.com" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6974923&style=0025&nbdigits=5&type=page&initCount=0" title="website counter" Alt="website counter"   border="0" align="up" >
-</a> 
--->
-
-<a href="https://clustrmaps.com/site/1aae7" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=_A6aIN1PIjxyWChOHfot_6QWJTyXak5ICsMT6_Cye6I&co=2d78ad&ct=ffffff"></a>
-
-
+                <a href="http://hexo.io/" target="_blank" title="<%= __('tooltip.Hexo') %>">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="<%= __('tooltip.Yelee') %>  v<%= theme.Yelee %>">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
-
-
-
         </div>
 
 
 
+<!-- hitwebcounter Code START -->
+<a href="http://www.hitwebcounter.com" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=6974923&style=0025&nbdigits=5&type=page&initCount=0" title="website counter" Alt="website counter"   border="0" align="up" >
+</a> 
+  	<a href="https://clustrmaps.com/site/1aae7" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=100&t=n&d=_A6aIN1PIjxyWChOHfot_6QWJTyXak5ICsMT6_Cye6I&co=2d78ad&ct=ffffff"></a>
 
 
 <!--
-        
+        <% if (theme.visit_counter.on) { %>
             <div class="visit">
-                
+                <% if (theme.visit_counter.site_visit) { %>
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="<%= __('visit_counter.site') %>"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
-                
-                
+                <% } %>
+                <% if (theme.visit_counter.site_visit && theme.visit_counter.page_visit) { %>
                     <span>| </span>
-                
-                
+                <% } %>
+                <% if (theme.visit_counter.page_visit) { %>
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="<%= __('visit_counter.page') %>"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
-                
+                <% } %>
             </div>
-        
+        <% } %>
 
 -->
 

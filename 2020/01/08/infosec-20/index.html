@@ -208,195 +208,101 @@
     </div>
     <link class="menu-list" tags="Tags" friends="Friends" about="About Me">
 </nav>
-      <div class="body-wrap"><article id="post-infosec-20" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
+      <div class="body-wrap"><article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope="" itemprop="blogPost">
+  <%if(post.nodate !="true" ){%="">
     <div class="article-meta">
-      <a href="/2020/01/08/infosec-20/" class="article-date">
-      <time datetime="2020-01-08T11:28:24.000Z" itemprop="datePublished">2020-01-08</time>
-</a>
-
-
-    </div>
-  
+      <%- partial('post="" date',="" {class_name:="" 'article-date',="" date_format:="" null})="" %="">
+    </%-></div>
+  <%}%>
   <div class="article-inner">
-    
+    <% if="" (theme.fancybox){="" %="">
       <input type="hidden" class="isFancy">
-    
-    
+    <% }="" %="">
+    <% if="" (post.link="" ||="" post.title){="" %="">
       <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      InforSec 2020 网络空间安全国际学术成果分享（上） Day One
-    </h1>
-  
-
-      </header>
-      
+        <%- partial('post="" title',="" {class_name:="" 'article-title'})="" %="">
+      </%-></header>
+      <% if="" (!index){="" %="">
       <div class="article-info article-info-post">
-        
-
-        
+        <%- partial('post="" category')="" %="">
+        <%- partial('post="" tag')="" %="">
         <div class="clearfix"></div>
-      </div>
-      
-    
+      </%-></%-></div>
+      <% }="" %="">
+    <% }="" %="">
     <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p> <img src="https://desword.github.io/image/2020-1-8/infosec20_program.jpg" width="50%" height="50%" align="center"></p>
-<h2 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h2><h3 id="上午："><a href="#上午：" class="headerlink" title="上午："></a>上午：</h3><p>SDN 清华 The CrossPath Attack: Disrupting the SDN Control Channel via Shared Links <a href="https://desword.github.io/paper/ref/SDN_清华_usenix19_The CrossPath Attack.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br>证书安全 信工所 Certificate Transparency in the Wild: Exploring the Reliability of Monitors 中文介绍 <a href="https://desword.github.io/paper/ref/证书安全_信工所_ccs19.pdf" target="_blank" rel="noopener">pdf</a>  CCS2019<br><a href="https://www.bilibili.com/video/av82531392?p=1" target="_blank" rel="noopener">dns缓存攻击_360.mp4</a> GeekPwn2018  </p>
-<h3 id="下午："><a href="#下午：" class="headerlink" title="下午："></a>下午：</h3><p><a href="https://www.bilibili.com/video/av82531392?p=4" target="_blank" rel="noopener">pex内核权限_浙江大学.mp4</a> PeX: A Permission Check Analysis Framework for Linux Kernel <a href="https://desword.github.io/paper/ref/pex内核权限_浙江大学_usenix19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br><a href="https://www.bilibili.com/video/av82531392?p=5" target="_blank" rel="noopener">SecTEE可信计算_软件所.mp4</a> SecTEE: A Software-based Approach to Secure Enclave Architecture Using TEE <a href="https://desword.github.io/paper/ref/SecTEE可信计算_软件所_ccs19.pdf" target="_blank" rel="noopener">pdf</a> CCS2019<br><a href="https://www.bilibili.com/video/av82531392?p=3" target="_blank" rel="noopener">mesatee联邦学习sgx_百度.mp4</a> Towards Memory Safe Enclave Programming with Rust-SGX<br><a href="https://www.bilibili.com/video/av82531392?p=7" target="_blank" rel="noopener">未初始化漏洞_阿里.mp4</a> Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay <a href="https://desword.github.io/paper/ref/未初始化漏洞_阿里_ccs19.pdf" target="_blank" rel="noopener">pdf</a> CCS2019<br><a href="https://www.bilibili.com/video/av82531392?p=2" target="_blank" rel="noopener">Matryoshka套娃_蚂蚁金服.mp4</a> Matryoshka: fuzzing deeply nested branches <a href="https://desword.github.io/paper/ref/Matryoshka套娃_蚂蚁金服_ccs19.pdf" target="_blank" rel="noopener">pdf</a> CCS2019<br><a href="https://www.bilibili.com/video/av82531392?p=6" target="_blank" rel="noopener">漏洞报告_中科院大学.mp4</a> Towards the Detection of Inconsistencies in Public Security Vulnerability Reports <a href="https://desword.github.io/paper/ref/证书安全_信工所_ccs19.pdf" target="_blank" rel="noopener">pdf</a> USENIX2019<br>圆桌_安全顶会中的那些脑洞大开的idea是怎么来的？<a href="https://www.bilibili.com/video/av82531392?p=8" target="_blank" rel="noopener">mp4</a></p>
-
-      
-    </div>
-    
-  </div>
-  
-    
-    <div class="copyright">
-        <p><span>Title:</span><a href="/2020/01/08/infosec-20/">InforSec 2020 网络空间安全国际学术成果分享（上） Day One</a></p>
-        <p><span>Author:</span><a href="/" title="Back to Homepage">Gonglong Chen</a></p>
-        <p><span>Created:</span>2020-01-08, 19:28:24</p>
-        <p><span>Updated:</span>2022-05-10, 11:59:58</p>
-        <p>
-            <span>Full URL:</span><a class="post-url" href="/2020/01/08/infosec-20/" title="InforSec 2020 网络空间安全国际学术成果分享（上） Day One">http://yoursite.com/2020/01/08/infosec-20/</a>
-            <span class="copy-path" data-clipboard-text="From http://yoursite.com/2020/01/08/infosec-20/　　By Gonglong Chen" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
-            <script> var clipboard = new Clipboard('.copy-path'); </script>
-        </p>
-        <p>
-            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
-        </p>
-    </div>
-
-
-
-    <nav id="article-nav">
-        
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2020/01/08/inforsec20-day2/">
-                    InforSec 2020 网络空间安全国际学术成果分享（上） Day Two
-                </a>
-            </div>
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2019/10/29/linux-pwn-basic-3/">
-                    Linux pwn从入门到熟练（三）
-                </a>
-            </div>
-        
-    </nav>
-
-  
-</article>
-
-    <div id="toc" class="toc-article">
-        <strong class="toc-title">Contents</strong>
-        
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Day-1"><span class="toc-number">1.</span> <span class="toc-text">Day 1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#上午："><span class="toc-number">1.1.</span> <span class="toc-text">上午：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下午："><span class="toc-number">1.2.</span> <span class="toc-text">下午：</span></a></li></ol></li></ol>
-        
-    </div>
-    <style>
-        .left-col .switch-btn,
-        .left-col .switch-area {
-            display: none;
-        }
-        .toc-level-3 i,
-        .toc-level-3 ol {
-            display: none !important;
-        }
-    </style>
-
-    <input type="button" id="tocButton" value="Hide" title="Show or Hide Table of Contents">
-
-    <script>
-        yiliaConfig.toc = ["Hide", "Show", !!"false"];
-    </script>
-
-
-
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
+          <% if="" (post.description){="" %="">
+              <%- post.description="" %="">
+          <% }="" else="" {="" %="">
+              <%- post.excerpt="" %="">
+          <% }="" %="">
+      <% }="" else="" {="" %="">
+          <% if="" (is_page()){="" %="">
+              <%- partial('_partial="" page')="" %="">
+          <% }="" %="">
+        <%- post.content="" %="">
+      <% }="" %="">
+    </%></%-></%></%-></%></%></%></%-></%></%-></%></%></div>
+    <% if="" (index){="" %="">
+    <div class="article-info article-info-index">
+      <%if(post.top){%>
+        <div class="article-pop-out tagcloud">
+          <a class="">置顶</a>
         </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"InforSec 2020 网络空间安全国际学术成果分享（上） Day One　| Gonglong Chen　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
+      <% }="" %="">
+      <%- partial('post="" category')="" %="">
+      <%- partial('post="" tag')="" %="">
+      <% if="" (index="" &&="" (post.description="" ||="" post.excerpt)){="" %="">
+        <p class="article-more-link">
+          <a href="<%- url_for(post.path) %>#more"><%= __('index.more')="" %=""> >></%=></a>
+        </p>
+      <% }="" %="">
+      <div class="clearfix"></div>
+    </%></%></%-></%-></%></%if(post.top){%></div>
+    <% }="" %="">
+  </%></%></%></%></%></%></%></%></div>
+  <% if="" (!index){="" %="">
+    <%- partial('post="" nav')="" %="">
+  <% }="" %="">
+</%></%-></%></%}%></%if(post.nodate></article>
+<%- partial('_partial="" toc')="" %="">
 
-    
-</div>
-
-
-
-
-
-
-<!-- for valine comment-->
-
-    <div id="comment"></div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-new Valine({
-    el: '#comment' ,
-    notify:false, 
-    verify:false, 
-    appId: '5ThDnxJ9xGDRyj5a8Kq8apby-gzGzoHsz',
-    appKey: 'SmwcB7E7gWXRWaBth0Em9cV8',
-    placeholder: "One comment, many ideas.",
-    avatar:"retro"
-});
-</script>
-
-    
+<% if="" (!index="" &&="" theme.share.on="" (post.share="" !="false" ||="" post.share)){="" %="">
+    <%- partial('post="" share')="" %="">
+<% }="" %="">
 
 
+<% if="" (theme.valine_appid="" &&="" theme.valine_appkey){="" %="">
+    <%- partial('post="" valine',="" {="" key:="" post.slug,="" title:="" post.title,="" url:="" config.url+url_for(post.path)="" })="" %="">
+    <% }="" %="">
 
-    
 
-
-
-
+<% if="" (!index="" &&="" post.comments){="" %="">
+    <% if="" (theme.duoshuo.on)="" {="" %="">
+      <%- partial('comments="" duoshuo',="" {="" key:="" post.path,="" title:="" post.title,="" url:="" config.url+url_for(post.path),="" })="" %="">
+    <% }="" else="" if="" (theme.youyan.on)="" {="" %="">
+        <%- partial('comments="" youyan')="" %="">
+    <% }="" else="" if="" (theme.disqus.on)="" {="" %="">
+        <%- partial('comments="" disqus',="" {="" shortname:="" theme.disqus.shortname="" })="" %="">
+    <% }="" else="" if="" (config.disqus_shortname)="" {="" %="">
+        <%- partial('comments="" disqus',="" {="" shortname:="" config.disqus_shortname="" })="" %="">
+    <% }="" %="">
 
 
 
-    <div class="scroll" id="post-nav-button">
-        
-            <a href="/2020/01/08/inforsec20-day2/" title="Pre: InforSec 2020 网络空间安全国际学术成果分享（上） Day Two">
-                <i class="fa fa-angle-left"></i>
-            </a>
-        
+<% }="" %="">
 
-        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+<%- partial('_partial="" post-nav-button')="" %="">
 
-        
-            <a href="/2019/10/29/linux-pwn-basic-3/" title="Next: Linux pwn从入门到熟练（三）">
-                <i class="fa fa-angle-right"></i>
-            </a>
-        
-    </div>
-
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/01/08/inforsec20-day2/">InforSec 2020 网络空间安全国际学术成果分享（上） Day Two</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/08/infosec-20/">InforSec 2020 网络空间安全国际学术成果分享（上） Day One</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/10/29/linux-pwn-basic-3/">Linux pwn从入门到熟练（三）</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/22/lora-error-packet-modify/">修改某款lora固件库以支持接收错误数据包</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/24/linux-pwn-2/">Linux pwn从入门到熟练（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/18/linx-pwn-basic-rop/">Linux PWN从入门到熟练</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/03/cc2650-mqtt-client-example/">CC2650 launchpad + RPI + CC2650 sensor tag 构造MQTT控制蓝牙节点</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/11/01/fuzzer_simple_survey/">漏洞挖掘之乱拳打死老师傅——Fuzzer</a></li></ul>
-
-
-
-
+<% if="" (!index)="" {="" %="">
     <script>
-        
+        <% if (post.fancybox === false){ %>
+            yiliaConfig.fancybox = false;
+        <% } %>
     </script>
-
-</div>
+<% }="" %="">
+</%></%></%-></%></%></%-></%></%-></%></%-></%></%-></%></%></%></%-></%></%></%-></%></%-></div>
       <footer id="footer">
     <div class="outer">
 
@@ -404,55 +310,44 @@ new Valine({
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2018-2022 Gonglong Chen
+                <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since%>-<% } %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
             </div>
 
 
             <div class="footer-right">
-
-<!--
-                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
--->
-
-<!-- hitwebcounter Code START 
-<a href="http://www.hitwebcounter.com" target="_blank">
-<img src="http://hitwebcounter.com/counter/counter.php?page=6974923&style=0025&nbdigits=5&type=page&initCount=0" title="website counter" Alt="website counter"   border="0" align="up" >
-</a> 
--->
-
-<a href="https://clustrmaps.com/site/1aae7" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=_A6aIN1PIjxyWChOHfot_6QWJTyXak5ICsMT6_Cye6I&co=2d78ad&ct=ffffff"></a>
-
-
+                <a href="http://hexo.io/" target="_blank" title="<%= __('tooltip.Hexo') %>">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="<%= __('tooltip.Yelee') %>  v<%= theme.Yelee %>">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
-
-
-
         </div>
 
 
 
+<!-- hitwebcounter Code START -->
+<a href="http://www.hitwebcounter.com" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=6974923&style=0025&nbdigits=5&type=page&initCount=0" title="website counter" Alt="website counter"   border="0" align="up" >
+</a> 
+  	<a href="https://clustrmaps.com/site/1aae7" title="Visit tracker"><img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=100&t=n&d=_A6aIN1PIjxyWChOHfot_6QWJTyXak5ICsMT6_Cye6I&co=2d78ad&ct=ffffff"></a>
 
 
 <!--
-        
+        <% if (theme.visit_counter.on) { %>
             <div class="visit">
-                
+                <% if (theme.visit_counter.site_visit) { %>
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="<%= __('visit_counter.site') %>"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
-                
-                
+                <% } %>
+                <% if (theme.visit_counter.site_visit && theme.visit_counter.page_visit) { %>
                     <span>| </span>
-                
-                
+                <% } %>
+                <% if (theme.visit_counter.page_visit) { %>
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="<%= __('visit_counter.page') %>"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
-                
+                <% } %>
             </div>
-        
+        <% } %>
 
 -->
 
