@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://deswords.github.io/sitemap.xml
+Sitemap: https://desword.github.io/sitemap.xml
