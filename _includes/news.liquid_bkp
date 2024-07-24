@@ -19,9 +19,9 @@
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
               {% if item.inline %}
-                {{ item.content | remove: '' | remove: '' | emojify }}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
-                {{ item.title }}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}
             </td>
           </tr>
@@ -32,15 +32,3 @@
     <p>No news so far...</p>
   {% endif %}
 </div>
-
-<style>
-  .news table tr {
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
-  }
-
-  .news table td, .news table th {
-    padding-top: 2px; /* Adjust as needed */
-    padding-bottom: 2px; /* Adjust as needed */
-  }
-</style>
