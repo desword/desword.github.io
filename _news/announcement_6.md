@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The project "Edge Hyperconverged Gateway Technology" won the ODCC 10th Anniversary Outstanding Project Award.
+《边缘超融合网关技术》项目荣获ODCC十周年杰出项目奖.

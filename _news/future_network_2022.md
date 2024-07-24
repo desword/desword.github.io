@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The project "Edge Internet Convergence Gateway" won the Leading Innovation and Technology Achievements at the 2022 Future Network Development. 
+《边缘互联网络》荣获2022年未来网络发展大会领先创新科技成果奖.
