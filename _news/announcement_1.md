@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper accepted to INFOCOM 2024. Congrats to Jinlong ! 
+One paper about simulating IoT protocols has been accepted to IoT Journal 2023.  

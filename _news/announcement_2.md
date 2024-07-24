@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-11-01 15:59:00-0400
+date: 2020-12-05 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-We have another anoucnement.
+One paper about enabling the coexistence of 2.4G LoRa and WiFi is accepted to INFOCOM 2021.
