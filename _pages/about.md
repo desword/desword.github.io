@@ -6,7 +6,7 @@ subtitle: Senior Cloud Network Researcher@Tencent
 
 profile:
   align: left
-  image: head_pic.png
+  image: formal_head.jpg
   image_circular: false # crops the image to make it circular
   more_info: 
 
