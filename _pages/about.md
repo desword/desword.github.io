@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: **Senior Cloud Network Researcher**@Tencent
+subtitle: Senior Cloud Network Researcher@Tencent
 
 profile:
   align: left
