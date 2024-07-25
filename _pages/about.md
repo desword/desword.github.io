@@ -6,7 +6,7 @@ subtitle: Senior Cloud Network Researcher@Tencent
 
 profile:
   align: left
-  image: life_one.JPG
+  image: life_two.jpg
   image_circular: false # crops the image to make it circular
   more_info: 
 
