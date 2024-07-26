@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Awarded National Scholarship Scholarship 2019 (ZJU CS top 1%,6/400).
+Awarded National Scholarship Scholarship 2019 **(ZJU CS top 1%,6/400)**.

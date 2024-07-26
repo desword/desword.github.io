@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Awarded  Tianzhou Chen Scholarship 2019 (ZJU CS top 1%, 2/400).
+Awarded  Tianzhou Chen Scholarship 2019 **(ZJU CS top 1%, 2/400)**.
