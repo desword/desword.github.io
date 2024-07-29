@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**《边缘超融合网关技术》**项目荣获[`ODCC十周年杰出项目奖`](http://www.d1net.com/news/hyxg/579329.html):trophy:，[`PR`](https://cloud.tencent.com/developer/article/2410141) .
+**《边缘超融合网关技术》**项目荣获[`ODCC十周年杰出项目奖`](http://www.d1net.com/news/hyxg/579329.html):trophy:, [`PR`](https://cloud.tencent.com/developer/article/2410141) .
