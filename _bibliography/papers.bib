@@ -8,6 +8,7 @@
   abbr={INFOCOM},
   author = {E, Jinlong and He, Lin  and Zhao, Zongyi and Wang, Yachen  and  Chen, Gonglong and Chen, Wei},
   title = {AggDeliv: Aggregating Multiple Wireless Links for Efficient Mobile Live Video Delivery},
+  abstract = {Mobile live-streaming applications with stringent latency and bandwidth requirements have gained tremendous attention in recent years. Encountered with bandwidth insufficiency and congestion instability of the wireless uplinks, multi-access networking provides opportunities to achieve fast and robust connectivity. However, the state-of-the-art multi-path transmission solutions are lack of adaptivity to the heterogeneous and dynamic nature of wireless networks. Meanwhile, the indispensable video coding and transformation bring about extra latency and make the video delivery vulnerable to network throughput fluctuation. This paper presents AggDeliv, a framework that provides efficient and robust multi-path transmission for mobile live video delivery. The key idea is to relate multi-path packet scheduling to congestion control optimization over diverse wireless links and adapt it to the mobile video characteristics. This is achieved by probabilistic packet allocation based on links' congestion windows, wireless-oriented delay and loss aware congestion control, as well as lightweight video frame coding and network-adaptive frame-packet transformation. Real-world evaluations demonstrate that our framework significantly outperforms the state-of-the-art solutions on aggregate goodput and streaming video bitrate.},
   year = {2024},
   month = {may},
   level = {(CCF-A)},
@@ -47,11 +48,13 @@
   author={Chen, Gonglong and Dong, Wei and Qiu, Fujian and Guan, Gaoyang and Gao, Yi and Zeng, Siyu},
   journal={IEEE Internet of Things Journal}, 
   title={Scalable and Interactive Simulation for IoT Applications With TinySim}, 
+  abstract = {Recent years, the rapid development of Internet of Things (IoT) technologies and applications have been witnessed. Three important features are characterized in modern IoT applications: 1) device heterogeneity; 2) long-range communication; and 3) cloud/edge-device integration. Difficulties are raised by the above features toward IoT application developers, e.g., predicting and evaluating the performance of the entire IoT application system. To deal with the above difficulties, we design and implement an IoT simulator, TinySim, which satisfies the requirements of high fidelity, high scalability, and seamless transplantation. TinySim takes advantage of the hardware-independent features of TinyLink programming language. Hence, a similar code can be used for both simulation and execution on real hardware platforms. Many virtual IoT devices can be simulated by TinySim at the PC end. These IoT devices can send or receive messages from the cloud or smartphones, making it possible for the developers to evaluate the entire system without the actual IoT hardware. We connect TinySim with Unity 3-D to provide high interactivity. To reduce the event synchronization overhead between TinySim and Unity 3-D, a dependence graph-based approach is proposed. We design an approximation-based approach to reduce the number of simulation events, greatly speeding up the simulation process. We carefully evaluate TinySim using benchmarks and two concrete case studies. TinySim can simulate representative IoT applications, such as smart flowerspot and shared bikes. We conduct extensive experiments to evaluate the performance of TinySim. Results show that TinySim can achieve high accuracy with an error ratio lower than 9.52% in terms of energy and latency. Further, TinySim can simulate 4000 devices within 11.2 physical-minutes for ten simulation-minutes, which is about 3x faster than the state-of-art approach.},
   year={2023},
   month = {dec},
   volume={10},  
   number={23},
   pages={20984-20999},
+  html={https://mp.weixin.qq.com/s/nGYH5aERHiXHmpA8f12Ctw},
   keywords={Internet of Things;Cloud computing;Protocols;Scalability;Three-dimensional displays;Synchronization;Smart phones;Interactive development;Internet of Things (IoT);scalability;simulation;speculative execution},
   doi={10.1109/JIOT.2023.3285244},
     level = {(JCR-Q1, IF=10.238)},
@@ -78,6 +81,22 @@
   abbr={MobiSys},
 author = {Dong, Wei and Lv, Jiamei and Chen, Gonglong and Wang, Yihui and Li, Huikang, and Gao, Yi and Bharadia, Dinesh},
 title = {TinyNet: A Lightweight, Modular, and Unified Network Architecture for The Internet of Things},
+  abstract = {Interoperability among a vast number of heterogeneous IoT nodes
+  is a key issue. However, the communication among IoT nodes does
+  not fully interoperate to date. The underlying reason is the lack of a
+  lightweight and unified network architecture for IoT nodes having
+  different radio technologies. In this paper, we design and implement
+  TinyNet, a lightweight, modular, and unified network architecture
+  for representative low-power radio technologies including 802.15.4,
+  BLE, and LoRa. The modular architecture of TinyNet allows us to
+  simplify the creation of new protocols by selecting specific modules
+  in TinyNet.We implement TinyNet on realistic IoT nodes including
+  TI CC2650 and Heltec IoT LoRa nodes. We perform extensive
+  evaluations. Results show that TinyNet (1) allows interoperability at
+  or above the network layer; (2) allows code reuse for multi-protocol
+  co-existence and simplifies new protocols design by module
+  composition; (3) has a small code size and memory footprint.},
+
 year = {2022},
 isbn = {9781450368865},
 publisher = {Association for Computing Machinery},
@@ -96,6 +115,7 @@ keywords = {Internet of Things, modular, network architectures},
 author = { Chen, Gonglong and Dong, Wei and Lv, Jiamei},
 title = {LoFi: Enabling 2.4GHz LoRa and WiFi Coexistence by Detecting Extremely Weak Signals},
 year = {2021},
+abstract = {Low-Power Wide Area Networks (LPWANs) emerges as attractive communication technologies to connect the Internet-of-Things. A new LoRa chip has been proposed to pro-vide long range and low power support on 2.4GHz. Comparing with previous LoRa radios operating on sub-gigahertz, the new one can transmit LoRa packets faster without strict channel duty cycle limitations and have attracted many attentions. Prior studies have shown that LoRa packets may suffer from severe corruptions with WiFi interference. However, there are many limitations in existing approaches such as too much signal processing overhead on weak devices or low detection accuracy. In this paper, we propose a novel weak signal detection approach, LoFi, to enable the coexistence of LoRa and WiFi. LoFi utilizes a typical physical phenomenon Stochastic Resonance (SR) to boost weak signals with a specific frequency by adding appropriate white noise. Based on the detected spectrum occupancy of LoRa signals, LoFi reserves the spectrum for LoRa transmissions. We implement LoFi on USRP N210 and conduct extensive experiments to evaluate its performance. Results show that LoFi can enable the coexistence of LoRa and WiFi in 2.4GHz. The packet reception ratio of LoRa achieves 98% over an occupied 20MHz WiFi channel, and the WiFi throughput loss is reduced by up to 13%.},
   booktitle = {Proceedings of IEEE INFOCOM},
 keywords = {Internet of Things, modular, network architectures},
 month = {may},
@@ -136,6 +156,7 @@ keywords = {Cross-technology communication, jamming attack},
   author={Chen, Gonglong and Dong, Wei and Zhao, Zhiwei and Gu, Tao},
   journal={IEEE Transactions on Mobile Computing}, 
   title={Accurate Corruption Estimation in ZigBee under Cross-Technology Interference}, 
+  abstract = {Cross-Technology Interference affects the operation of low-power ZigBee networks, especially under severe WiFi interference. Accurate corruption estimation is very important to improve the resilience of ZigBee transmissions. However, there are many limitations in existing approaches such as low accuracy, high overhead, and requirement of hardware modification. In this paper, we propose an accurate corruption estimation approach, AccuEst, which utilizes per-byte SINR (Signal-to-Interference-and-Noise Ratio) to detect corruption. We combine the use of pilot symbols with per-byte SINR to improve corruption detection accuracy, especially in highly noisy environments (i.e., noise and interference are at the same level). We extract pilot symbols by leveraging protocol signatures. In addition, we design an adaptive pilot instrumentation scheme to strike a good balance between accuracy and overhead. We implement AccuEst on the TinyOS 2.1.1/TelosB platform and evaluate its performance through extensive experiments. Results show that AccuEst improves corruption detection accuracy by 79.4 percent on average compared with state-of-the-art approach (i.e., CARE) in highly noisy environments. In addition, AccuEst reduces pilot overhead by 83.7 percent on average compared to the traditional pilot-based approach. We implement AccuEst in a coding-based transmission protocol, and results show that with AccuEst, the packet delivery ratio is improved by 22.1 percent on average.},
   year={2019},
   month = {oct},
   volume={18},
