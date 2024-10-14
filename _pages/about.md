@@ -32,20 +32,60 @@ Email: desword [at] zju.edu.cn
 - *2023.12*: &nbsp; One paper about simulating IoT protocols has been accepted to IoT Journal 2023.  
 - *2023.09*: &nbsp;**《边缘超融合网关技术》**项目荣获[`ODCC十周年杰出项目奖`](http://www.d1net.com/news/hyxg/579329.html)🏆, [`PR`](https://cloud.tencent.com/developer/article/2410141) .
 - *2022.08*: &nbsp; **《基于可编程网关的边缘互联网络》** 项目荣获2022年[`未来网络发展大会领先创新科技成果奖`](https://www.51cto.com/article/717189.html) 🏆.
-- *2020.12*: &nbsp; One paper about enabling the coexistence of 2.4G LoRa and WiFi is accepted to INFOCOM 2021.  
+- *2021.01*: &nbsp; Joined Tencent as a `Cloud Network Architect`. 🎉🎉
+- *2020.12*: &nbsp; One paper about enabling the coexistence of 2.4G LoRa and WiFi is accepted to INFOCOM 2021. 
+- *2020.12*: &nbsp; I have passed the Ph.D. defense!🎉🎉
 
 
 
 
 # 📝 Publications 
 
+### 2024
 1.  Jinlong E, Lin He, Zongyi Zhao, Yachen Wang, **Gonglong Chen** and Wei Chen, "AggDeliv: Aggregating Multiple Wireless Links for Efficient Mobile Live Video Delivery",  *IEEE INFOCOM*, Vancouver, Canada, May 20-23, 2024. [[PDF]](#) (**CCF A**)
+
+### 2023
 1.  **Gonglong Chen**, Wei Dong, Fujian Qiu, Gaoyang Guan, Yi Gao, and Siyu Zeng, "Scalable and Interactive Simulation for IoT Applications with TinySim", *IEEE Internet of Things Journal*,  vol. 10, Issue 23,  pp. 20984 - 20999,  2023.[[PDF]](https://desword.github.io/paper/iotj23-tinysim.pdf) (**JCR Q1, IF=10.238, 2023**)
 1.  Jiamei Lv, **Gonglong Chen**, and Wei Dong, "Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks",  *ACM Transactions on Sensor Networks* (TOSN), vol. 18, no. 4, article 62, pp. 62:1-62:24, 2023. [[PDF]](https://desword.github.io/paper/tosn23-eLora.pdf) (**CCF B, IF=4.1, 2023**)
 
 
+### 2022
+1.  Wei Dong, Jiamei Lv, **Gonglong Chen**, Yihui Wang, Huikang Li, and Yi Gao, Dinesh Bharadia, "TinyNet: a Lightweight, Modular, and Unified Network Architecture for the Internet of Things", *ACM MobiSys*, Portland, June 27 - July 1, 2022.[[PDF]](https://desword.github.io/paper/mobisys22-tinynet.pdf) (**CCF B, 21.5% acceptance rate**)
+1.  Peng Tao, Guo Yichen, Wang Yachen, **Gonglong Chen**,Yang Feng; Chen Wei, "An Interference-Oriented 5G Radio Resource Allocation Framework for Ultra-Dense Networks", *IEEE Internet of Things Journal*,  2022.[[PDF]](#) (**JCR Q1, IF=11.705**)
+
+
+### 2021
+1.  Jiamei Lv, **Gonglong Chen**, Wei Dong, "Isolayer: The Case for an IoT Protocol Isolation Layer.", *IEEE/ACM IWQoS*, Virtual, June 25-28, 2021. [[PDF]](#) (**CCF B**)
+1.  Han Liu, Tao Peng, Yichen Guo, Yachen Wang, **Gonglong Chen**, Feng Yang, Wei Chen, "A XGBoost Based Wireless Interference Relation Mining and Performance Prediction Method", *IEEE VTC*, Virtual, Sep 27- Oct 28, 2021. [[PDF]](#)
+1.  **Gonglong Chen**, Wei Dong and Jiamei Lv, "LoFi: Enabling 2.4GHz LoRa and WiFi Coexistence by Detecting Extremely Weak Signals",  *IEEE INFOCOM*, Virtual, May 10-13, 2021. [[PDF]](https://desword.github.io/paper/infocom21-lofi.pdf) (**CCF A, 19.9% acceptance rate**)
+
+### 2020
+1.  **Gonglong Chen**, Wei Dong, "Reactive Jamming and Attack Mitigation over Cross-Technology Communication Links", *ACM Transactions on Sensor Networks*, vol. 17, no. 1, article 4, pp. 4:1-4:25, 2020. [[PDF]](https://desword.github.io/paper/tosn20-jamcloak.pdf) (**CCF B, IF=2.469, 2019**)
+1.  **Gonglong Chen**, Jiamei Lv, and Wei Dong, "Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks",  *IEEE/ACM IWQoS*, Virtual, June 15-17, 2020. [[PDF]](https://desword.github.io/paper/iwqos20_eLoRa.pdf) (**CCF B**)
+1.  **Gonglong Chen**, Wei Dong, Fujian Qiu, Gaoyang Guan, Yi Gao, and Siyu Zeng, "Scalable and Interactive Simulation for IoT Applications with TinySim", accept to *IEEE INFOCOM Poster*, Virtual, July 6-9, 2020. [[PDF]](https://desword.github.io/paper/infocom20-poster-tinysim.pdf) (**CCF A**)
+
+### 2019
+1.  **Gonglong Chen**, Wei Dong, Zhiwei Zhao, and Tao Gu, "Accurate Corruption Estimation in ZigBee Under Cross-Technology Interference", *IEEE Transactions on Mobile Computing*, vol. 18, no. 10, pp. 2243-2256, 1 Oct. 2019. [[PDF]](https://desword.github.io/paper/tmc19_accuest.pdf) (**CCF A, IF=4.474, 2018**)
+1.  **Gonglong Chen**, Wei Dong, Yihui Wang, and Huikang Li, "TinyNet: A Lightweight, Modular, and Unified Network Architecture for The Internet of Things", *ACM SIGCOMM Poster*, Beijing, China, Augest 19-24, 2019. [[PDF]](https://desword.github.io/paper/sigcomm19_tinynet_poster_v2.pdf) (**CCF A**)
+1. Yihui Wang, **Gonglong Chen**, Jiajun Bu, and Wei Dong, "MoRa: a LoRa-based System for Timely and Energy-Efficient e-Price Tag Update in Markets", *IEEE ICPADS 2019*, Tianjing, China, December 4-6, 2019. [[PDF]](https://desword.github.io/paper/icpads19-mora.pdf)
+1.  Wei Dong, **Gonglong Chen**, Xiaoyu Zhang, and Yi Gao, "Trading Routing Diversity for Better Network Performance", *IEEE Transactions on Mobile Computing*, vol. 18, no. 6, pp. 1433-1446, 1 June 2019. [[PDF]](https://desword.github.io/paper/tmc18_flexcut.pdf) (**CCF A, IF=4.474, 2018**)
+
+
+### 2018 and Before 
+1.  **Gonglong Chen**, and Wei Dong, "JamCloak: Reactive Jamming Attack over Cross-Technology Communication Links", *IEEE ICNP 2018*, Cambridge, UK, September 24-27, 2018. [[PDF]](https://desword.github.io/paper/icnp18_jamcloak.pdf) (**CCF B, 17.8% acceptance rate**)
+1.  Zhiwei Zhao, Wei Dong, Geyong Min, **Gonglong Chen**, Tao Gu and Jiajun Bu, "Towards Repeatable Wireless Network Simulation Using Performance-Aware Markov Model", *IEEE INFOCOM 2018*, Honolulu, HI, USA, April 15-19, 2018. [[PDF]](https://desword.github.io/paper/Infocom18-zhao.pdf) (**CCF A, 19.2% acceptance rate**)
+1.  Huikang Li, **Gonglong Chen**, Yihui Wang and Wei Dong, "Accurate Performance Modeling of Uplink Transmission in NB-IoT", *IEEE ICPADS 2018*, Singapore, December 11-13, 2018. [[PDF]](https://desword.github.io/paper/icpads18_nblink.pdf)
+1.  **Gonglong Chen**, Wei Dong, Zhiwei Zhao, and Tao Gu, "Towards Accurate Corruption Estimation in ZigBee Under Cross-Technology Interference", *IEEE ICDCS 2017*, Atlanta, GA, USA, June 5-8, 2017. [[PDF]](https://desword.github.io/paper/icdcs17_AccuEst.pdf) (**CCF B, 16.9% acceptance rate**)
+1.  **Gonglong Chen**, and Wei Dong, "Adaptive Path Profiling using Arithmetic Coding", *IEEE ICPADS 2015*, Melbourne, Australia, December 14-17, 2015. [[PDF]](https://desword.github.io/paper/icpads15_adaptracer.pdf)
+1.  **Gonglong Chen**, and Wei Dong, "AdapTracer: Adaptive Path Profiling Using Arithmetic Coding", Elsevier Journal of Systems Architecture, Vol.88, pp.74-86, 31 May, 2018. [[PDF]](https://desword.github.io/paper/jsa18_adaptracer.pdf) (**CCF B, IF=1.159, 2017**)
+1.  Zhiwei Zhao, Wei Dong, **Gonglong Chen**, Geyong Min, Tao Gu, and Jiajun Bu, "Embracing Corruption Burstiness: Fast Error Recovery for ZigBee under Wi-Fi Interference", *IEEE Transactions on Mobile Computing*, vol. 16, no. 9, pp. 2518-2530, 2017. [[PDF]](https://desword.github.io/paper/tmc-2016-embracing.pdf) (**CCF A, IF=4.098, 2017**)
+1.  Wei Dong, **Gonglong Chen**, Chenhong Cao, Luyao Luo, Yi Gao, Towards a Software-Defined Architecture for Wireless Sensor Networks. *Chinese Journal of Computers(CJC)*, Vol.40, No. 8, pp.1779-1797, 2017. [[PDF]](https://desword.github.io/paper/DW0315-2017315152626.pdf)
+
+
+
 # 🎖 Honors and Awards
 - *2019.10* National Scholarship Scholarship 2019 **(ZJU CS top 1%,6/400)**.
+- *2019.09* Huawei Jingying Scholarship 2019 **(ZJU CS top 1%, 1/400)**.
 - *2019.06* Tianzhou Chen Scholarship 2019 **(ZJU CS top 1%, 2/400)**.
 - *2018.10* National Scholarship Scholarship 2018 **(ZJU CS top 1%,5/400)**.
 
