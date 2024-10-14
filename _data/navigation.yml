@@ -11,10 +11,11 @@ main:
 
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
-
+    
+  - title: "Patents"
+    url: "/#-patents"
 
   - title: "Invited Talks"
     url: "/#-invited-talks"
 
-  - title: "Patents"
-    url: "/#-patents"
+
