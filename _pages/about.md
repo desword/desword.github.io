@@ -42,7 +42,7 @@ Email: desword [at] zju.edu.cn
 # 📝 Publications 
 
 ### 2024
-1.  Jinlong E, Lin He, Zongyi Zhao, Yachen Wang, **Gonglong Chen** and Wei Chen, "AggDeliv: Aggregating Multiple Wireless Links for Efficient Mobile Live Video Delivery",  *IEEE INFOCOM*, Vancouver, Canada, May 20-23, 2024. [[PDF]](https://desword.github.io/paper/infocom24-AggDeliv.pdf) (**CCF A**)
+1.  Jinlong E, Lin He, Zongyi Zhao, Yachen Wang, **Gonglong Chen** and Wei Chen, "AggDeliv: Aggregating Multiple Wireless Links for Efficient Mobile Live Video Delivery",  *IEEE INFOCOM*, Vancouver, Canada, May 20-23, 2024. [[PDF]](https://desword.github.io/paper/infocom24-AggDeliv.pdf) (**<span class="color-text">CCF A</span>**)
 
 ### 2023
 1.  **Gonglong Chen**, Wei Dong, Fujian Qiu, Gaoyang Guan, Yi Gao, and Siyu Zeng, "Scalable and Interactive Simulation for IoT Applications with TinySim", *IEEE Internet of Things Journal*,  vol. 10, Issue 23,  pp. 20984 - 20999,  2023.[[PDF]](https://desword.github.io/paper/iotj23-tinysim.pdf) (**JCR Q1, IF=10.238, 2023**)
