@@ -90,7 +90,7 @@ Email: desword [at] zju.edu.cn
 - *2018.10* National Scholarship Scholarship 2018 **(ZJU CS top 1%,5/400)**.
 
 # 📜 Patents
-- *2024.09*, Cloud-Edge Collaborative Data Transmission Method, Device, Server, and Storage Medium, [CN113489643B](https://desword.github.io/patents/大陆专利-云边协同的数据传输方法、装置、服务器及存储介质-ZL202110793799.4).
+- *2024.09*, Cloud-Edge Collaborative Data Transmission Method, Device, Server, and Storage Medium, [CN113489643B](https://desword.github.io/patents/大陆专利-云边协同的数据传输方法、装置、服务器及存储介质-ZL202110793799.4.pdf).
 - *2023.10*, Video Data Processing Method and Device, Electronic Equipment, and Storage Medium, [HK40052849](https://desword.github.io/patents/大陆专利-视频数据处理方法及装置、电子设备、存储介质-ZL202110764442.3.pdf).
 - *2023.08*, Driver-side Positioning Method, Device, Computer Equipment, and Storage Medium, [CN113790761B](https://desword.github.io/patents/大陆专利-驾驶端定位方法、装置、计算机设备和存储介质-ZL202111105490.8.pdf).
 - *2023.07*, Decoding Method and Dvice, Electronic Equipment, and Computer-readable Storage Medium, [HK40052850](https://desword.github.io/patents/香港专利-21HK3323批予专利证明书.pdf).
