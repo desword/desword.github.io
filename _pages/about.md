@@ -19,7 +19,7 @@ redirect_from:
 
 
 Gonglong Chen currently is an `Associate Professor/Researcher` in `Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences`([SIAT](https://www.siat.ac.cn/)).
-Before that, He has been a `Cloud Network Architect` in Tencent since 2021.
+Before that, He has been a `Cloud Network Architect` in [Tencent](https://www.tencent.com/zh-cn/business.html) since 2021.
 He received his PhD degree from the College of Computer Science and Technology at `Zhejiang University` (ZJU) in 2020, advised by [Wei Dong](https://dongw.emnets.cn/).
 He received the BS degree from the College of Computer Science in East China University of Political Science and Law (ECUPL) in 2015. 
 His research interests include **Cloud network**, **Machine Learning system** and **Mobile computing**.
@@ -28,28 +28,26 @@ Email: desword [at] zju.edu.cn
 
 
 # 🔥 News
-- *2024.10*: &nbsp; Joined SIAT as an `Associate Professor/Researcher`. :tada:
+- *2024.10*: &nbsp; Joined SIAT as an `Associate Professor/Researcher`. 🎉🎉
 - *2023.12*: &nbsp; One paper about simulating IoT protocols has been accepted to IoT Journal 2023.  
+- *2023.09*: &nbsp;**《边缘超融合网关技术》**项目荣获[`ODCC十周年杰出项目奖`](http://www.d1net.com/news/hyxg/579329.html)🏆, [`PR`](https://cloud.tencent.com/developer/article/2410141) .
+- *2022.08*: &nbsp; **《基于可编程网关的边缘互联网络》** 项目荣获2022年[`未来网络发展大会领先创新科技成果奖`](https://www.51cto.com/article/717189.html) 🏆.
+- *2020.12*: &nbsp; One paper about enabling the coexistence of 2.4G LoRa and WiFi is accepted to INFOCOM 2021.  
+
+
+
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+1.  Jinlong E, Lin He, Zongyi Zhao, Yachen Wang, **Gonglong Chen** and Wei Chen, "AggDeliv: Aggregating Multiple Wireless Links for Efficient Mobile Live Video Delivery",  *IEEE INFOCOM*, Vancouver, Canada, May 20-23, 2024. [[PDF]](#) (**CCF A**)
+1.  **Gonglong Chen**, Wei Dong, Fujian Qiu, Gaoyang Guan, Yi Gao, and Siyu Zeng, "Scalable and Interactive Simulation for IoT Applications with TinySim", *IEEE Internet of Things Journal*,  vol. 10, Issue 23,  pp. 20984 - 20999,  2023.[[PDF]](https://desword.github.io/paper/iotj23-tinysim.pdf) (**JCR Q1, IF=10.238, 2023**)
+1.  Jiamei Lv, **Gonglong Chen**, and Wei Dong, "Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks",  *ACM Transactions on Sensor Networks* (TOSN), vol. 18, no. 4, article 62, pp. 62:1-62:24, 2023. [[PDF]](https://desword.github.io/paper/tosn23-eLora.pdf) (**CCF B, IF=4.1, 2023**)
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2019.10* National Scholarship Scholarship 2019 **(ZJU CS top 1%,6/400)**.
+- *2019.06* Tianzhou Chen Scholarship 2019 **(ZJU CS top 1%, 2/400)**.
+- *2018.10* National Scholarship Scholarship 2018 **(ZJU CS top 1%,5/400)**.
 
 
 # 💬 Invited Talks
