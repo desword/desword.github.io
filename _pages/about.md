@@ -91,7 +91,10 @@ Email: desword [at] zju.edu.cn
 
 
 # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.06*, Embracing the New Trend of Edge Computing in Network Platforms. Rhinoceros Bird Study Camp 2021. 
+
+
+
 
 # 💻 Internships
 - *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
