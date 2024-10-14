@@ -94,7 +94,7 @@
   img {
     max-width: 175px;
     min-width: 75px;
-    border-radius: 0; // 修改此处以取消圆形效果
+    border-radius: 10%; // 修改此处以取消圆形效果. 50% original
 
     @include breakpoint($large) {
       padding: 5px;
