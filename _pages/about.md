@@ -23,6 +23,7 @@ Gonglong Chen currently is an `Associate Professor/Researcher` in `Shenzhen Inst
 Before that, He has been a `Cloud Network Architect` in [Tencent](https://www.tencent.com/zh-cn/business.html) since 2021.
 He received his PhD degree from the College of Computer Science and Technology at `Zhejiang University` ([ZJU](https://www.zju.edu.cn/)) in 2020, advised by [Wei Dong](https://dongw.emnets.cn/).
 He received the BS degree from the College of Computer Science in East China University of Political Science and Law (ECUPL) in 2015. 
+
 His research interests include **Cloud network**, **Machine Learning system** and **Mobile computing**.
 
 Email: desword [at] zju.edu.cn 
