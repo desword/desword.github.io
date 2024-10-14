@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Gonglong Chen"
   avatar           : "images/life_short_two.png"
-  bio              : "[Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences](https://www.siat.ac.cn/)"
+  bio              : 
   location         : "Shenzhen, China"
   employer         :
   pubmed           : 
