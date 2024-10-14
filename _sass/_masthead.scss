@@ -62,14 +62,8 @@
   }
 }
 
-
-.masthead .masthead__menu-item {
-  color: #000000; // 黑色文字
+.masthead__menu .masthead__menu-item {
+  color: #000000 !important; // 使用 !important 强制应用
 }
 
-.masthead .masthead__menu-item--lg {
-  padding-right: 2em;
-  font-weight: 700;
-  color: #000000; // 同样黑色
-}
 
