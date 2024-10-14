@@ -91,10 +91,4 @@ Email: desword [at] zju.edu.cn
 
 
 # 💬 Invited Talks
-- *2021.06*, Embracing the New Trend of Edge Computing in Network Platforms. Rhinoceros Bird Study Camp 2021. 
-
-
-
-
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2021.06*, Embracing the New Trend of Edge Computing in Network Platforms, *Rhinoceros Bird Study Camp 2021*. 
