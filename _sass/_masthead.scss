@@ -54,10 +54,13 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  color: #000000; // 添加黑色文字
 
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+    color: #000000; // 如果您也希望这个更大的菜单项使用相同的颜色
+
   }
 }
 
