@@ -23,7 +23,7 @@ div.highlighter-rouge, figure.highlight {
     line-height: 1;
     text-transform: none;
     speak: none;
-    color: purple; // 添加紫色字体颜色
+    color: purple !important; // 添加紫色字体颜色
 
   }
 
@@ -32,7 +32,7 @@ div.highlighter-rouge, figure.highlight {
     font-family: $monospace;
     font-size: $type-size-7;
     line-height: 1.8;
-    color: purple; // 添加紫色字体颜色
+    color: purple !important; // 添加紫色字体颜色
 
   }
 }
