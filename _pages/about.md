@@ -84,7 +84,7 @@ Email: desword [at] zju.edu.cn
 
 
 # 🎖 Honors and Awards
-- *2023.06* Tencent's Five-Star Outstanding Contributor Award in 2023H1.
+- *2023.12* Tencent's Five-Star Outstanding Contributor Award in 2023H2.
 - *2022.12* Tencent's Five-Star Outstanding Contributor Award in 2022H2.
 - *2022.06* Tencent's Five-Star Outstanding Contributor Award in 2022H1.
 - *2019.10* National Scholarship Scholarship 2019 **(ZJU CS top 1%,6/400)**.
