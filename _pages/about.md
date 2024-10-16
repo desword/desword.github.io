@@ -41,10 +41,10 @@ Email: desword [at] zju.edu.cn
 <details>
 <summary>More<p style="line-height:1.4"></p></summary>
 <ul>
-  <li><em>2020.10</em> JamCloak accepted to ToSN.</li>
-  <li><em>2020.06</em> eLoRa accepted to IwQoS 2020.</li>
-  <li><em>2020.07</em> TinySim accepted to INFOCOM 2020 as poster.</li>
-  <li><em>2019.07</em> AccuEst accepted to TMC.</li>
+  <li><em>2020.10:</em> &nbsp; JamCloak is accepted to ToSN.</li>
+  <li><em>2020.06:</em> &nbsp; eLoRa is accepted to IwQoS 2020.</li>
+  <li><em>2020.07:</em> &nbsp; TinySim is accepted to INFOCOM 2020 as poster.</li>
+  <li><em>2019.07:</em> &nbsp; AccuEst is accepted to TMC.</li>
 </ul>
 </details>
 
