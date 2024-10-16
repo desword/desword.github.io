@@ -119,7 +119,7 @@ Email: desword [at] zju.edu.cn
 
 
 
-# 🧭 Academic Service
+# 🧭 Academic Services
 - *Journal Reviewer*: JSAC, TMC, ToSN, TWC, IoTJ, ...
 - *Conference Reviewer*: SECON, IWQoS, ICPADS, ... 
 
