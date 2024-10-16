@@ -40,12 +40,11 @@ Email: desword [at] zju.edu.cn
 
 <details>
 <summary>More<p style="line-height:1.4"></p></summary>
-  
 <ul>
-  <li>[07/2021] CloudPinraffic accepted to <a href="https://2021.issre.net/">ISSRE'21</a>. Congrats to Shize!</li>
-  <li>[07/2021] P4DAD accepted to <a href="https://www.sciencedirect.com/journal/computer-networks/vol/198/suppl/C">Elsevier Computer Networks</a>.</li>
-  <li>[04/2021] CASD accepted to <a href="https://iwqos2021.ieee-iwqos.org/">IWQoS'21</a>.</li>
-  <li>[04/2021] pSAV accepted to <a href="https://iwqos2021.ieee-iwqos.org/">IWQoS'21</a>. Congrats to Jiamin!</li>
+  <li><em>2020.10</em> JamCloak accepted to ToSN.</li>
+  <li><em>2020.06</em> eLoRa accepted to IwQoS 2020.</li>
+  <li><em>2020.07</em> TinySim accepted to INFOCOM 2020 as poster.</li>
+  <li><em>2019.07</em> AccuEst accepted to TMC.</li>
 </ul>
 </details>
 
