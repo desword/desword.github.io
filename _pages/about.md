@@ -51,7 +51,8 @@ Email: desword [at] zju.edu.cn
 
 # 📝 Publications 
 
-**2021 ~ 2024**
+<span><strong>2021 ~ 2024</strong></span>
+
 
 1.  Jinlong E, Lin He, Zongyi Zhao, Yachen Wang, **<u>Gonglong Chen</u>** and Wei Chen, "AggDeliv: Aggregating Multiple Wireless Links for Efficient Mobile Live Video Delivery",  *IEEE INFOCOM*, Vancouver, Canada, May 20-23, 2024. [[PDF]](https://desword.github.io/paper/infocom24-AggDeliv.pdf) (**<span class="color-text">CCF A</span>**)
 
@@ -64,21 +65,20 @@ Email: desword [at] zju.edu.cn
 1.  Han Liu, Tao Peng, Yichen Guo, Yachen Wang, **<u>Gonglong Chen</u>**, Feng Yang, Wei Chen, "A XGBoost Based Wireless Interference Relation Mining and Performance Prediction Method", *IEEE VTC*, Virtual, Sep 27- Oct 28, 2021. [[PDF]](https://desword.github.io/paper/vtc21-xgboost.pdf)
 1.  **<u>Gonglong Chen</u>**, Wei Dong and Jiamei Lv, "LoFi: Enabling 2.4GHz LoRa and WiFi Coexistence by Detecting Extremely Weak Signals",  *IEEE INFOCOM*, Virtual, May 10-13, 2021. [[PDF]](https://desword.github.io/paper/infocom21-lofi.pdf) (**<span class="color-text">CCF A</span>, 19.9% acceptance rate**)
 
-**2020**
+<span><strong>2020</strong></span>
 
 1.  **<u>Gonglong Chen</u>**, Wei Dong, "Reactive Jamming and Attack Mitigation over Cross-Technology Communication Links", *ACM Transactions on Sensor Networks (TOSN)* , vol. 17, no. 1, article 4, pp. 4:1-4:25, 2020. [[PDF]](https://desword.github.io/paper/tosn20-jamcloak.pdf) (**CCF B, IF=2.469, 2019**)
 1.  **<u>Gonglong Chen</u>**, Jiamei Lv, and Wei Dong, "Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks",  *IEEE/ACM IWQoS*, Virtual, June 15-17, 2020. [[PDF]](https://desword.github.io/paper/iwqos20_eLoRa.pdf) (**CCF B**)
 1.  **<u>Gonglong Chen</u>**, Wei Dong, Fujian Qiu, Gaoyang Guan, Yi Gao, and Siyu Zeng, "Scalable and Interactive Simulation for IoT Applications with TinySim", accept to *IEEE INFOCOM Poster*, Virtual, July 6-9, 2020. [[PDF]](https://desword.github.io/paper/infocom20-poster-tinysim.pdf) (**<span class="color-text">CCF A</span>**)
 
-**2019**
+<span><strong>2019</strong></span>
 
 1.  **<u>Gonglong Chen</u>**, Wei Dong, Zhiwei Zhao, and Tao Gu, "Accurate Corruption Estimation in ZigBee Under Cross-Technology Interference", *IEEE Transactions on Mobile Computing (TMC)*, vol. 18, no. 10, pp. 2243-2256, 1 Oct. 2019. [[PDF]](https://desword.github.io/paper/tmc19_accuest.pdf) (**<span class="color-text">CCF A</span>, IF=4.474, 2018**)
 1.  **<u>Gonglong Chen</u>**, Wei Dong, Yihui Wang, and Huikang Li, "TinyNet: A Lightweight, Modular, and Unified Network Architecture for The Internet of Things", *ACM SIGCOMM Poster*, Beijing, China, Augest 19-24, 2019. [[PDF]](https://desword.github.io/paper/sigcomm19_tinynet_poster_v2.pdf) (**<span class="color-text">CCF A</span>**)
 1. Yihui Wang, **<u>Gonglong Chen</u>**, Jiajun Bu, and Wei Dong, "MoRa: a LoRa-based System for Timely and Energy-Efficient e-Price Tag Update in Markets", *IEEE ICPADS*, Tianjing, China, December 4-6, 2019. [[PDF]](https://desword.github.io/paper/icpads19-mora.pdf)
 1.  Wei Dong, **<u>Gonglong Chen</u>**, Xiaoyu Zhang, and Yi Gao, "Trading Routing Diversity for Better Network Performance", *IEEE Transactions on Mobile Computing (TMC)*, vol. 18, no. 6, pp. 1433-1446, 1 June 2019. [[PDF]](https://desword.github.io/paper/tmc18_flexcut.pdf) (**<span class="color-text">CCF A</span>, IF=4.474, 2018**)
 
-
-**2018 and Before**
+<span><strong>2018 and Before</strong></span>
 
 1.  **<u>Gonglong Chen</u>**, and Wei Dong, "JamCloak: Reactive Jamming Attack over Cross-Technology Communication Links", *IEEE ICNP*, Cambridge, UK, September 24-27, 2018. [[PDF]](https://desword.github.io/paper/icnp18_jamcloak.pdf) (**CCF B, 17.8% acceptance rate**)
 1.  Zhiwei Zhao, Wei Dong, Geyong Min, **<u>Gonglong Chen</u>**, Tao Gu and Jiajun Bu, "Towards Repeatable Wireless Network Simulation Using Performance-Aware Markov Model", *IEEE INFOCOM*, Honolulu, HI, USA, April 15-19, 2018. [[PDF]](https://desword.github.io/paper/Infocom18-zhao.pdf) (**<span class="color-text">CCF A</span>, 19.2% acceptance rate**)
