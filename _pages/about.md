@@ -38,7 +38,16 @@ Email: desword [at] zju.edu.cn
 - *2020.12*: &nbsp; One paper about enabling the coexistence of 2.4G LoRa and WiFi is accepted to INFOCOM 2021. 
 - *2020.12*: &nbsp; I have passed the Ph.D. defense!🎉🎉
 
-
+<details>
+<summary>More<p style="line-height:1.4"></p></summary>
+  
+<ul>
+  <li>[07/2021] CloudPinraffic accepted to <a href="https://2021.issre.net/">ISSRE'21</a>. Congrats to Shize!</li>
+  <li>[07/2021] P4DAD accepted to <a href="https://www.sciencedirect.com/journal/computer-networks/vol/198/suppl/C">Elsevier Computer Networks</a>.</li>
+  <li>[04/2021] CASD accepted to <a href="https://iwqos2021.ieee-iwqos.org/">IWQoS'21</a>.</li>
+  <li>[04/2021] pSAV accepted to <a href="https://iwqos2021.ieee-iwqos.org/">IWQoS'21</a>. Congrats to Jiamin!</li>
+</ul>
+</details>
 
 
 # 📝 Publications 
