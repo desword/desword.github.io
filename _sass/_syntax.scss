@@ -4,7 +4,11 @@
 
 .language-plaintext.highlighter-rouge {
   color: purple; // 设置字体颜色为紫色
-  font-size: 14px;
+  //font-size: 14px;
+  font-size: $type-size-6;
+
+
+
 }
 
 strong {
