@@ -18,13 +18,13 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-**Ph.D, Associate Professor/Associate Researcher@SIAT, Master Advisor.**
+**PhD, Associate Professor@SIAT, Master supervisor.**
 
 [Research Center for Cloud Computing](https://cloud.siat.ac.cn/cloud/).
 
-[Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences(SIAT)](https://www.siat.ac.cn/)).
+[Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences(SIAT)](https://www.siat.ac.cn/).
 
-
+# 🏖️ Biography
 Gonglong Chen currently is an `Associate Professor/Researcher` in `Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences`([SIAT](https://www.siat.ac.cn/)).
 
 Before that, He has been a `Cloud Network Architect` in [Tencent](https://www.tencent.com/zh-cn/business.html) since 2021.
