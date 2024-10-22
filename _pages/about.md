@@ -21,7 +21,7 @@ redirect_from:
 **PhD, Associate Professor@SIAT, Master supervisor**
 
 [Research Center for Cloud Computing](https://cloud.siat.ac.cn/cloud/)
-,[Shenzhen Institute of Advanced Technology Chinese Academy of Sciences(SIAT)](https://www.siat.ac.cn/)
+, [Shenzhen Institute of Advanced Technology Chinese Academy of Sciences (SIAT)](https://www.siat.ac.cn/)
 
 **Office**: F-1003, 1068 Xueyuan Road, Nanshan District
 
