@@ -24,6 +24,10 @@ redirect_from:
 
 [Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences(SIAT)](https://www.siat.ac.cn/)
 
+**Office**: F-1003, 1068 Xueyuan Road, Nanshan District
+
+
+
 # 🏖️ Biography
 Gonglong Chen currently is an `Associate Professor/Researcher` in `Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences`([SIAT](https://www.siat.ac.cn/)).
 
