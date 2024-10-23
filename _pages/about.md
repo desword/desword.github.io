@@ -20,11 +20,11 @@ redirect_from:
 
 **PhD, Associate Professor@SIAT, Master supervisor**
 
-[Research Center for Cloud Computing](https://cloud.siat.ac.cn/cloud/)
-, [Shenzhen Institute of Advanced Technology Chinese Academy of Sciences (SIAT)](https://www.siat.ac.cn/)
+[Research Center for Cloud Computing](https://cloud.siat.ac.cn/cloud/), [Shenzhen Institute of Advanced Technology Chinese Academy of Sciences (SIAT)](https://www.siat.ac.cn/)
 
 **Office**: F-1003, 1068 Xueyuan Road, Nanshan District
 
+**Email**:  gl.chen2 [at] siat.ac.cn or desword [at] zju.edu.cn 
 
 
 # 🏖️ Biography
@@ -36,7 +36,6 @@ He received the BS degree from the College of Computer Science in East China Uni
 
 His research interests include **Cloud network**, **Machine Learning system** and **Mobile computing**.
 
-Email: desword [at] zju.edu.cn 
 
 
 # 🔥 News
