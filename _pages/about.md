@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-**PhD, Associate Professor@SIAT, Master supervisor**
+**PhD, Associate Professor@SIAT**
 
 [Research Center for Cloud Computing](https://cloud.siat.ac.cn/cloud/), [Shenzhen Institute of Advanced Technology Chinese Academy of Sciences (SIAT)](https://www.siat.ac.cn/)
 
