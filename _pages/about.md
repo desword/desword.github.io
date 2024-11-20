@@ -127,6 +127,12 @@ His research interests include **Cloud network**, **Machine Learning system** an
 - *Journal Reviewer*: JSAC, TMC, ToSN, TWC, IoTJ, ...
 - *Conference Reviewer*: SECON, IWQoS, ICPADS, ... 
 
+
+# 🧭 Useful Links
+[CCF Deadlines](https://ccfddl.com/), [Submission Scheduler](https://desword.github.io/images/submission_scheduler/投稿计划衔接.pdf)
+
+
+
 <div style="text-align: center;">
   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=200&t=m&d=69kNdwcXWzvIWfiTn8p5Af5Iv54yTQJ6nI1ihe9jM4A&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
 </div>
