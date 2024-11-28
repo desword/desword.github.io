@@ -129,7 +129,7 @@ His research interests include **Cloud network**, **Machine Learning system** an
 
 
 # ⌛ Useful Links
-[CCF Deadlines](https://ccfddl.com/), [Submission Scheduler](https://desword.github.io/images/submission_scheduler/投稿计划衔接.pdf)
+[CCF Deadlines](https://ccfddl.com/), [Submission Scheduler](https://desword.github.io/images/submission_scheduler/scheduler.pdf)
 
 
 
