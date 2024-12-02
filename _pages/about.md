@@ -40,6 +40,7 @@ His research interests include **Cloud network**, **Machine Learning system** an
 
 # 🔥 News
 - *2024.10*: &nbsp; Joined SIAT as an `Associate Professor/Researcher`. 🎉🎉
+- *2024.09*: &nbsp; Received the [`Exceptional Star Award`](http://www.opendatacenter.cn/news/p-1832340426277609473.html) issued by ODCC. 🏆
 - *2023.12*: &nbsp; One paper about simulating IoT protocols has been accepted to IoT Journal 2023.  
 - *2023.09*: &nbsp;**《边缘超融合网关技术》**项目荣获[`ODCC十周年杰出项目奖`](http://www.d1net.com/news/hyxg/579329.html)🏆, [`PR`](https://cloud.tencent.com/developer/article/2410141) .
 - *2022.08*: &nbsp; **《基于可编程网关的边缘互联网络》** 项目荣获2022年[`未来网络发展大会领先创新科技成果奖`](https://www.51cto.com/article/717189.html) 🏆.
