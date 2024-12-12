@@ -41,7 +41,8 @@ His research interests include **Cloud network**, **Machine Learning system** an
 # 🔥 News
 - *2024.10*: &nbsp; Joined SIAT as an `Associate Professor/Researcher`. 🎉🎉
 - *2024.09*: &nbsp; Received the [`Exceptional Star Award`](http://www.opendatacenter.cn/news/p-1832340426277609473.html) issued by ODCC. 🏆
-- *2023.12*: &nbsp; One paper about simulating IoT protocols has been accepted to IoT Journal 2023.  
+- *2023.12*: &nbsp; One paper, TinySim, about simulating IoT protocols has been accepted to IoT Journal 2023.
+TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id=193), a rapid IoT developlement platform. [`PR`](https://mp.weixin.qq.com/s/nGYH5aERHiXHmpA8f12Ctw). 
 - *2023.09*: &nbsp;**[《边缘超融合网关技术》](https://desword.github.io/honors/ODCC-decades.jpg)**项目荣获[`ODCC十周年杰出项目奖`](http://www.d1net.com/news/hyxg/579329.html)🏆, [`PR`](https://cloud.tencent.com/developer/article/2410141) .
 - *2022.09*: &nbsp; The project **5G MEC/Slice System to Support Cloud Gaming**  was awarded  [`Top Blueprint of the Year`](https://mp.weixin.qq.com/s/nNL61H8vp_IO4Z7gTQcQmQ)  by the Linux Foundation Edge 🏆.
 - *2022.08*: &nbsp; **[《基于可编程网关的边缘互联网络》](https://desword.github.io/honors/未来创新技术奖-hypersgw.jpeg)** 项目荣获2022年[`未来网络发展大会领先创新科技成果奖`](https://www.51cto.com/article/717189.html) 🏆.
