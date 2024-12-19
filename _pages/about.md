@@ -28,7 +28,7 @@ redirect_from:
 
 
 # 🏖️ Biography
-Gonglong Chen currently is an `Associate Professor/Researcher` in `Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences`([SIAT](https://www.siat.ac.cn/)).
+Gonglong Chen currently is an `Associate Professor/Researcher` in `Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences`([SIAT](https://www.siat.ac.cn/)).
 
 Before that, He has been a `Cloud Network Architect` in [Tencent](https://www.tencent.com/zh-cn/business.html) since 2021.
 He received his PhD degree from the College of Computer Science and Technology at `Zhejiang University` ([ZJU](https://www.zju.edu.cn/)) in 2020, advised by [Wei Dong](https://dongw.emnets.cn/).
