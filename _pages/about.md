@@ -20,7 +20,7 @@ redirect_from:
 
 **PhD, Associate Professor@SIAT**
 
-[Research Center for Cloud Computing](https://cloud.siat.ac.cn/cloud/), [Shenzhen Institute of Advanced Technology Chinese Academy of Sciences (SIAT)](https://www.siat.ac.cn/)
+[Research Center for Cloud Computing](https://cloud.siat.ac.cn/), [Shenzhen Institute of Advanced Technology Chinese Academy of Sciences (SIAT)](https://www.siat.ac.cn/)
 
 **Office**: F-1003, 1068 Xueyuan Road, Nanshan District
 
@@ -66,7 +66,7 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 ### 2021 ~ 2024
 1.  Jinlong E, Lin He, Zongyi Zhao, Yachen Wang, **<u>Gonglong Chen</u>** and Wei Chen, "AggDeliv: Aggregating Multiple Wireless Links for Efficient Mobile Live Video Delivery",  *IEEE INFOCOM*, Vancouver, Canada, May 20-23, 2024. [[PDF]](https://desword.github.io/paper/infocom24-AggDeliv.pdf) (**<span class="color-text">CCF A</span>**)
 1.  **<u>Gonglong Chen</u>**, Wei Dong, Fujian Qiu, Gaoyang Guan, Yi Gao, and Siyu Zeng, "Scalable and Interactive Simulation for IoT Applications with TinySim", *IEEE Internet of Things Journal*,  vol. 10, Issue 23,  pp. 20984 - 20999,  2023.[[PDF]](https://desword.github.io/paper/iotj23-tinysim.pdf) (**<span class="color-text">JCR Q1</span>, IF=10.238, 2023**)
-1.  Jiamei Lv, **<u>Gonglong Chen</u>**, and Wei Dong, "Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks",  *ACM Transactions on Sensor Networks (ToSN)*, vol. 18, no. 4, article 62, pp. 62:1-62:24, 2023. [[PDF]](https://desword.github.io/paper/tosn23-eLora.pdf) (**CCF B, IF=4.1, 2023**)
+1.  Jiamei Lv, **<u>Gonglong Chen</u>**, and Wei Dong, "Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks",  *ACM Transactions on Sensor Networks (ToSN)*, vol. 18, no. 4, article 62, pp. 62:1-62:24, 2022. [[PDF]](https://desword.github.io/paper/tosn23-eLora.pdf) (**CCF B, IF=4.1, 2022**)
 
 1.  Wei Dong, Jiamei Lv, **<u>Gonglong Chen</u>**, Yihui Wang, Huikang Li, and Yi Gao, Dinesh Bharadia, "TinyNet: a Lightweight, Modular, and Unified Network Architecture for the Internet of Things", *ACM MobiSys*, Portland, June 27 - July 1, 2022.[[PDF]](https://desword.github.io/paper/mobisys22-tinynet.pdf) (**CCF B, 21.5% acceptance rate**)
 1.  Peng Tao, Guo Yichen, Wang Yachen, **<u>Gonglong Chen</u>**, Yang Feng, Chen Wei, "An Interference-Oriented 5G Radio Resource Allocation Framework for Ultra-Dense Networks", *IEEE Internet of Things Journal*,  2022.[[PDF]](https://desword.github.io/paper/iotj22-5g.pdf) (**<span class="color-text">JCR Q1</span>, IF=11.705**)
