@@ -22,7 +22,7 @@ redirect_from:
 
 [Research Center for Cloud Computing](https://cloud.siat.ac.cn/), [Shenzhen Institutes of Advanced Technology Chinese Academy of Sciences (SIAT)](https://www.siat.ac.cn/)
 
-**Office**: 1491, Building F, 1068 Xueyuan Road, Nanshan District
+**Office**: 1431, Building F, 1068 Xueyuan Road, Nanshan District
 
 **Email**:  gl.chen2 [at] siat.ac.cn or desword [at] zju.edu.cn 
 
