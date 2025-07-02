@@ -108,6 +108,8 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 - *2018.10* National Scholarship Scholarship 2018 **(ZJU CS top 1%,5/400)**.
 
 # 📜 Patents
+- *2025.06*, A Data Transmission Method, Device and Readable Storage Medium, CN113301549B, ZL202110570674.5.
+- *2025.04*, Data Transmission Method, Data Reception Method, Switch, and Gateway Server, CN115996185B, ZL202111208819.3.
 - *2024.09*, Cloud-Edge Collaborative Data Transmission Method, Device, Server, and Storage Medium, CN113489643B, ZL02110793799.4.
 - *2023.10*, Video Data Processing Method and Device, Electronic Equipment, and Storage Medium, HK40052849.
 - *2023.08*, Driver-side Positioning Method, Device, Computer Equipment, and Storage Medium, CN113790761B, ZL202111105490.8.
