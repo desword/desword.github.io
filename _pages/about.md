@@ -37,8 +37,8 @@ He received the BS degree from the College of Computer Science in East China Uni
 His research interests include **Cloud network**, **Machine Learning system** and **Mobile computing**.
 
 
-
 # 🔥 News
+- *2025.07*: &nbsp; One paper about accelerating inference speed and scale is accepted to CLUSTER 2025. 
 - *2024.10*: &nbsp; Joined SIAT as an `Associate Professor/Researcher`. 🎉🎉
 - *2024.09*: &nbsp; Received the [`Exceptional Star Award`](http://www.opendatacenter.cn/news/p-1832340426277609473.html) issued by ODCC. 🏆
 - *2023.12*: &nbsp; One paper, TinySim, about simulating IoT protocols has been accepted to IoT Journal 2023.
@@ -63,7 +63,10 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 
 # 📝 Publications 
 
-### 2021 ~ 2024
+
+
+### 2021 ~ 2025
+1.  **<u>Gonglong Chen</u>**, Jiamei Lv, Kejiang Ye, Tao Gu and Chenzhong Xu, "Scalable and Fast Inference Serving via Hybrid Communication Scheduling on Heterogeneous Networks",  *IEEE CLUSTER*, Edinburgh, United Kingdom, Sep 2-5, 2025. [[PDF]](#) (**CCF B**)
 1.  Jinlong E, Lin He, Zongyi Zhao, Yachen Wang, **<u>Gonglong Chen</u>** and Wei Chen, "AggDeliv: Aggregating Multiple Wireless Links for Efficient Mobile Live Video Delivery",  *IEEE INFOCOM*, Vancouver, Canada, May 20-23, 2024. [[PDF]](https://desword.github.io/paper/infocom24-AggDeliv.pdf) (**<span class="color-text">CCF A</span>**)
 1.  **<u>Gonglong Chen</u>**, Wei Dong, Fujian Qiu, Gaoyang Guan, Yi Gao, and Siyu Zeng, "Scalable and Interactive Simulation for IoT Applications with TinySim", *IEEE Internet of Things Journal*,  vol. 10, Issue 23,  pp. 20984 - 20999,  2023.[[PDF]](https://desword.github.io/paper/iotj23-tinysim.pdf) (**<span class="color-text">JCR Q1</span>, IF=10.238, 2023**)
 1.  Jiamei Lv, **<u>Gonglong Chen</u>**, and Wei Dong, "Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks",  *ACM Transactions on Sensor Networks (ToSN)*, vol. 18, no. 4, article 62, pp. 62:1-62:24, 2022. [[PDF]](https://desword.github.io/paper/tosn23-eLora.pdf) (**CCF B, IF=4.1, 2022**)
