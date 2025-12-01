@@ -66,7 +66,7 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 
 
 ### 2022 ~ 2025
-1.  **<u>Gonglong Chen</u>**, Jiamei Lv, Kejiang Ye, Tao Gu and Chenzhong Xu, "Scalable and Fast Inference Serving via Hybrid Communication Scheduling on Heterogeneous Networks",  *IEEE CLUSTER*, Edinburgh, United Kingdom, Sep 2-5, 2025. [[PDF]](#) (**CCF B**)
+1.  **<u>Gonglong Chen</u>**, Jiamei Lv, Kejiang Ye, Tao Gu and Chenzhong Xu, "Scalable and Fast Inference Serving via Hybrid Communication Scheduling on Heterogeneous Networks",  *IEEE CLUSTER*, Edinburgh, United Kingdom, Sep 2-5, 2025. [[PDF]](https://desword.github.io/paper/cluster25_ina.pdf) (**CCF B**)  
 1.  Jinlong E, Lin He, Zongyi Zhao, Yachen Wang, **<u>Gonglong Chen</u>** and Wei Chen, "AggDeliv: Aggregating Multiple Wireless Links for Efficient Mobile Live Video Delivery",  *IEEE INFOCOM*, Vancouver, Canada, May 20-23, 2024. [[PDF]](https://desword.github.io/paper/infocom24-AggDeliv.pdf) (**<span class="color-text">CCF A</span>**)
 1.  **<u>Gonglong Chen</u>**, Wei Dong, Fujian Qiu, Gaoyang Guan, Yi Gao, and Siyu Zeng, "Scalable and Interactive Simulation for IoT Applications with TinySim", *IEEE Internet of Things Journal*,  vol. 10, Issue 23,  pp. 20984 - 20999,  2023.[[PDF]](https://desword.github.io/paper/iotj23-tinysim.pdf) (**<span class="color-text">JCR Q1</span>, IF=10.238, 2023**)
 1.  Jiamei Lv, **<u>Gonglong Chen</u>**, and Wei Dong, "Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks",  *ACM Transactions on Sensor Networks (ToSN)*, vol. 18, no. 4, article 62, pp. 62:1-62:24, 2022. [[PDF]](https://desword.github.io/paper/tosn23-eLora.pdf) (**CCF B, IF=4.1, 2022**)
@@ -101,6 +101,12 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 1.  Wei Dong, **<u>Gonglong Chen</u>**, Chenhong Cao, Luyao Luo, Yi Gao, Towards a Software-Defined Architecture for Wireless Sensor Networks. *Chinese Journal of Computers (CJC)*, Vol.40, No. 8, pp.1779-1797, 2017. [[PDF]](https://desword.github.io/paper/DW0315-2017315152626.pdf)
 
 
+# Fundings
+
+1. **PI**, A Study on Low-Altitude Mission Scheduling Techniques Using Wide-Area Perception and Multi-Modal Information Fusion, NSF of Guangdong Province,China, RMB 100k, 2026.1-2028.12.
+1. **Core member**, Green-aware Data Center Energy Optimization, Inner Mongolia Science and Technology Project, RMB 300k out of 1 million, 2025YFHH0110, 2025.6-2028.6.
+1. **Core member**, Optimization Theory and Methods for Quantum Reinforcement Learning in the Context of Edge Intelligence, Shenzhen Science and Technology Program, RMB 300k, JCYJ20250604183035046, 2026.1-2028.12.
+
 
 # 🎖 Honors and Awards
 - *2023.12* Tencent's Five-Star Outstanding Contributor Award in 2023H2.
@@ -124,7 +130,6 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 1.  *2023.05*, Decoding Method and Apparatus, Electronic Device, and Computer-readable Storage Medium, CN113542871B, ZL202110764441.9.
 1.  *2022.05*, A LoRa and WiFi Concurrent Transmission Method Based on Weak Signal Detection, CN112153652B, ZL202010877295.6.
 1.  *2019.12*, A Method for Restoring the Execution Path of an Android Program, CN106802866B, ZL201710062753.9.
-
 
 
 # 💬 Invited Talks
