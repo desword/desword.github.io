@@ -38,6 +38,7 @@ His research interests include **Cloud network**, **Machine Learning system** an
 
 
 # 🔥 News
+- *2025.11*: &nbsp; Awarded Grant by the Guangdong Provincial Natural Science Foundation! 
 - *2025.07*: &nbsp; One paper about accelerating inference speed and scale is accepted to CLUSTER 2025. 
 - *2024.10*: &nbsp; Joined SIAT as an `Associate Professor/Researcher`. 🎉🎉
 - *2024.09*: &nbsp; Received the [`Exceptional Star Award`](http://www.opendatacenter.cn/news/p-1832340426277609473.html) issued by ODCC. 🏆
@@ -101,11 +102,11 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 1.  Wei Dong, **<u>Gonglong Chen</u>**, Chenhong Cao, Luyao Luo, Yi Gao, Towards a Software-Defined Architecture for Wireless Sensor Networks. *Chinese Journal of Computers (CJC)*, Vol.40, No. 8, pp.1779-1797, 2017. [[PDF]](https://desword.github.io/paper/DW0315-2017315152626.pdf)
 
 
-# Fundings
+# 📁 Fundings
 
 1. **PI**, A Study on Low-Altitude Mission Scheduling Techniques Using Wide-Area Perception and Multi-Modal Information Fusion, NSF of Guangdong Province,China, RMB 100k, 2026.1-2028.12.
 1. **Core member**, Green-aware Data Center Energy Optimization, Inner Mongolia Science and Technology Project, RMB 300k out of 1 million, 2025YFHH0110, 2025.6-2028.6.
-1. **Core member**, Optimization Theory and Methods for Quantum Reinforcement Learning in the Context of Edge Intelligence, Shenzhen Science and Technology Program, RMB 300k, JCYJ20250604183035046, 2026.1-2028.12.
+1. **Core member**, Optimization Theory and Methods for Quantum Reinforcement Learning in the Context of Edge Intelligence, Shenzhen Science and Technology Program, RMB 300k, JCYJ20250604183035046, 2026.01-2028.12.
 
 
 # 🎖 Honors and Awards
