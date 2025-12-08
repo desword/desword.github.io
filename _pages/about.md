@@ -50,11 +50,11 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 - *2022.08*: &nbsp; **[《基于可编程网关的边缘互联网络》](https://desword.github.io/honors/未来创新技术奖-hypersgw.jpeg)** 项目荣获2022年[`未来网络发展大会领先创新科技成果奖`](https://www.51cto.com/article/717189.html) 🏆.
 - *2021.01*: &nbsp; Joined Tencent as a `Cloud Network Architect`. 🎉🎉
 - *2020.12*: &nbsp; One paper about enabling the coexistence of 2.4G LoRa and WiFi is accepted to INFOCOM 2021. 
-- *2020.12*: &nbsp; I have passed the Ph.D. defense!🎉🎉
 
 <details>
 <summary>More<p style="line-height:1.4"></p></summary>
 <ul>
+  <li><em>2020.12:</em> &nbsp; I have passed the Ph.D. defense!🎉🎉</li>
   <li><em>2020.10:</em> &nbsp; JamCloak is accepted to ToSN.</li>
   <li><em>2020.06:</em> &nbsp; eLoRa is accepted to IWQoS 2020.</li>
   <li><em>2020.07:</em> &nbsp; TinySim is accepted to INFOCOM 2020 as a poster.</li>
@@ -66,6 +66,8 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 # 📝 Publications 
 
 
+### 2026
+1.  **<u>Gonglong Chen</u>**, Jiacong Li, Yuxin Xu, Baiyan Ke, Zhitao Lan, Wenxing Ge, Haiying Shen, Jiamei Lv,  Tao Gu, Chenzhong Xu and Kejiang Ye, "Enabling Fast and Stable Service Mesh Communication via Piggyback Layer-7 Traffic Control on Programmable Switches",  *IEEE INFOCOM*, Tokyo, Japan, May 18-21, 2026. [[PDF]](#) (**<span class="color-text">CCF A</span>, 18.9% acceptance rate**)  
 
 ### 2022 ~ 2025
 1.  **<u>Gonglong Chen</u>**, Jiamei Lv, Kejiang Ye, Tao Gu and Chenzhong Xu, "Scalable and Fast Inference Serving via Hybrid Communication Scheduling on Heterogeneous Networks",  *IEEE CLUSTER*, Edinburgh, United Kingdom, Sep 2-5, 2025. [[PDF]](https://desword.github.io/paper/cluster25_ina.pdf) (**CCF B**)  
