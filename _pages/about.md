@@ -38,6 +38,7 @@ His research interests include **Cloud network**, **Machine Learning system** an
 
 
 # 🔥 News
+- *2025.12*: &nbsp; A paper about accelerating the communication of multi-agent systems deployed on containers has been accepted to INFOCOM 2026! 
 - *2025.11*: &nbsp; Awarded Grant by the Guangdong Provincial Natural Science Foundation! 
 - *2025.07*: &nbsp; One paper about accelerating inference speed and scale is accepted to CLUSTER 2025. 
 - *2024.10*: &nbsp; Joined SIAT as an `Associate Professor/Researcher`. 🎉🎉
