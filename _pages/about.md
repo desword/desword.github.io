@@ -67,10 +67,10 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 
 
 ### 2026
-1.  **<u>Gonglong Chen</u>**, Jiacong Li, Yuxin Xu, Baiyan Ke, Zhitao Lan, Wenxing Ge, Haiying Shen, Jiamei Lv,  Tao Gu, Chenzhong Xu and Kejiang Ye, "Enabling Fast and Stable Service Mesh Communication via Piggyback Layer-7 Traffic Control on Programmable Switches",  *IEEE INFOCOM*, Tokyo, Japan, May 18-21, 2026. [[PDF]](#) (**<span class="color-text">CCF A</span>, 18.9% acceptance rate**)  
+1.  **<u>Gonglong Chen</u>**, Jiacong Li, Yuxin Xu, Baiyan Ke, Zhitao Lan, Wenxing Ge, Haiying Shen, Jiamei Lv,  Tao Gu, Chengzhong Xu and Kejiang Ye, "Enabling Fast and Stable Service Mesh Communication via Piggyback Layer-7 Traffic Control on Programmable Switches",  *IEEE INFOCOM*, Tokyo, Japan, May 18-21, 2026. [[PDF]](#) (**<span class="color-text">CCF A</span>, 18.9% acceptance rate**)  
 
 ### 2022 ~ 2025
-1.  **<u>Gonglong Chen</u>**, Jiamei Lv, Kejiang Ye, Tao Gu and Chenzhong Xu, "Scalable and Fast Inference Serving via Hybrid Communication Scheduling on Heterogeneous Networks",  *IEEE CLUSTER*, Edinburgh, United Kingdom, Sep 2-5, 2025. [[PDF]](https://desword.github.io/paper/cluster25_ina.pdf) (**CCF B**)  
+1.  **<u>Gonglong Chen</u>**, Jiamei Lv, Kejiang Ye, Tao Gu and Chengzhong Xu, "Scalable and Fast Inference Serving via Hybrid Communication Scheduling on Heterogeneous Networks",  *IEEE CLUSTER*, Edinburgh, United Kingdom, Sep 2-5, 2025. [[PDF]](https://desword.github.io/paper/cluster25_ina.pdf) (**CCF B**)  
 1.  Jinlong E, Lin He, Zongyi Zhao, Yachen Wang, **<u>Gonglong Chen</u>** and Wei Chen, "AggDeliv: Aggregating Multiple Wireless Links for Efficient Mobile Live Video Delivery",  *IEEE INFOCOM*, Vancouver, Canada, May 20-23, 2024. [[PDF]](https://desword.github.io/paper/infocom24-AggDeliv.pdf) (**<span class="color-text">CCF A</span>**)
 1.  **<u>Gonglong Chen</u>**, Wei Dong, Fujian Qiu, Gaoyang Guan, Yi Gao, and Siyu Zeng, "Scalable and Interactive Simulation for IoT Applications with TinySim", *IEEE Internet of Things Journal*,  vol. 10, Issue 23,  pp. 20984 - 20999,  2023.[[PDF]](https://desword.github.io/paper/iotj23-tinysim.pdf) (**<span class="color-text">JCR Q1</span>, IF=10.238, 2023**)
 1.  Jiamei Lv, **<u>Gonglong Chen</u>**, and Wei Dong, "Exploiting Rateless Codes and Cross-Layer Optimization for Low-Power Wide-Area Networks",  *ACM Transactions on Sensor Networks (ToSN)*, vol. 18, no. 4, article 62, pp. 62:1-62:24, 2022. [[PDF]](https://desword.github.io/paper/tosn23-eLora.pdf) (**CCF B, IF=4.1, 2022**)
