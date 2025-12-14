@@ -38,6 +38,7 @@ His research interests include **Cloud network**, **Machine Learning system** an
 
 
 # 🔥 News
+- *2025.12*: &nbsp; A paper about enabling WF2Q+ rate limiting algorithm on programmable switches has been accepted to ToN! 
 - *2025.12*: &nbsp; A paper about accelerating the communication of multi-agent systems deployed on containers has been accepted to INFOCOM 2026! 
 - *2025.11*: &nbsp; Awarded Grant by the Guangdong Provincial Natural Science Foundation! 
 - *2025.07*: &nbsp; One paper about accelerating inference speed and scale is accepted to CLUSTER 2025. 
@@ -67,6 +68,7 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 
 
 ### 2026
+1.  **<u>Gonglong Chen</u>**, Kejiang Ye, Kai Chen and Chengzhong Xu, "DragonKing: A Scalable and High-Throughput Rate Limiter by Enabling WF2Q+ on Programmable Switches for Cloud Networks",  accepted to *IEEE/ACM Transactions on Networking (ToN)*. [[PDF]](#) (**<span class="color-text">CCF A</span>**)  
 1.  **<u>Gonglong Chen</u>**, Jiacong Li, Yuxin Xu, Baiyan Ke, Zhitao Lan, Wenxing Ge, Haiying Shen, Jiamei Lv,  Tao Gu, Chengzhong Xu and Kejiang Ye, "Enabling Fast and Stable Service Mesh Communication via Piggyback Layer-7 Traffic Control on Programmable Switches",  *IEEE INFOCOM*, Tokyo, Japan, May 18-21, 2026. [[PDF]](#) (**<span class="color-text">CCF A</span>, 18.9% acceptance rate**)  
 
 ### 2022 ~ 2025
