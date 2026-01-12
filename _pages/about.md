@@ -109,6 +109,8 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 
 # 📁 Fundings
 
+1. **PI** for one of the sub research topics about AI inference acceleration, National Key R&D Program of China, Science and Technology Development Fund of Macao S.A.R (FDCT),
+RMB 2000K，I am responsible for  ~RMB 500k，2026.1-2028.12.
 1. **PI**, A Study on Low-Altitude Mission Scheduling Techniques Using Wide-Area Perception and Multi-Modal Information Fusion, NSF of Guangdong Province,China, RMB 100k, 2026.1-2028.12.
 1. **Core member**, Green-aware Data Center Energy Optimization, Inner Mongolia Science and Technology Project, RMB 300k out of 1 million, 2025YFHH0110, 2025.6-2028.6.
 1. **Core member**, Optimization Theory and Methods for Quantum Reinforcement Learning in the Context of Edge Intelligence, Shenzhen Science and Technology Program, RMB 300k, JCYJ20250604183035046, 2026.01-2028.12.
