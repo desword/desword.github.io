@@ -147,8 +147,17 @@ RMB 2000K，I am responsible for  ~RMB 500k，2026.1-2028.12.
 
 
 # 🧭 Academic Services
-- *Journal Reviewer*: JSAC, TMC, ToSN, TWC, IoTJ, ...
-- *Conference Reviewer*: SECON, IWQoS, ICPADS, ... 
+- *Journal Reviewer*: 
+  - IEEE Journal on Selected Areas in Communications (JSAC) 
+  - IEEE Transactions on Mobile Computing (TMC) 
+  - ACM Transactions on Sensor Networks (ToSN) 
+  - IEEE Transactions on Wireless Communications (TWC) 
+  - IEEE Internet of Things Journal (IoTJ)
+  - IEEE Transactions on Consumer Electronics (TCE)
+- *Conference Reviewer*: 
+  - IEEE INFOCOM
+  - IEEE SECON
+  - IEEE/ACM IWQoS
 
 
 # ⌛ Useful Links
