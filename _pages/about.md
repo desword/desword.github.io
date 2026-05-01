@@ -38,8 +38,9 @@ His research interests include **Cloud network**, **Machine Learning system** an
 
 
 # 🔥 News
-- *2025.12*: &nbsp; A paper about enabling WF2Q+ rate limiting algorithm on programmable switches has been accepted to ToN! 
-- *2025.12*: &nbsp; A paper about accelerating the communication of multi-agent systems deployed on containers has been accepted to INFOCOM 2026! 
+- *2026.04*: &nbsp; One paper about offloading serializetion on programmable switches has been accepted to IWQoS 2026! 
+- *2025.12*: &nbsp; One paper about enabling WF2Q+ rate limiting algorithm on programmable switches has been accepted to ToN! 
+- *2025.12*: &nbsp; One paper about accelerating the communication of multi-agent systems deployed on containers has been accepted to INFOCOM 2026! 
 - *2025.11*: &nbsp; Awarded Grant by the Guangdong Provincial Natural Science Foundation! 
 - *2025.07*: &nbsp; One paper about accelerating inference speed and scale is accepted to CLUSTER 2025. 
 - *2024.10*: &nbsp; Joined SIAT as an `Associate Professor/Researcher`. 🎉🎉
@@ -50,11 +51,11 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 - *2022.09*: &nbsp; The project **5G MEC/Slice System to Support Cloud Gaming**  was awarded  [`Top Blueprint of the Year`](https://mp.weixin.qq.com/s/nNL61H8vp_IO4Z7gTQcQmQ)  by the Linux Foundation Edge 🏆.
 - *2022.08*: &nbsp; **[《基于可编程网关的边缘互联网络》](https://desword.github.io/honors/未来创新技术奖-hypersgw.jpeg)** 项目荣获2022年[`未来网络发展大会领先创新科技成果奖`](https://www.51cto.com/article/717189.html) 🏆.
 - *2021.01*: &nbsp; Joined Tencent as a `Cloud Network Architect`. 🎉🎉
-- *2020.12*: &nbsp; One paper about enabling the coexistence of 2.4G LoRa and WiFi is accepted to INFOCOM 2021. 
 
 <details>
 <summary>More<p style="line-height:1.4"></p></summary>
 <ul>
+  <li><em>2020.12:</em> &nbsp; One paper about enabling the coexistence of 2.4G LoRa and WiFi is accepted to INFOCOM 2021. </li>
   <li><em>2020.12:</em> &nbsp; I have passed the Ph.D. defense!🎉🎉</li>
   <li><em>2020.10:</em> &nbsp; JamCloak is accepted to ToSN.</li>
   <li><em>2020.06:</em> &nbsp; eLoRa is accepted to IWQoS 2020.</li>
@@ -68,6 +69,7 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 
 
 ### 2026
+1.  **<u>Gonglong Chen</u>**, Baiyan Ke, Yuxin Xu, Shenghong Xiong, Haolin Pan, Jiamei Lv, Wenxing Ge, Yuxi Wang, Chengzhong Xu, Kejiang Ye, "Achieving Fast and High Throughput Data Exchange for Serverless Computing Systems via Switch-Native Serialization/Deserialization", *IEEE/ACM IWQoS*, Istanbul, Turkey, 29 June - 2 July, 2026. [[PDF]](#) (**CCF B**)   
 1.  **<u>Gonglong Chen</u>**, Kejiang Ye, Kai Chen and Chengzhong Xu, "DragonKing: A Scalable and High-Throughput Rate Limiter by Enabling WF2Q+ on Programmable Switches for Cloud Networks", *IEEE/ACM Transactions on Networking (ToN)*, vol. 34, pp. 3226-3241, 2026. [[PDF]](https://desword.github.io/paper/ton26-dragonking.pdf) (**<span class="color-text">CCF A</span>**)  
 1.  **<u>Gonglong Chen</u>**, Jiacong Li, Yuxin Xu, Baiyan Ke, Zhitao Lan, Wenxing Ge, Haiying Shen, Jiamei Lv,  Tao Gu, Chengzhong Xu and Kejiang Ye, "Enabling Fast and Stable Service Mesh Communication via Piggyback Layer-7 Traffic Control on Programmable Switches",  *IEEE INFOCOM*, Tokyo, Japan, May 18-21, 2026. [[PDF]](https://desword.github.io/paper/infocom26_discar.pdf) (**<span class="color-text">CCF A</span>, 18.9% acceptance rate**)  
 
