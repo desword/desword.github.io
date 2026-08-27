@@ -38,7 +38,8 @@ His research interests include **Cloud network**, **Machine Learning system** an
 
 
 # 🔥 News
-- *2026.04*: &nbsp; One paper about offloading serializetion on programmable switches has been accepted to IWQoS 2026! 
+- *2026.07*: &nbsp; One paper about offloading stateful gateway on programmable switches has been accepted to ICNP 2026! 
+- *2026.04*: &nbsp; One paper about offloading serialization on programmable switches has been accepted to IWQoS 2026! 
 - *2026.04*: &nbsp; Awarded funding through the Guangdong Provincial Overseas Distinguished Faculty Program to host an international scholar! 
 - *2025.12*: &nbsp; One paper about enabling WF2Q+ rate limiting algorithm on programmable switches has been accepted to ToN! 
 - *2025.12*: &nbsp; One paper about accelerating the communication of multi-agent systems deployed on containers has been accepted to INFOCOM 2026! 
@@ -70,7 +71,12 @@ TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id
 
 
 ### 2026
+<<<<<<< HEAD
 1.  **<u>Gonglong Chen</u>**, Baiyan Ke, Yuxin Xu, Shenghong Xiong, Haolin Pan, Jiamei Lv, Wenxing Ge, Yuxi Wang, Chengzhong Xu, Kejiang Ye, "Achieving Fast and High Throughput Data Exchange for Serverless Computing Systems via Switch-Native Serialization/Deserialization", *IEEE/ACM IWQoS*, Istanbul, Turkey, 29 June - 2 July, 2026. [[PDF]](https://desword.github.io/paper/iwqos26-hyperlink.pdf) (**CCF B**)   
+=======
+1.  Decang Sun,**<u>Gonglong Chen</u>**, Chaoliang Zeng, Kaiqiang Xu, Han Tian, Zili Meng, Wei Chen, Yuxi Wang, Kai Chen, "ARIES: Cost-Efficient Tunnel Gateway Offload on Programmable Switches", *IEEE ICNP 2026*, Tempe, Arizona, USA, October 05-08, 2026. [[PDF]](#)  (**CCF B**)   
+1.  **<u>Gonglong Chen</u>**, Baiyan Ke, Yuxin Xu, Shenghong Xiong, Haolin Pan, Jiamei Lv, Wenxing Ge, Yuxi Wang, Chengzhong Xu, Kejiang Ye, "Achieving Fast and High Throughput Data Exchange for Serverless Computing Systems via Switch-Native Serialization/Deserialization", *IEEE/ACM IWQoS*, Istanbul, Turkey, 29 June - 2 July, 2026. [[PDF]](https://desword.github.io/paper/iwqos26-hyperlink.pdf)  (**CCF B**)   
+>>>>>>> 3bf44b8262a81d2b4593f9e19ecd4776dce06ff7
 1.  **<u>Gonglong Chen</u>**, Kejiang Ye, Kai Chen and Chengzhong Xu, "DragonKing: A Scalable and High-Throughput Rate Limiter by Enabling WF2Q+ on Programmable Switches for Cloud Networks", *IEEE/ACM Transactions on Networking (ToN)*, vol. 34, pp. 3226-3241, 2026. [[PDF]](https://desword.github.io/paper/ton26-dragonking.pdf) (**<span class="color-text">CCF A</span>**)  
 1.  **<u>Gonglong Chen</u>**, Jiacong Li, Yuxin Xu, Baiyan Ke, Zhitao Lan, Wenxing Ge, Haiying Shen, Jiamei Lv,  Tao Gu, Chengzhong Xu and Kejiang Ye, "Enabling Fast and Stable Service Mesh Communication via Piggyback Layer-7 Traffic Control on Programmable Switches",  *IEEE INFOCOM*, Tokyo, Japan, May 18-21, 2026. [[PDF]](https://desword.github.io/paper/infocom26_discar.pdf) (**<span class="color-text">CCF A</span>, 18.9% acceptance rate**)  
 
