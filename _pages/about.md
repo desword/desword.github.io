@@ -46,17 +46,16 @@ His research interests include **Cloud network**, **Machine Learning system** an
 - *2025.11*: &nbsp; Awarded Grant by the Guangdong Provincial Natural Science Foundation! 
 - *2025.07*: &nbsp; One paper about accelerating inference speed and scale is accepted to CLUSTER 2025. 
 - *2024.10*: &nbsp; Joined SIAT as an `Associate Professor/Researcher`. 🎉🎉
-- *2024.09*: &nbsp; Received the [`Exceptional Star Award`](http://www.opendatacenter.cn/news/p-1832340426277609473.html) issued by ODCC. 🏆
-- *2023.12*: &nbsp; One paper, TinySim, about simulating IoT protocols has been accepted to IoT Journal 2023.
-TinySim has beed integrated into [LinkLab](https://azft.alibaba.com/newspage/?id=193), a rapid IoT developlement platform. [`PR`](https://mp.weixin.qq.com/s/nGYH5aERHiXHmpA8f12Ctw). 
-- *2023.09*: &nbsp;**[《边缘超融合网关技术》](https://desword.github.io/honors/ODCC-decades.jpg)**项目荣获[`ODCC十周年杰出项目奖`](https://www.odcc.org.cn/news/p-1702100744789598209.html)🏆, [`PR`](https://cloud.tencent.com/developer/article/2410141) .
-- *2022.09*: &nbsp; The project **5G MEC/Slice System to Support Cloud Gaming**  was awarded  [`Top Blueprint of the Year`](https://mp.weixin.qq.com/s/nNL61H8vp_IO4Z7gTQcQmQ)  by the Linux Foundation Edge 🏆.
-- *2022.08*: &nbsp; **[《基于可编程网关的边缘互联网络》](https://desword.github.io/honors/未来创新技术奖-hypersgw.jpeg)** 项目荣获2022年[`未来网络发展大会领先创新科技成果奖`](https://www.51cto.com/article/717189.html) 🏆.
-- *2021.01*: &nbsp; Joined Tencent as a `Cloud Network Architect`. 🎉🎉
 
 <details>
 <summary>More<p style="line-height:1.4"></p></summary>
 <ul>
+  <li><em>2024.09:</em> &nbsp; Received the <a href="http://www.opendatacenter.cn/news/p-1832340426277609473.html"><code>Exceptional Star Award</code></a> issued by ODCC. 🏆</li>
+  <li><em>2023.12:</em> &nbsp; One paper, TinySim, about simulating IoT protocols is accepted to IoT Journal 2023. TinySim has been integrated into <a href="https://azft.alibaba.com/newspage/?id=193">LinkLab</a>, a rapid IoT development platform. <a href="https://mp.weixin.qq.com/s/nGYH5aERHiXHmpA8f12Ctw"><code>PR</code></a></li>
+  <li><em>2023.09:</em> &nbsp; The project <strong><a href="https://desword.github.io/honors/ODCC-decades.jpg">《边缘超融合网关技术》</a></strong> received the <a href="https://www.odcc.org.cn/news/p-1702100744789598209.html"><code>ODCC 10th Anniversary Outstanding Project Award</code></a> 🏆, <a href="https://cloud.tencent.com/developer/article/2410141"><code>PR</code></a></li>
+  <li><em>2022.09:</em> &nbsp; The project <strong>5G MEC/Slice System to Support Cloud Gaming</strong> was awarded <a href="https://mp.weixin.qq.com/s/nNL61H8vp_IO4Z7gTQcQmQ"><code>Top Blueprint of the Year</code></a> by the Linux Foundation Edge 🏆</li>
+  <li><em>2022.08:</em> &nbsp; The project <strong><a href="https://desword.github.io/honors/未来创新技术奖-hypersgw.jpeg">《基于可编程网关的边缘互联网络》</a></strong> received the <a href="https://www.51cto.com/article/717189.html"><code>Leading Innovation Award</code></a> at the Future Network Development Conference 2022 🏆</li>
+  <li><em>2021.01:</em> &nbsp; Joined Tencent as a <code>Cloud Network Architect</code>. 🎉🎉</li>
   <li><em>2020.12:</em> &nbsp; One paper about enabling the coexistence of 2.4G LoRa and WiFi is accepted to INFOCOM 2021. </li>
   <li><em>2020.12:</em> &nbsp; I have passed the Ph.D. defense!🎉🎉</li>
   <li><em>2020.10:</em> &nbsp; JamCloak is accepted to ToSN.</li>
